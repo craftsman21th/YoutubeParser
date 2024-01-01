@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE
+  resources [
+  <!ENTITY base_app_name "Moder">
+  <!ENTITY homesite_domain "www.heybox.ai">
+  ]
+  >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="about_title_text">&base_app_name;について</string>
+    <string name="account_error_toast">&base_app_name;に登録していません。登録してからもう一度試してください</string>
+    <string name="agreement_dialog_content">&base_app_name;へようこそ！ご利用の際に発生データ料金はご利用の携帯電話会社にお問い合わせください。私たちはプライバシーポリシーと個人情報を重視しています。ご利用の前に&lt;プライバシーポリシー&gt;と&lt;利用規約&gt;を閲覧し同意してからご利用のください。</string>
+    <string name="already_lastet_version">すでに最新版の&base_app_name;です</string>
+    <string name="apk_version_info">&base_app_name;<xliff:g id="version">%s</xliff:g>バージョン</string>
+    <string name="app_name">&base_app_name;</string>
+    <string name="backup_my_app">\t| &base_app_name;</string>
+    <string name="backup_delete_tips">&base_app_name;にアップロードしたフィルが削除しません</string>
+    <string name="backup_introduce_thanks_for_your_affirmation">&base_app_name;へのご信頼、どうもありがとうございます。</string>
+    <string name="buckup_setting_guide_hint">&base_app_name;のセキュリティについて</string>
+    <string name="category_my_app">My &base_app_name;</string>
+    <string name="download_apk">&base_app_name;ダウンロード中<xliff:g id="version">%s</xliff:g>バージョン</string>
+    <string name="my_app_account">&base_app_name;アカウント</string>
+    <string name="my_app_album">&base_app_name;Album</string>
+    <string name="my_app_website_desktop_guide_title">&base_app_name;コンピューターのWebサイト</string>
+    <string name="file_list_title">&base_app_name;</string>
+    <string name="live_photo_export_title">&base_app_name;ダウンロードリストに出力</string>
+    <string name="my_app_net_error">&base_app_name;接続に失敗しました。コンテンツを表示できません</string>
+    <string name="new_version">&base_app_name;がアップデートされました</string>
+    <string name="notification_album_open_seven_content">写真の自動バックアップ機能をオンにしましょう！撮った写真を自動的に&base_app_name;上に保存できる便利機能です！</string>
+    <string name="notification_album_open_thrity_content">写真の自動バックアップ機能をオンにしましょう！撮った写真を自動的に&base_app_name;上に保存できる便利機能です！</string>
+    <string name="result_advanced_permission_dialog_content">【設定ー＞アプリケーションー＞&base_app_name;ー＞権限】のかなから%1$s権限を付与してください。付与後に%2$s機能が使用できるようになります。</string>
+    <string name="result_advanced_permission_dialog_content_without_des">【設定ー＞アプリケーションー＞&base_app_name;ー＞権限】のかなから%1$s権限を付与してください。付与後にこの機能が使用できるようになります。</string>
+    <string name="root_cloud">&base_app_name;</string>
+    <string name="safety_ability_text">&base_app_name;のセキュリティについて</string>
+    <string name="search_box_hint_text">&base_app_name;内の検索</string>
+    <string name="select_secondary_warning_content">外付けメモリにファイルをダウンロードした場合、&base_app_name;を削除するとダウンロードしたファイルも同時に削除されます、よろしいでしょうか？</string>
+    <string name="settings_ablout_netdisk">&base_app_name;について</string>
+    <string name="signature_check_failed">Please download &base_app_name; from http://&homesite_domain;/</string>
+    <string name="video_notification_title">&base_app_name;が動画を再生しています</string>
+    <string name="share_other_muti_item_text">Hi、&base_app_name;を利用しています。皆様と共有します\"<xliff:g>%s</xliff:g>\"（<xliff:g>   %d</xliff:g>個ファイルを待っています）、さっそく見てみましょう〜</string>
+    <string name="share_other_one_item_text">Hi、&base_app_name;を使用して共有しています\"<xliff:g>%s</xliff:g>\"、さっそく見てみましょう〜</string>
+    <string name="my_app_share">&base_app_name;の共有</string>
+    <string name="personalpage_datail_footer_button_conserve">&base_app_name;に保存します</string>
+    <string name="backup_setting_safe_title">&base_app_name;はデータを安全に守ります</string>
+    <string name="set_coded_lock">&base_app_name;ロック解除</string>
+    <string name="rating_my_app">&base_app_name;を評価する</string>
+    <string name="rating_guide_dialog_title_sub">絵文字をタップして、&base_app_name;を評価してください</string>
+    <string name="rating_guide_dialog_title_sub_bad">&base_app_name;はもっと良いサービスを提供するように努力いたします</string>
+    <string name="vip_video_speed_title">&base_app_name; Premiumになり、ビデオの倍速再生をお楽しみください</string>
+    <string name="feedback_msg">&base_app_name;にご注目とご支援をいただき、誠にありがとうございます。フィードバックを真摯に処理させていただき、関連機能を素早く修復・改善致します。</string>
+    <string name="privi_normal_over_limit_content">&base_app_name; Premiumを開通して、最大50000までの転送数を享受できる</string>
+    <string name="priv_my_app_video_backup">&base_app_name; Premiumを開通し、オリジナルビデオの自動的バックアップ特権を享受できる</string>
+    <string name="privi_normal_upload_over_limit_content">&base_app_name; Premiumを開通し、大サイズファイルのバックアップ特権を享受できる</string>
+    <string name="priv_my_app_no_space_title">&base_app_name; Premiumを開通し、2Tの大容量をお楽しみください</string>
+    <string name="priv_large_space_title">&base_app_name; Premiumから2Tの大容量をお楽しみください</string>
+    <string name="server_google_network_exception_message">Googleのネットワークが異常で、&base_app_name;の取引確認をお待ちください</string>
+    <string name="my_app_update_agreement">&base_app_name;は契約を更新した</string>
+    <string name="my_app_update_agreement_content">より良いクラウドストレージサービスをご利用いただき、ユーザーデータのセキュリティとプライバシーを確保するために、&base_app_name;はユーザー規約とプライバシー規約を更新した。アプリケーションを引き続き使用する場合は、更新されたコンテンツを受け入れるように見なされる。</string>
+    <string name="desc_video_to_backup">スマートフォン本体に保存したビデオを&base_app_name;にバックアップして、容量不足の問題を解消しましょう。</string>
+    <string name="backup_switch_opened">自動バックアップ機能は起動中…いつでも安全に&base_app_name;へ保存が可能です。</string>
+    <string name="bottom_bar_action_add_to_netdisk">&base_app_name;に保存</string>
+    <string name="save_to_cloud">&base_app_name;に保存</string>
+    <string name="complete_offline_task">リソースは&base_app_name;への保存に成功しました</string>
+    <string name="saved_at">保存先：&base_app_name;%sに保存しました</string>
+    <string name="transfer_error_save_myself_album">保存に失敗しました。ファイルは&base_app_name;にあります</string>
+    <string name="dasdja_yun_no_storage">&base_app_name;の容量が不足しています</string>
+    <string name="resource_saved">&base_app_name;への保存が完了しました</string>
+    <string name="save_video_to_continue_watching">&base_app_name;に保存すると、もう2度と映画を失う心配はありません</string>
+    <string name="save_video_to_everytime_watching">ネットワークが不安定で、いつでも鑑賞できるように&base_app_name;に保存してください</string>
+    <string name="save_video_to_everytime_watching_match">&base_app_name;に保存</string>
+    <string name="had_save_to_floder_and_goto_look">映画は&base_app_name;フォルダーに保存されました。チェックします</string>
+    <string name="business_scan_result_mac_login">%s &base_app_name; 登録</string>
+    <string name="home_new_user_guide_text_1">1枚の写真にはそれぞれの思い出が込められています\n&base_app_name;はお守りします</string>
+    <string name="home_tools_user_guide">&base_app_name;とは</string>
+    <string name="login_with_email">&base_app_name;メールでログイン</string>
+    <string name="sign_up_with_email">&base_app_name;メールで登録</string>
+    <string name="my_app_premium_issues">&base_app_name; Premiumの問題</string>
+    <string name="warning_content_one">すべての端末からの&base_app_name;がログアウト状態になります。</string>
+    <string name="warning_content_two">ファイルデータは&base_app_name;サーバーより完全削除されます。</string>
+    <string name="search_hint">&base_app_name;に保存しているファイルの検索とGoogle検索が可能</string>
+    <string name="search_from_google_hint">まとめて&base_app_name;に保存しましょう</string>
+    <string name="network_search_empty_desc">このページには&base_app_name;に保存できる動画ファイルはありません</string>
+    <string name="offline_upload_use_tips_bt_2">スマートフォン本体のストレージを使用せず、&base_app_name;に直接保存する</string>
+    <string name="guide_welcome_to_my_app">&base_app_name;へようこそ</string>
+    <string name="guide_welcome_tips">&base_app_name;の使い方をご紹介します。</string>
+    <string name="guide_start_experience">&base_app_name;を使用する</string>
+    <string name="dynamic_feature_module_res_not_found_err">インストールパッケージに問題があります。Google Playまたはその他の公式チャネルにアクセスして、&base_app_name;のダウンロードおよび再インストールを行ってください。</string>
+    <string name="share_tab_search_hint">&base_app_name;内のファイルを検索</string>
+    <string name="share_from_my_app">&base_app_name;</string>
+    <string name="cleanup_open_premium_info">Premium会員になると動画を&base_app_name;にバックアップし、端末本体のストレージ不足を解消できます</string>
+    <string name="video_downloader_description">お気に入りの動画を&base_app_name;に保存しよう</string>
+    <string name="search_file_in_my_app">&base_app_name;内のファイルを検索</string>
+    <string name="my_app_premium">&base_app_name; Premium</string>
+    <string name="net_search_save_video_title">オンライン動画を&base_app_name;に保存する方法</string>
+    <string name="net_search_save_video_method_2_info">動画のURLリンクをコピーします。&base_app_name;を起動後に、ポップ画面に表示されたら動画を閲覧／保存の順に操作してください。</string>
+    <string name="net_search_save_video_method_1_info">TikTok/Instagram/Facebookアプリから保存する動画の共有ボタンをクリックし、「&base_app_name;に保存」を選択してください。</string>
+    <string name="offline_download_disclaimers_content">お客様が外部のサイトから保存したコンテンツの適法性について、&base_app_name;一切責任を負いません。本機能を利用して第三者の権利を侵害する動画を保存しないよう注意してください。</string>
+    <string name="folder_backup_no_disk_space">バックアップを中止しました。&base_app_name;の残容量を確認してください。</string>
+    <string name="play_audio_in_my_app">&base_app_name;で再生</string>
+    <string name="business_widget_not_support_add_widget_in_app">ホーム画面にて二本の指でつまみ、「Widget」で&base_app_name;の追加を選択</string>
+    <string name="coupon_type_repurchase_subTitle">&base_app_name;シニアユーザーになりました</string>
+    <string name="search_videos_in_my_app">&base_app_name;で動画を検索</string>
+    <string name="clean_storage_push_content">スマホのストレージが70%を超えました。今すぐ&base_app_name;に保存し、スマホを整理しましょう</string>
+    <string name="safe_mode_clean_desc">&base_app_name;キャッシュデータのクリアは、すでにダウンロードされたファイルやメッセージデータに影響しません。タップしてから、&base_app_name;にログインし直す必要があります。</string>
+    <string name="safe_mode_restart_desc">タップしてバックグラウンドのプロセスを停止し、&base_app_name;を再起動します</string>
+    <string name="disclaimer_content">&base_app_name;はお客様が保存されたファイルの合法性について、一切責任を負いかねますのでご了承ください。権利を侵害されたファイルやリンクを見つけた場合、メールにてフィードバックをお願い致します。</string>
+    <string name="upload_file_guide_one_content">ここをタップすれば、どんな種類のファイルでも&base_app_name;にアップロードし、バックアップすることができます。</string>
+    <string name="newbie_task_guide_invite_tips">下記リンクをお友達に送信して、お友達がリンクを通して&base_app_name;アプリに新規登録すれば任務完了となります。</string>
+    <string name="newbie_share_link_declare">こちらの&base_app_name;公式ファイルを保存してください</string>
+    <string name="newbie_share_link_file_declare">こちらはリンクに含まれていた&base_app_name;の公式ファイルです</string>
+    <string name="newbie_guide_welcome">&base_app_name;へようこそ</string>
+    <string name="report_text">&base_app_name;は、映画・テレビ放映権、音楽著作権、ソフトウェア著作権、文学著作権など、あらゆる著作権侵害にすばやく対応します</string>
+    <string name="newbie_share_link_file_desc">&base_app_name;からのファイルを保存</string>
+    <string name="radar_description">さらに面白い内容\n紹介プログラムに参加中の&base_app_name;ユーザーから共有されました</string>
+    <string name="no_video_dialog_desc">まず、動画サイトにアクセスし、動画を再生してください。その後、&base_app_name;は自動的に動画リソースを見つけ、ダウンロードボタンが使えるようになります</string>
+    <string name="get_all_youtube_features_on_my">&base_app_name;ではすべてのYoutube機能が利用可能</string>
+</resources>

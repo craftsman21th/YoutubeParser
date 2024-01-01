@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PopupMenu">
+        <attr name="paddingLeft" format="dimension" />
+        <attr name="paddingRight" format="dimension" />
+        <attr name="paddingTop" format="dimension" />
+        <attr name="paddingBottom" format="dimension" />
+        <attr name="itemMargin" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ButtonGroup">
+        <attr name="buttonNumber" format="integer" />
+        <attr name="buttonLength" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ProgressBar">
+        <attr name="android:progressDrawable" />
+        <attr name="android:minWidth" />
+        <attr name="android:maxWidth" />
+        <attr name="android:minHeight" />
+        <attr name="android:maxHeight" />
+        <attr name="android:max" />
+        <attr name="android:progress" />
+        <attr name="android:secondaryProgress" />
+    </declare-styleable>
+    <declare-styleable name="SeekBar">
+        <attr name="android:thumb" />
+        <attr name="android:thumbOffset" />
+    </declare-styleable>
+    <declare-styleable name="Theme">
+        <attr name="android:disabledAlpha" />
+    </declare-styleable>
+    <declare-styleable name="FolderPathLayout">
+        <attr name="firstItemText" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CommonSettingsItemView">
+        <!-- 图标资源 -->
+        <attr name="item_icon" format="reference" />
+        <!-- 标题文字 -->
+        <attr name="item_title" format="reference|string" />
+        <!-- 说明文字 -->
+        <attr name="item_info" format="reference|string" />
+        <!-- 状态文字 -->
+        <attr name="item_status_text" format="reference|string" />
+        <!-- 状态图片资源 -->
+        <attr name="item_status_icon" format="reference" />
+        <!-- 点击后进入的类名 -->
+        <attr name="entry_class" format="string" />
+        <!-- 是否显示右侧的箭头 -->
+        <attr name="show_guide_arrow" format="boolean" />
+        <!-- 是否显示右侧的复选框 -->
+        <attr name="show_checkbox" format="boolean" />
+        <!-- 复选框对应的personal config key -->
+        <attr name="key_checkbox" format="string" />
+        <!-- 复选框对应的personal config key的默认值，不设置则为false -->
+        <attr name="key_checkbox_default_value" format="boolean" />
+        <!-- 最小高度 -->
+        <attr name="min_height" format="dimension" />
+        <!-- new标记对应的personal config key -->
+        <attr name="key_tag_new" format="string" />
+        <!-- new标记的图标 -->
+        <attr name="tag_new_icon" format="reference" />
+        <!-- 是否将点击事件下发 -->
+        <attr name="outer_click_event" format="boolean" />
+        <!-- 状态图标对应的默认动画 -->
+        <attr name="item_status_icon_anim" format="reference" />
+        <!-- 状态文字的样式 -->
+        <attr name="item_status_text_style" format="reference" />
+        <!-- item点击事件的统计项名称 mtj -->
+        <attr name="key_click_mtj_statistics" format="string" />
+        <!-- item点击事件的统计项名称 -->
+        <attr name="key_click_statistics" format="string" />
+        <!-- checkbox点击事件的统计项名称 -->
+        <attr name="key_checkbox_statistics" format="string" />
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="hasSearchView" format="boolean" />
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FeedItem">
+        <attr name="thumbWidth" format="dimension" />
+        <attr name="thumbHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="max" format="integer" />
+        <!-- 进度条最大值 -->
+        <attr name="fill" format="boolean" />
+        <!-- 是否填充圆形区域 -->
+        <attr name="Paint_Width" format="integer" />
+        <!-- 画笔宽度，填充模式下无效，会被重置为0 -->
+        <attr name="Paint_Color" format="integer" />
+        <!-- 画笔颜色 -->
+        <attr name="Inside_Interval" format="integer" />
+        <attr name="stroke_cap_round" format="boolean" />
+        <!-- 圆形区域向里缩进的距离 -->
+    </declare-styleable>
+    <declare-styleable name="RotateProgress">
+        <attr name="width" format="integer" />
+        <attr name="rotate_height" format="integer" />
+        <attr name="progress_width" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TimelineImagesLayout">
+        <attr name="columnWidth" format="dimension" />
+        <attr name="sideWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LineTabIndicator">
+        <attr name="tabCount" format="integer" />
+    </declare-styleable>
+
+
+    <!-- CircleWaveView 控件 -->
+    <declare-styleable name="CircleWaveView">
+        <attr name="waveColor" format="color" />
+        <attr name="waveInterval" format="dimension" />
+        <attr name="maxRadius" format="dimension" />
+        <attr name="startAngle" format="dimension" />
+        <attr name="sweepAngle" format="dimension" />
+        <attr name="centerAlign">
+            <enum name="bottom" value="1" />
+            <enum name="center" value="0" />
+        </attr>
+        <attr name="centerPaddingBottom" format="dimension" />
+        <attr name="isUseHalo" format="boolean" />
+    </declare-styleable>
+
+    <!-- RoundProgressBar控件 -->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="maxProgress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="GridViewItem">
+        <attr name="clickStatistics" format="string" />
+        <attr name="gridItemBackground" format="reference" />
+        <attr name="iconImage" format="reference" />
+        <attr name="tagOfNew" format="reference" />
+        <attr name="tagOfRunning" format="reference" />
+        <attr name="itemName" format="string" />
+        <attr name="entryClass" format="string" />
+        <attr name="tagOfActive" format="reference" />
+        <attr name="keyOfNew" format="string" />
+        <attr name="outerClickEvent" format="boolean" />
+    </declare-styleable>
+
+    <!-- 缎带控件 -->
+    <declare-styleable name="RibbonView">
+        <!-- 缎带上的文字大小 -->
+        <attr name="font_size" format="dimension" />
+        <!-- 缎带上的文字颜色 -->
+        <attr name="font_color" format="color" />
+        <!-- 缎带的颜色 -->
+        <attr name="ribbon_color" format="color" />
+        <!-- 缎带距离,左侧最远点到右侧位置 -->
+        <attr name="ribbon_width" format="dimension" />
+        <!-- 缎带偏移量,左侧最近点到右侧位置 -->
+        <attr name="ribbon_offset" format="dimension" />
+        <!-- 缎带显示的文字 -->
+        <attr name="ribbon_text" format="reference|string" />
+    </declare-styleable>
+
+    <!-- 简单设置项控件 -->
+    <declare-styleable name="SimpleSettingsItemView">
+        <!-- title的文字 -->
+        <attr name="title_text" format="reference|string" />
+        <!-- 相关内容的文字 -->
+        <attr name="reference_text" format="reference|string" />
+    </declare-styleable>
+
+    <!-- 抽屉 -->
+    <declare-styleable name="BottomDrawerLayout">
+        <attr name="drawer_background_id" format="reference" />
+        <attr name="drawer_layout_id" format="reference" />
+        <attr name="drawer_handler_id" format="reference" />
+        <attr name="drawer_content_id" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollPickView">
+        <attr name="scroll_pick_item_offset" format="integer" />
+        <attr name="scroll_pick_select_item_text_color" format="color" />
+        <attr name="scroll_pick_normal_item_text_color" format="color" />
+        <attr name="scroll_pick_select_background_color" format="color" />
+        <attr name="scroll_pick_normal_background_color" format="color" />
+        <attr name="scroll_pick_select_item_line_color" format="color" />
+        <attr name="scroll_pick_min_value" format="integer" />
+        <attr name="scroll_pick_max_value" format="integer" />
+        <attr name="scroll_pick_enable_loop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedCornerLayout">
+        <attr name="corner_radius_value" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedCornerFrameLayout">
+        <attr name="frame_corner_radius" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="lottieRadioButton">
+
+        <attr name="text" format="string" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="remindButton">
+
+        <attr name="image_icon" format="reference" />
+        <attr name="dark_model" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeToLoadLayout">
+        <attr name="refresh_enabled" format="boolean" />
+        <attr name="load_more_enabled" format="boolean" />
+        <attr name="swipe_style" format="enum">
+            <enum name="classic" value="0" />
+            <enum name="above" value="1" />
+            <enum name="blew" value="2" />
+            <enum name="scale" value="3" />
+        </attr>
+        <attr name="drag_ratio" format="float" />
+        <attr name="refresh_trigger_offset" format="dimension" />
+        <attr name="load_more_trigger_offset" format="dimension" />
+        <attr name="refresh_final_drag_offset" format="dimension" />
+        <attr name="load_more_final_drag_offset" format="dimension" />
+        <attr name="swiping_to_refresh_to_default_scrolling_duration" format="integer" />
+        <attr name="release_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="refresh_complete_delay_duration" format="integer" />
+        <attr name="refresh_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="swiping_to_load_more_to_default_scrolling_duration" format="integer" />
+        <attr name="release_to_loading_more_scrolling_duration" format="integer" />
+        <attr name="load_more_complete_delay_duration" format="integer" />
+        <attr name="load_more_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_loading_more_scrolling_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalPagerIndicator">
+        <attr name="dot_normal_resource" format="reference" />
+        <attr name="dot_selected_resource" format="reference" />
+        <attr name="dotMargin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TextFlipper">
+        <attr name="textSize" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+            <flag name="bold_italic" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CardView">
+        <attr name="leftShadowWidth" format="dimension" />
+        <attr name="topShadowHeight" format="dimension" />
+        <attr name="rightShadowWidth" format="dimension" />
+        <attr name="bottomShadowHeight" format="dimension" />
+        <attr name="shadowSize" format="dimension" />
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowStartAlpha" format="integer" />
+        <attr name="shadowFluidShape" format="enum">
+            <enum name="adsorption" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+        <attr name="cardBackgroundColor" format="color" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="leftTopCornerRadius" format="dimension" />
+        <attr name="rightTopCornerRadius" format="dimension" />
+        <attr name="leftBottomCornerRadius" format="dimension" />
+        <attr name="rightBottomCornerRadius" format="dimension" />
+        <attr name="elevation" format="dimension" />
+        <attr name="elevationAffectShadowColor" format="boolean" />
+        <attr name="elevationAffectShadowSize" format="boolean" />
+        <attr name="xOffset" format="dimension" />
+        <attr name="yOffset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BannerLayout">
+        <attr name="bl_Interval" format="integer" />
+        <attr name="bl_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="bl_autoPlaying" format="boolean" />
+        <attr name="bl_itemSpace" format="integer" />
+        <attr name="bl_centerScale" format="float" />
+        <attr name="bl_moveSpeed" format="float" />
+        <attr name="bl_enableFling" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BannerIndicator">
+        <attr name="bi_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="bi_itemMargin" format="dimension" />
+        <attr name="bi_selectedDrawable" format="reference" />
+        <attr name="bi_unselectedDrawable" format="reference" />
+    </declare-styleable>
+
+    <!-- 头像重叠 -->
+    <declare-styleable name="PileLayout">
+        <attr name="PileLayout_verticalSpace" format="dimension" />
+        <attr name="PileLayout_pileWidth" format="dimension" />
+    </declare-styleable>
+
+    <!-- 带编辑框的设置item -->
+    <declare-styleable name="EditSettingsItemView">
+        <!-- 标题文字 -->
+        <attr name="item_label" format="reference|string" />
+        <attr name="item_text" format="reference|string" />
+        <attr name="item_hint" format="reference|string" />
+        <attr name="item_maxLength" format="integer" />
+    </declare-styleable>
+    <!-- 圆角群组头像 -->
+    <declare-styleable name="RoundedGroupImageView">
+        <attr name="rgiv_corner_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Yi.Theme">
+        <attr name="windowTitleBackground" format="reference"/>
+        <attr name="functionBarStyle" format="reference"/>
+        <attr name="functionBarItemStyle" format="reference"/>
+        <attr name="functionBarItemGreenStyle" format="reference"/>
+        <attr name="functionBarItemBlueStyle" format="reference"/>
+        <attr name="listButtonStyle" format="reference"/>
+        <attr name="clearButtonStyle" format="reference"/>
+        <attr name="contentAreaTopImage" format="reference"/>
+        <attr name="windowTitleButton" format="reference"/>
+        <attr name="yiEditTextStyle" format="reference"/>
+        <attr name="searchEditTextStyle" format="reference"/>
+        <attr name="indicatorStylePlay" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="EmptyView">
+        <attr name="empty_image" format="reference"/>
+        <attr name="empty_text" format="string"/>
+        <attr name="show_default_empty_image" format="boolean"/>
+        <attr name="empty_image_width" format="dimension"/>
+        <attr name="button_background" format="reference"/>
+        <attr name="button_text_color" format="reference"/>
+        <attr name="button_text" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="NetdiskImageView">
+        <attr name="view_border_width" format="dimension"/>
+        <attr name="view_border_color" format="color"/>
+        <attr name="corner_radius" format="float"/>
+        <attr name="for_received" format="boolean"/>
+        <attr name="normal_color" format="color"/>
+        <attr name="pressed_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MRoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="mriv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="mriv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="mriv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FixedRatioRoundedImageView">
+        <attr name="fix_aspect_ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="FixedRatioRelativeLayout">
+        <attr name="frrl_fix_aspect_ratio" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="swan_corner_radius" format="dimension"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="round_background" format="boolean"/>
+        <attr name="android:scaleType"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean"/>
+        <attr name="rcProgress" format="float"/>
+        <attr name="rcMax" format="float"/>
+        <attr name="rcSecondaryProgress" format="float"/>
+        <attr name="rcBackgroundPadding" format="dimension"/>
+        <attr name="rcRadius" format="dimension"/>
+        <attr name="rcProgressColor" format="color"/>
+        <attr name="rcSecondaryProgressColor" format="color"/>
+        <attr name="rcBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CommonTitleBar">
+        <attr name="left_img_res" format="reference"/>
+        <attr name="left_img_show" format="boolean" />
+        <attr name="title_txt" format="reference" />
+        <attr name="title_txt_color" format="color" />
+        <attr name="title_txt_size" format="dimension" />
+        <attr name="right_img_res" format="reference" />
+        <attr name="right_img_show" format="boolean" />
+        <attr name="right_txt" format="reference" />
+        <attr name="right_txt_show" format="boolean" />
+        <attr name="show_divider" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgressBar">
+        <attr name="arc_max_progress" format="float"/>
+        <attr name="arc_target_progress" format="float"/>
+        <attr name="arc_bg_color" format="color"/>
+        <attr name="arc_progress_start_color" format="color"/>
+        <attr name="arc_progress_end_color" format="color"/>
+        <attr name="arc_stroke_width" format="dimension"/>
+        <attr name="arc_start_angle" format="float"/>
+        <attr name="arc_angle_size" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="GradientTextView">
+        <attr name="selected_start_color" format="color"/>
+        <attr name="selected_end_color" format="color"/>
+        <attr name="unselected_end_color" format="color"/>
+        <attr name="unselected_start_color" format="color"/>
+        <attr name="select_state" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SearchBox">
+        <attr name="show_clear_icon" format="boolean"/>
+    </declare-styleable>
+</resources>

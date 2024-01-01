@@ -1,0 +1,81 @@
+<com.moder.compass.ui.widget.PullDownFooterView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="48dip"
+  android:clickable="true"
+  android:duplicateParentState="true"
+  android:gravity="center"
+  android:minHeight="48dip" >
+
+  <LinearLayout
+    android:id="@+id/layout_refresh_add_more"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:duplicateParentState="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <TextView
+      style="@style/Moder.TextAppearance.Smaller.Gray"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/personalpage_pulldown_more"
+      android:visibility="visible" >
+    </TextView>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/layout_add_follow"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <TextView
+      style="@style/Moder.TextAppearance.Smaller.Gray"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingRight="7dip"
+      android:text=" " >
+    </TextView>
+
+    <Button
+      android:id="@+id/btn_add_follow"
+      style="@style/Moder.TextAppearance.Least.Red"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/personalpage_add_follow_btn_bg"
+      android:text=" " >
+    </Button>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/layout_bottom_bar_refreshing"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <com.moder.compass.ui.widget.RotateImageView
+      android:id="@+id/footer_rotate_image_refreshing"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="4dip"
+      android:src="@drawable/refresh_progress_rotate_image"
+      android:visibility="visible" />
+
+    <TextView
+      style="@style/Moder.TextAppearance.Smaller.Gray"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:clickable="true"
+      android:paddingRight="7dip"
+      android:text="@string/personalpage_pulldown_refreshing" >
+    </TextView>
+  </LinearLayout>
+
+</com.moder.compass.ui.widget.PullDownFooterView>

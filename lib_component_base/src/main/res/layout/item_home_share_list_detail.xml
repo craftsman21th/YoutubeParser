@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+
+    <com.moder.compass.ui.widget.roundedimageview.RoundedImageView
+            android:id="@+id/ivFileImg"
+            style="@style/Moder.ListViewItem.Icon"
+            app:riv_corner_radius="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"/>
+
+
+    <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            app:layout_constraintLeft_toRightOf="@+id/ivFileImg"
+            app:layout_constraintRight_toLeftOf="@+id/ivSelect"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvFileInfo"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:textSize="14dp"
+            android:textColor="@color/bg_dn_text_color"
+            tools:text="AE engineering documents.mp4"/>
+
+    <TextView
+            android:id="@+id/tvFileInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="@+id/tvFileName"
+            app:layout_constraintTop_toBottomOf="@+id/tvFileName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/color_A3ACBD"
+            app:layout_constraintRight_toLeftOf="@+id/ivSelect"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            tools:text="来自:新建文件新建"/>
+
+    <TextView
+            android:id="@+id/tvFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintLeft_toRightOf="@+id/tvFileInfo"
+            app:layout_constraintTop_toTopOf="@+id/tvFileInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFileInfo"
+            android:textColor="@color/color_A3ACBD"
+            app:layout_constraintRight_toLeftOf="@+id/ivSelect"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0"
+            android:textSize="12dp"
+            tools:text="325k"/>
+
+    <ImageView
+            android:id="@+id/ivSelect"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_home_share_delete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/bg_dn_list_view_divider"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

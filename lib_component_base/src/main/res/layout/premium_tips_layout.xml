@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:minHeight="@dimen/dimen_52dp"
+  android:gravity="center"
+  android:orientation="horizontal"
+  android:paddingHorizontal="@dimen/dimen_21dp"
+  android:background="@color/color_fff6e6"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <ImageView
+    android:id="@+id/icon"
+    android:layout_width="@dimen/dimen_16dp"
+    android:layout_height="@dimen/dimen_16dp"
+    android:src="@drawable/icon_premium" />
+
+  <TextView
+    android:id="@+id/text"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:textSize="@dimen/dimen_12dp"
+    android:textColor="@color/color_664100"
+    android:layout_marginHorizontal="@dimen/dimen_7dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:text="@string/buy_premium_enjoy_fast_uploads"/>
+
+  <TextView
+    android:id="@+id/buyButton"
+    android:layout_width="wrap_content"
+    android:layout_height="28dp"
+    android:minHeight="78dp"
+    android:layout_marginRight="@dimen/dimen_7dp"
+    android:paddingHorizontal="@dimen/dimen_10dp"
+    android:text="@string/buy"
+    android:gravity="center"
+    android:textSize="@dimen/dimen_12dp"
+    android:textColor="@color/color_6b2e2e"
+    android:background="@drawable/premium_tips_buy_button_bg"/>
+
+  <FrameLayout
+    android:id="@+id/closeBtn"
+    android:layout_width="25dp"
+    android:layout_height="25dp">
+    <ImageView
+      android:layout_width="@dimen/dimen_9dp"
+      android:layout_height="@dimen/dimen_9dp"
+      android:src="@drawable/ic_banner_close"
+      android:layout_gravity="center"/>
+  </FrameLayout>
+
+</LinearLayout>

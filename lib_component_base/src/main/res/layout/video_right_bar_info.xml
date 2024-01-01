@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="307dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="26dp">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/img_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:drawableTop="@drawable/embedded_player_ic_subtitle"
+        android:text="@string/subtitle_switch"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_12dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="@dimen/dimen_18dp"
+        android:background="@color/color_efefef" />
+
+    <TextView
+        style="@style/Moder.TextAppearance.Small.White"
+        android:text="@string/video_voice_brightness"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left" />
+
+    <!--控制-->
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="22dp"
+      android:gravity="center_vertical"
+      android:orientation="vertical"
+      android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21dp"
+              android:layout_height="21dp"
+              android:clickable="true"
+              android:padding="1dp"
+              android:src="@drawable/video_volume" />
+
+
+            <SeekBar
+              android:id="@+id/video_sb_voice"
+              style="@style/VideoPlayerProgress.SeekBar"
+              android:layout_marginLeft="12dp"
+                    tools:progress="50"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:clickable="true"
+                android:src="@drawable/video_brightness" />
+
+            <SeekBar
+                android:id="@+id/video_sb_brightness"
+                style="@style/VideoPlayerProgress.SeekBar"
+                android:layout_marginLeft="12dp" />
+        </LinearLayout>
+
+        <!--信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="26dp">
+
+            <!--文字内容-->
+            <TextView
+                android:id="@+id/video_tv_title"
+                style="@style/Moder.TextAppearance.Small.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:ellipsize="marquee"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/color_C7C7C7"
+                android:textSize="@dimen/dimen_12dp" />
+
+            <TextView
+                android:id="@+id/video_tv_time"
+                style="@style/Moder.TextAppearance.Small.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="left"
+                android:textColor="@color/color_C7C7C7"
+                android:textSize="@dimen/dimen_12dp" />
+
+            <TextView
+                android:id="@+id/video_tv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="@dimen/dimen_12dp"
+                android:gravity="left"
+                android:textColor="@color/color_C7C7C7"
+                android:textSize="@dimen/dimen_12dp" />
+
+        </LinearLayout>
+        <!--解码方式-->
+        <!--<LinearLayout
+          android:id="@+id/decode_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:visibility="gone"
+          android:orientation="horizontal">
+
+            <TextView
+              android:id="@+id/decode_mode"
+              style="@style/Moder.TextAppearance.Small.White"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/right_bar_decode_mode" />
+
+            <RadioGroup
+              android:id="@+id/video_right_decode"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="20dp"
+              android:orientation="horizontal">
+
+                <RadioButton
+                  android:id="@+id/hw_decode"
+                  style="@style/Moder.TextAppearance.Small.White"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:checked="true"
+                  android:button="@null"
+                  android:text="@string/right_bar_deccode_hw_mode"
+                  android:textColor="@drawable/blue_white_reverse_drawable" />
+
+                <RadioButton
+                  android:id="@+id/sw_decode"
+                  style="@style/Moder.TextAppearance.Small.White"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_marginLeft="20dp"
+                  android:button="@null"
+                  android:text="@string/right_bar_deccode_sw_mode"
+                  android:textColor="@drawable/blue_white_reverse_drawable" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+          android:id="@+id/video_ll_appeal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:gravity="center_vertical"
+          android:orientation="horizontal"
+          android:visibility="invisible">
+
+            <ImageView
+              android:id="@+id/video_imv_appeal"
+              android:layout_width="21dp"
+              android:layout_height="21dp"
+              android:clickable="true"
+              android:src="@drawable/video_tv_appeal" />
+
+            <TextView
+              android:id="@+id/video_tv_appeal"
+              style="@style/Moder.TextAppearance.Small.White"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="22dp"
+              android:background="@drawable/shape_speed_hint_bg"
+              android:paddingLeft="10dp"
+              android:paddingTop="4dp"
+              android:paddingRight="10dp"
+              android:paddingBottom="4dp"
+              android:text="video_right_bar_info_appeal"
+              android:textSize="@dimen/dimen_12dp" />
+        </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

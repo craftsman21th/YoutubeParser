@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+  android:opacity="opaque"
+  >
+
+  <item>
+    <shape >
+      <size android:height="500dp"
+        android:width="360dp"
+        />
+      <solid android:color="@color/image_preview_error_bg"/>
+    </shape>
+  </item>
+
+  <item>
+    <bitmap
+      android:gravity="center"
+      android:src="@drawable/empty_error"/>
+  </item>
+
+</layer-list>

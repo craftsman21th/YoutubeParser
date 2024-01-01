@@ -1,0 +1,28 @@
+<resources>
+    <string name="ayp_play_button">Play button</string>
+    <string name="ayp_null_time">0:00</string>
+    <string name="ayp_open_video_in_youtube">Open video in YouTube</string>
+    <string name="ayp_full_screen_button">Full screen button</string>
+    <string name="ayp_live">LIVE</string>
+    <string name="ayp_custom_action_left">YouTube player Custom action left</string>
+    <string name="ayp_custom_action_right">YouTube player custom action right</string>
+    
+    <string name="app_name">ayp API</string>
+    <string name="simple_example">Simple example</string>
+    <string name="fullscreen_example">Fullscreen example</string>
+    <string name="complete_example">Complete example</string>
+    <string name="recycler_view_example">RecyclerView example</string>
+    <string name="custom_ui_example">Custom UI example</string>
+    <string name="view_pager_example">ViewPager example</string>
+    <string name="live_video_example">Live video example</string>
+    <string name="player_status_example">Player state example</string>
+    <string name="picture_in_picture_example">PictureInPicture example</string>
+    <string name="chromecast_example">Chromecast example</string>
+    <string name="fragment_example">Fragment example</string>
+    <string name="iframe_player_options_example">IFrame Player Options example</string>
+    <string name="playlist_example">Playlist example</string>
+    <string name="default_custom_ui_example">Default custom UI example</string>
+    <string name="no_lifecycle_observer_example">NoLifecycleObserver example</string>
+
+    <string name="owner_profile_url_format">https://m.youtube.com/channel/%s</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="0dip"
+  android:layout_weight="1.0"
+  android:animationCache="false">
+
+  <com.moder.compass.ui.widget.ListViewEx
+    android:id="@android:id/list"
+    style="@style/Moder.ListView" />
+
+  <com.moder.compass.ui.widget.ListViewEx
+    style="@style/Moder.ListView"
+    android:visibility="gone" />
+
+  <com.moder.compass.ui.widget.ListViewEx
+    style="@style/Moder.ListView"
+    android:visibility="gone" />
+
+  <com.moder.compass.ui.widget.EmptyView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@color/activity_view_bg"
+    android:orientation="vertical"
+    android:visibility="gone"
+    app:empty_image="@drawable/empty_folder_root"
+    app:empty_text="@string/this_folder_is_empty" >
+  </com.moder.compass.ui.widget.EmptyView>
+
+</RelativeLayout>

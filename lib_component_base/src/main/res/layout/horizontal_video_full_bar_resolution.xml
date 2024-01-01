@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/resolution_root_view"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/black_80p_transparent"
+  android:visibility="gone"
+  tools:visibility="visible">
+
+  <TextView
+    android:id="@+id/resolutionTv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_16dp"
+    android:text="@string/clarity"
+    android:textColor="@color/white"
+    android:textSize="@dimen/dimen_16dp"
+    app:layout_constraintBottom_toTopOf="@id/rv_horizontal_video_resolution"
+    app:layout_constraintLeft_toLeftOf="@id/rv_horizontal_video_resolution"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_horizontal_video_resolution"
+    android:layout_width="wrap_content"
+    android:layout_height="76dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toTopOf="@id/ll_resolution_reward_entry_horizontal"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/resolutionTv"
+    tools:listitem="@layout/item_video_horizontal_resolution" />
+
+  <LinearLayout
+    android:id="@+id/ll_resolution_reward_entry_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="36dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/bg_selector_btn"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toTopOf="@id/tv_resolution_reward_entry_horizontal"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/rv_horizontal_video_resolution"
+    tools:visibility="visible">
+
+    <ImageView
+      android:layout_width="15dp"
+      android:layout_height="15dp"
+      android:layout_marginRight="6.5dp"
+      android:src="@drawable/ic_speed_play_reward" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:gravity="center"
+      android:maxLines="1"
+      android:text="@string/free_try"
+      android:textColor="@color/white"
+      android:textSize="14dp" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/tv_resolution_reward_entry_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="30dp"
+    android:ellipsize="end"
+    android:maxLines="2"
+    android:text="@string/video_resolution_reward_guide_tip"
+    android:textColor="@color/white"
+    android:textSize="12dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/ll_resolution_reward_entry_horizontal"
+    tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

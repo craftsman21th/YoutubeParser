@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <dimen name="text_size_super_large">22dip</dimen>-->
+<!--    <dimen name="text_size_larger">20dip</dimen>-->
+
+    <drawable name="null_drawable">#00ffffff</drawable>
+</resources>

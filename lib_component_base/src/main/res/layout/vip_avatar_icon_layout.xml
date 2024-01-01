@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.moder.compass.ui.widget.CircleImageView
+        android:id="@+id/iv_avatar"
+        style="@style/Moder.MainTab.CircleView"
+        android:layout_width="@dimen/dimen_36dp"
+        android:layout_height="@dimen/dimen_36dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_user_head_icon"
+        app:view_border_color="@color/color_DCDFE6" />
+
+    <View
+        android:id="@+id/v_notice"
+        android:layout_width="@dimen/dimen_8dp"
+        android:layout_height="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:layout_marginEnd="@dimen/dimen_2dp"
+        android:visibility="gone"
+        android:background="@drawable/icon_tip"
+        android:layout_gravity="right"/>
+
+    <ImageView
+        android:id="@+id/iv_premium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/icon_premium_n"
+        android:layout_gravity="bottom|right" />
+
+</merge>

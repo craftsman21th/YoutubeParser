@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="my_cloud_disk">พื้นที่คลาวด์ของฉัน
+</string>
+    <string name="resource_radar">เรดาร์ทรัพยากร
+</string>
+    <string name="tab_explore">สำรวจ</string>
+    <string name="cloud">ไฟล์คลาวด์
+</string>
+    <string name="upload_photo">อัปโหลดรูปภาพ</string>
+    <string name="tools_of_choice">เครื่องมือแนะนำ</string>
+    <string name="hot_movie">ภาพยนตร์ยอดนิยม</string>
+    <string name="resource_share">แชร์ทรัพยากร</string>
+    <string name="resource_share_desc">สะดวกในการแชร์ทรัพยากรให้กับใครก็ได้</string>
+    <string name="bt_parse">ดาวน์โหลดทรัพยากร</string>
+    <string name="bt_parse_desc">สะดวกในการบันทึกลิงก์ต่าง ๆ และทรัพยากรบนแพลตฟอร์ม</string>
+    <string name="resource_radar_desc">ค้นพบทรัพยากรที่น่าสนใจมากขึ้น</string>
+    <string name="tab_my_files">ไฟล์</string>
+    <string name="downloaded">ดาวน์โหลดแล้ว
+</string>
+    <string name="new_version_msg_bug_fixes">แก้ไขปัญหาบางอย่างที่ทราบ</string>
+    <string name="new_version_msg_optimized_for_better_experience">เพิ่มประสิทธิภาพเพื่อประสบการณ์ที่ดีขึ้น</string>
+    <string name="new_version_title">เนื้อหาที่อัปเดต</string>
+    <string name="background_download">ดาวน์โหลดในเบื้องหลังแล้ว</string>
+    <string name="bt_files">ไฟล์ BT</string>
+    <string name="link_url">ลิงก์ URL</string>
+    <string name="video_downloader_desc_1">ดาวน์โหลดทรัพยากรจากเว็บต่อไปนี้</string>
+    <string name="video_downloader_desc_2">ดาวน์โหลดทรัพยากรผ่านไฟล์ BT และลิงก์</string>
+    <string name="offline_upload_use_tips_link_2">หลังจากวิเคราะห์เสร็จสิ้น ให้เลือกทรัพยากรที่คุณต้องการดาวน์โหลดและวิธีบันทึก</string>
+    <string name="offline_upload_use_tips_3">หลังจากบันทึกเสร็จสิ้น สามารถดูทรัพยากรในตำแหน่งที่สอดคล้องกันได้</string>
+    <string name="net_search_hint_1">ค้นหาทรัพยากรที่คุณต้องการดาวน์โหลด</string>
+    <string name="net_search_hint_2">คลิกปุ่มดาวน์โหลดที่มุมขวาล่าง</string>
+    <string name="net_search_hint_3">เลือกวิธีบันทึกวิดีโอและบันทึกในคลิกเดียว</string>
+    <string name="save_to_cloud2">บันทึกไปยังพื้นที่คลาวด์</string>
+    <string name="download_to_my_phone_too">พร้อมกับดาวน์โหลดลงมือถือ</string>
+    <string name="video_and_ext">วิดีโอ (%s)</string>
+    <string name="audio_and_ext">ออดิโอ （%s）</string>
+    <string name="parse_failed">วิเคราะห์ล้มเหลว</string>
+    <string name="net_search_detect_shield_tips">เนื่องจากข้อจำกัดทางกฎหมาย จึงไม่สามารถดาวน์โหลดวิดีโอบนเว็บไซต์นี้ได้ โปรดไปที่เว็บไซต์อื่นเพื่อดาวน์โหลด</string>
+    <string name="how_to_use2">ใช้อย่างไร</string>
+    <string name="video_download_desc_3">1. เปิดเว็บไซต์ที่คุณต้องการดาวน์โหลดทรัพยากร\n\n2. ค้นหาทรัพยากรที่คุณต้องการดาวน์โหลด\n\n3. คลิกปุ่มดาวน์โหลดที่มุมล่างขวา</string>
+    <string name="unsupported_websites">เว็บไซต์นี้ไม่รองรับการวิเคราะห์</string>
+    <string name="data_null">ผลการวิเคราะห์ว่างเปล่า</string>
+    <string name="unknown_error">ข้อผิดพลาดที่ไม่รู้จัก</string>
+    <string name="url_unavailable">URL นี้ไม่รองรับการวิเคราะห์</string>
+    <string name="duration_unknown">ไม่ทราบระยะเวลา</string>
+    <string name="guide_to_explore">ไม่มีเนื้อหาที่น่าสนใจหรือไม่</string>
+    <string name="title_recommendations">แนะนำให้ติดตาม</string>
+
+    <string name="ban_adult_content_new">ยินดีต้อนรับ! โปรดเลือกเนื้อหาที่คุณต้องการให้แสดงในแอป</string>
+    <string name="ban_adult_choice1_new">มีเนื้อหาสำหรับผู้ใหญ่</string>
+    <string name="ban_adult_choice1_desc">โปรดยืนยันว่าคุณมีอายุครบ 18 ปีบริบูรณ์</string>
+    <string name="ban_adult_choice3_new">ไม่มีเนื้อหาสำหรับผู้ใหญ่</string>
+    <string name="ban_adult_choice_setting_hint">แก้ไขได้ในหน้าการตั้งค่า</string>
+    <string name="ban_adult_choice_modify_hint">แก้ไขสำเร็จ</string>
+    <string name="setting_ban_content">การตั้งค่าเนื้อหา</string>
+</resources>

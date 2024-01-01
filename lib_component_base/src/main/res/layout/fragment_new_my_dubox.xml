@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+  <include layout="@layout/layout_file_list_share_tips" />
+
+  <FrameLayout
+      android:id="@+id/content_container"
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1.0">
+
+    <com.moder.compass.ui.widget.PullWidgetListView
+        android:id="@+id/listview"
+        style="@style/Moder.FileListView"
+        android:fastScrollEnabled="true"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <FrameLayout
+        android:id="@+id/fl_guide_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+
+<!--    <View-->
+<!--        android:id="@+id/v_shadow"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="4dp"-->
+<!--        android:background="@drawable/bg_dn_title_shadow" />-->
+
+
+    <com.moder.compass.ui.widget.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/dimen_6dp"
+            android:paddingEnd="@dimen/dimen_6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:empty_image="@drawable/null_common"
+            app:empty_text="@string/transfer_list_empty"
+            tools:visibility="visible"/>
+
+  </FrameLayout>
+
+  <FrameLayout
+      android:id="@+id/bottom_view_parent"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clipChildren="false"
+      android:clipToPadding="false"/>
+
+  <View
+      android:id="@+id/sceneView"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/main_tab_background_height"
+      android:background="@drawable/main_tab_background"
+      android:visibility="gone" />
+
+  <View
+      android:id="@+id/bottom_empty_view"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/main_tab_background_height"
+      android:background="@drawable/main_tab_background"
+      android:visibility="gone" />
+
+</LinearLayout>

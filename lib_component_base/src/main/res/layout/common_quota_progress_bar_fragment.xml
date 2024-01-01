@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moder.compass.ui.widget.ColorfulProgressView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/quota_progress_bar"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/quota_progress_bar_height" />

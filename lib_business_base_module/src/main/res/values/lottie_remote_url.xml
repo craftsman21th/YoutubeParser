@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE
+    resources [
+        <!ENTITY cdn_base_url "/issue/pavobox">
+        <!ENTITY cdn_folder_path "/moder/PackageShrink/DynamicDispatch/Lottie/">
+    ]
+>
+<resources translatable="false">
+
+    <string name="lottie_loading_bg">&cdn_base_url;&cdn_folder_path;loadinground.json</string>
+    <string name="lottie_radar_searching">&cdn_base_url;&cdn_folder_path;radar_searching.zip</string>
+    <string name="lottie_radar_file_wave">&cdn_base_url;&cdn_folder_path;radar_file_wave.zip</string>
+    <string name="lottie_radar_wave">&cdn_base_url;&cdn_folder_path;radar_wave.zip</string>
+    <string name="lottie_radar_star_wave">&cdn_base_url;&cdn_folder_path;radar_star_wave.zip</string>
+    <string name="lottie_transmission_dark">&cdn_base_url;&cdn_folder_path;transmission_dark.zip</string>
+    <string name="lottie_transmission">&cdn_base_url;&cdn_folder_path;transmission.zip</string>
+    <string name="lottie_audio_circle_play_anim">&cdn_base_url;&cdn_folder_path;audio_circle_play_anim.json</string>
+    <string name="lottie_backup_folder">&cdn_base_url;&cdn_folder_path;backup_folder.json</string>
+    <string name="lottie_tiny_loading_ndsk">&cdn_base_url;&cdn_folder_path;tiny_loading_ndsk.json</string>
+    <string name="lottie_storage_analyzer">&cdn_base_url;&cdn_folder_path;storage_analyzer.zip</string>
+    <string name="lottie_home_gift_ad_normal">&cdn_base_url;&cdn_folder_path;home_gift_ad_normal.zip</string>
+    <string name="lottie_home_gift_ad_click">&cdn_base_url;&cdn_folder_path;home_gift_ad_click.json</string>
+    <string name="lottie_home_tab_icon">&cdn_base_url;&cdn_folder_path;home_tab_icon_v1.json</string>
+
+</resources>

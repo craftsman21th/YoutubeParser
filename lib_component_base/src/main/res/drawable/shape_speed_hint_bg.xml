@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 内部颜色 -->
+    <solid
+        android:color="@color/speed_hint_bg" />
+
+    <!-- 圆角的幅度 -->
+    <corners
+        android:topLeftRadius="48dip"
+        android:topRightRadius="48dip"
+        android:bottomLeftRadius="48dip"
+        android:bottomRightRadius="48dip" />
+</shape>

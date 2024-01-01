@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MimeTypes>
+	<!-- Audio types -->
+	<type extension=".amr" mimetype="audio/AMR" />
+	<type extension=".imy" mimetype="audio/IMY" />
+	<!-- Video types -->
+	
+	<!-- Package types -->
+	<type extension=".jar" mimetype="application/java-archive" />
+	<type extension=".gz" mimetype="application/gzip" />
+	
+	<!-- Web browser types -->
+	<type extension=".php" mimetype="text/php" />
+	
+	<!-- Text types -->	
+	<!-- Android specific -->
+	<type extension=".apk" mimetype="application/vnd.android.package-archive" />
+	<type extension=".rmvb" mimetype="video/x-pn-realaudio" />
+	<type extension=".rm" mimetype="video/x-pn-realaudio" />
+	<type extension=".mkv" mimetype="video/x-matroska" />
+	<type extension=".umd" mimetype="application/umd" />
+	<type extension=".epub" mimetype="application/epub+zip" />
+	<type extension=".log" mimetype="text/plain" />
+</MimeTypes>

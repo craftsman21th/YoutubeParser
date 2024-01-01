@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>NestedBlockDepth:FileMd5Slice.kt$FileMd5Slice$ fun create(fileSize: Long, localFile: RFile): List&lt;String&gt;</ID>
+  </CurrentIssues>
+</SmellBaseline>

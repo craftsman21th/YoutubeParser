@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ModerTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/activity_view_bg</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">52dip</item>
+        <item name="searchEditTextStyle">@style/Moder.Widget.EditText</item>
+        <item name="editTextStyle">@style/Moder.Widget.EditText</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/timeline_fast_scroller</item>
+        <item name="android:fastScrollTrackDrawable">@null</item>
+        <item name="android:fastScrollStyle">@android:style/Widget.Material.FastScroll</item>
+    </style>
+
+    <style name="VideoPlayerProgress.SeekBar" parent="VideoPlayerProgress">
+        <item name="android:thumb">@drawable/seek_bar_thumb</item>
+        <item name="android:thumbOffset">15dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:splitTrack">false</item>
+    </style>
+
+</resources>

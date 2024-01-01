@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+        android:id="@+id/dialogContentView"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="288dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:id="@+id/txt_confirmdialog_title"
+                style="@style/Moder.TextAppearance.Large.Lighter_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/delete_file_dialog_title"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Dialog Content -->
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+            tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_content"
+            android:textColor="@color/dark_gray_66"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:text="@string/delete_file_dialog_confirm"
+            android:visibility="visible"/>
+
+        <CheckBox
+            android:id="@+id/check_box"
+            style="@style/EditCheckboxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="13dip"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textColor="@color/gray"
+            android:visibility="gone"
+                tools:visibility="visible"/>
+
+        <ListView
+            android:id="@+id/list_content"
+            style="@style/Moder.DialogListView"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- Loading Dialog Content -->
+
+    <RelativeLayout
+        android:id="@+id/content_loading_layout"
+        android:layout_width="288dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="80dip"
+        android:visibility="gone"
+            tools:visibility="gone">
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/image_loading"/>
+
+        <TextView
+            android:id="@+id/text_loading_content"
+            style="@style/Moder.TextAppearance.Middle.Black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:text="@string/delete_file_dialog_confirm"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <!-- dialog footer -->
+
+    <FrameLayout
+      android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:visibility="gone"
+          android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:textSize="17dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@drawable/chain_dialog_btn_text_selector"
+            android:background="@drawable/chain_dialog_btn_selector"
+                tools:visibility="visible"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="59dp"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:text=" "
+            android:textSize="@dimen/dimen_12dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_marginBottom="30dp"
+          style="@style/Moder.ProgressBar.Small"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_footer"
+        android:layout_width="288dp"
+        android:layout_height="52dp"
+        android:background="@drawable/btn_bottom_radian_background"
+        android:visibility="gone">
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_e5e5e5"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/divider"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_button_cancel"
+                style="@style/Moder.TextAppearance.Large"
+                android:textColor="@color/normal_dialog_cancel_button_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:text="@string/cancel">
+            </Button>
+
+            <Button
+              style="@style/Moder.TextAppearance.Large"
+                android:textColor="@color/normal_dialog_confirm_button_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:text="@string/cancel"
+                android:visibility="gone">
+            </Button>
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="@dimen/dimen_18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/color_e5e5e5"/>
+
+            <Button
+                android:id="@+id/dialog_button_center"
+                style="@style/Moder.TextAppearance.Large"
+                android:textColor="@color/normal_dialog_confirm_button_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:text="@string/confirm"
+                android:visibility="gone">
+            </Button>
+
+            <Button
+                android:id="@+id/dialog_button_ok"
+                style="@style/Moder.TextAppearance.Large"
+                android:textColor="@color/normal_dialog_confirm_button_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:text="@string/confirm">
+            </Button>
+
+            <LinearLayout
+                android:id="@+id/loadingBox"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/loading_icon"
+                    style="@style/Moder.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

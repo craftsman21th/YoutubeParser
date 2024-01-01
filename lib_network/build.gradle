@@ -1,0 +1,55 @@
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: '../versions.gradle'
+android {
+    namespace "com.moder.compass.network.network"
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    //jdk配置
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation deps.kotlin.stdlib
+    implementation deps.support.core_ktx
+    implementation deps.support.app_compat
+    implementation deps.mars.kotlinx
+    api deps.retrofit.runtime
+    api deps.retrofit.gson
+    implementation deps.okhttp_logging_interceptor
+    implementation deps.mars.core
+    //    implementation project(':lib_kernel')
+    implementation project(':lib_business_kernel')
+    api project(':lib_business_base_module')
+//    implementation project(":lib_security")
+    implementation deps.mars.widget
+    //implementation project(":lib_account")
+    implementation deps.mars.kotlinx
+    implementation deps.autoservice.service
+    implementation deps.autoservice.annotation
+
+}

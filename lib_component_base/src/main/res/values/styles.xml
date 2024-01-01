@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TransferEditCheckboxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/transfer_edit_checkbox_selector</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 设置页面使用的checkbox -->
+    <style name="CheckboxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/chb_on_off_selector</item>
+        <item name="android:width">41dp</item>
+    </style>
+
+    <!-- 快速设置页 视频插件checkbox -->
+
+    <!-- 对话框样式 不允许退出的 -->
+    <style name="DialogThemeCannotCancel" parent="ModerDialogTheme">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <!-- 对话框样式 允许退出的 -->
+    <style name="DialogThemeCanCancel" parent="ModerDialogTheme">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="GroupCreateDialogTheme" parent="DialogThemeCanCancel">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!-- 对话框样式 允许退出的 -->
+    <style name="DialogTheme" parent="ModerDialogTheme">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_fade_out</item>
+        <!-- 其他Dialog样式的设置 -->
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="ModerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--这个无标题才可以的-->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 预览弹出对话框背景样式 -->
+    <style name="PreViewDialogBackgroundstyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:layout_width">288dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/background_with_radian</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:minWidth">288dip</item>
+        <item name="android:layout_marginLeft">14dip</item>
+        <item name="android:layout_marginRight">14dip</item>
+    </style>
+
+    <!-- ************************************************************************************************** -->
+    <!-- NetDisk 以后再添加请在下面添加，上面的SYTLE会逐步干掉 -->
+    <style name="Moder" parent="Theme.AppCompat" />
+
+    <style name="Moder.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Moder.NoActionBar" parent="Theme.AppCompat.NoActionBar" />
+
+    <style name="Moder.NoActionBar.WhiteWindowBg" parent="Moder.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/bg_dn_fast_scroller</item>
+    </style>
+
+    <style name="Moder.NoActionBar.MainActivityBg" parent="Moder.NoActionBar.WhiteWindowBg">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+    
+    <style name="Moder.NoActionBar.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Moder.NoActionBar.Translucent.NoAnim">
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="Moder.NoActionBar.Translucent.NoAnim.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- 其默认的window背景设置为常用activity背景 -->
+    <style name="ModerTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/activity_view_bg</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">52dip</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="searchEditTextStyle">@style/Moder.Widget.EditText</item>
+        <item name="editTextStyle">@style/Moder.Widget.EditText</item>
+    </style>
+
+    <style name="ModerTheme.TranslucentBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="ModerTheme.NoActionBar.DarkBg" parent="ModerTheme.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="ModerTheme.NoActionBar.WhiteBg">
+        <item name="android:windowBackground">@drawable/window_background</item>
+    </style>
+
+    <style name="ModerTheme.NoTitleBar.LightBlackBg.FullScreen" parent="ModerTheme.NoActionBar">
+        <item name="android:windowBackground">@color/light_black</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Moder.Theme.NoTitleBar.WelCome" parent="ModerTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/welcome</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--        <item name="android:windowFullscreen">true</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <!-- 移除页面动画。防止启动页闪屏 -->
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="ModerTheme.NoActionBar.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="ModerTheme.NoActionBar.Translucent.Image">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <!-- status bar progress dialog -->
+    <style name="StatusBarProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_drawable</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:maxHeight">14dip</item>
+    </style>
+
+    <!-- 统一的字体 YQH 20130725 -->
+    <style name="Moder.TextAppearance" />
+
+    <style name="Moder.TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Large.LighterBlack">
+        <item name="android:textColor">@color/lighter_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Large.LighterBlack.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Middle">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Middle.LighterBlack">
+        <item name="android:textColor">@color/bg_dn_lighter_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smallest.Yellow">
+        <item name="android:textColor">@color/yellow_ca</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.Color99">
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smallest">
+        <item name="android:textSize">@dimen/text_size_smallest</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller">
+        <item name="android:textSize">@dimen/text_size_smaller</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Least">
+        <item name="android:textSize">@dimen/text_size_least</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Large.Black">
+        <item name="android:textColor">@color/blue_black</item>
+    </style>
+
+    <!-- 蓝灰切换 小号字体 -->
+
+    <!-- 蓝灰切换 小号字体 -->
+    <!-- 蓝白切换 小号字体 -->
+    <style name="Moder.TextAppearance.Smaller.Blue2White">
+        <item name="android:textColor">@drawable/blue_white_reverse_drawable</item>
+    </style>
+    <!-- 白灰切换 小号字体 -->
+    <!-- 白灰切换 小号字体 -->
+    <style name="Moder.TextAppearance.Smaller.White2Gray">
+        <item name="android:textColor">@drawable/white50_white_reverse_drawable</item>
+    </style>
+    <!-- 蓝黑切换  小号字体 -->
+    <!-- 红灰切换  小号字体 -->
+    <!-- 红灰切换  小号字体 -->
+    <!-- 红黑切换  小号字体 -->
+
+    <style name="Moder.TextAppearance.Smaller.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.Gray99">
+        <item name="android:textColor">@color/dark_gray_99</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.Gray99.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.Yellow">
+        <item name="android:textColor">@color/yellow_ca</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.DarkGray">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.SemitransparentBlueBold">
+        <item name="android:textColor">@drawable/lightestblue_transparent_reverse_drawable</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.Black">
+        <item name="android:textColor">@color/blue_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.Blue">
+        <item name="android:textColor">@color/color_06a6e5</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.DarkRed">
+        <item name="android:textColor">@color/dark_red</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.LighterBlack">
+        <item name="android:textColor">@color/lighter_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.VipRecycle">
+        <item name="android:textColor">@color/color_64360D</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Middle.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+
+    <style name="Moder.TextAppearance.Middle.LightBlue">
+        <item name="android:textColor">@color/light_blue</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Middle.BlackWhiteReverse">
+        <item name="android:textColor">@drawable/black_white_reverse_drawable</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Large.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Large.Lighter_black">
+        <item name="android:textColor">@color/lighter_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Large.Lighter_black.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Larger">
+        <item name="android:textSize">@dimen/text_size_larger</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.LightBlack2blue">
+        <item name="android:textColor">@drawable/blue_lighterblack_reverse_drawable</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.LightBlack2blue.Bold">
+        <item name="android:textColor">@drawable/blue_lighterblack_reverse_drawable</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.DarkGray99">
+        <item name="android:textColor">@color/dark_gray_99</item>
+    </style>
+
+    <!-- 蓝白切换 小号字体 -->
+
+    <style name="Moder.TextAppearance.Small.Black">
+        <item name="android:textColor">@color/blue_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.LighterBlack">
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.LighterBlack.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.Blue">
+        <item name="android:textColor">@color/color_06a6e5</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.Red">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Least.Red">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+
+    <style name="Moder.ListViewItem.Icon">
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Moder.MainTab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/main_tab_background_height</item>
+        <item name="android:background">@drawable/main_tab_background</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Moder.Animation" />
+
+    <style name="Moder.Animation.PopDownMenu">
+        <item name="android:windowExitAnimation">@anim/popup_menu_disappear</item>
+    </style>
+    <!-- 网盘 -->
+
+    <style name="Moder.SettingItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Moder.SettingItem.Middle">
+        <item name="android:background">@drawable/background_common_setting_item_botom</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <!-- 通栏的设置按钮 -->
+
+    <!-- 设置item提示文案 -->
+
+    <style name="Moder.ProgressBar.Medium" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressbar_medium_blue</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">300</item>
+        <item name="android:minWidth">40dip</item>
+        <item name="android:maxWidth">40dip</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+    </style>
+
+    <style name="Moder.Button">
+        <item name="android:textColor">@color/white_to_semitransparent</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Moder.Button.Black">
+        <item name="android:textColor">@color/lighter_black</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 快速设置 BEGIN -->
+
+    <!-- 快速设置 END -->
+
+    <!-- 云端点对点 对话列表 -->
+
+    <!-- 云端点对点 对话列表 -->
+
+    <!-- 密码锁键盘界面的按钮 -->
+
+    <!-- 密码锁键盘界面的数字键盘 -->
+    <!-- 密码锁界面的输入框风格 -->
+
+    <style name="Moder.PageTabStrip">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="indicator_color">@color/light_blue</item>
+        <item name="indicator_height">3dip</item>
+        <item name="indicator_padding_bottom">0dip</item>
+        <item name="android:background">@drawable/child_tab_bg</item>
+        <item name="tab_textAppearance">@style/Moder.TextAppearance.Small.LightBlack2blue.Bold
+        </item>
+    </style>
+
+    <style name="Moder.PageTabStrip.Transfer">
+        <item name="android:layout_height">42dip</item>
+        <item name="indicator_padding_bottom">1dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+
+    </style>
+
+    <!--播放器相关的进度条-->
+
+    <!--播放器相关的拖动条-->
+
+    <!--视频播放Topbar按钮-->
+    <!--视频分享面板分享按钮-->
+
+    <!--视频分享面板分享图标-->
+
+    <!--视频分享面板分享图标下的文字-->
+
+    <!--sapi-->
+
+    <!-- 半透明activity -->
+
+    <!-- 从底部呼起的半屏透明activity，对应会员支付页面 -->
+
+    <style name="ModerListViewBigText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <!-- 网盘页面出现动画：右滑 -->
+
+    <!-- 网盘页面出现动画：右滑 -->
+
+    <!-- 网盘页面出现动画：上滑 -->
+
+    <!-- 页面出现消失动画，从右到左进入，从左到右退出 -->
+
+    <!-- 页面出现消失动画，从下到上进入，从上到下退出 -->
+
+    <!-- 备份页面底部详情样式 -->
+
+    <!--底部tab中LottieAnimationView-->
+
+    <!--底部tab中CircleView-->
+    <style name="Moder.MainTab.CircleView">
+        <item name="android:layout_width">26.7dp</item>
+        <item name="android:layout_height">26.7dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--底部tab中textview-->
+
+
+    <style name="AboutLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/color_e5e5e5</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <!-- 暗黑模式style -->
+    <style name="Moder.FileListViewItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:minHeight">@dimen/item_height</item>
+        <item name="android:background">@drawable/bg_dn_file_list_item</item>
+    </style>
+
+    <!-- 灰色暗黑模式style -->
+    <style name="Moder.FileListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@drawable/bg_dn_list_view_divider</item>
+        <item name="android:dividerHeight">@dimen/bg_dn_file_item_list_divider</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/bg_dn_fast_scroller</item>
+        <item name="android:fastScrollTrackDrawable">@null</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Moder.SettingItem.DayOrNightTopWithoutBorder">
+        <item name="android:background">
+            @drawable/bg_dn_background_common_setting_item_single_without_border
+        </item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <!-- 下拉小屏-->
+    <style name="Moder.TextAppearance.Smaller.DNBlack">
+        <item name="android:textColor">@color/bg_dn_blue_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Middle.DNLighterBlack">
+        <item name="android:textColor">@color/bg_dn_lighter_black</item>
+    </style>
+
+    <!-- #暗黑模式style -->
+    <style name="Moder.TextAppearance.QuickTitle">
+        <item name="android:textSize">@dimen/dimens15dp</item>
+        <item name="android:textColor">@color/black_333333</item>
+    </style>
+
+    <style name="Moder.TextAppearance.QuickSubTitle">
+        <item name="android:textSize">@dimen/dimens11dp</item>
+        <item name="android:textColor">@color/gray_999999</item>
+    </style>
+
+    <!-- WPS底部菜单栏 -->
+    <!-- 传输助手分享面板 -->
+
+    <!-- 紧贴输入法的弹窗样式-->
+    <style name="anim_dialog_slide_from_bottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_fade_out</item>
+    </style>
+
+    <style name="anim_dialog_slide_from_right" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_right_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_right_fade_out</item>
+    </style>
+
+    <!-- 网盘标题栏样式 -->
+    <style name="Moder.AppTitleBar" parent="Moder.TextAppearance.Small.LighterBlack.Bold" />
+
+    <style name="Moder.TextAppearance.Middle.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="ModerFullScreenDialogTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ModerFullScreenDialogFragmentTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.Gray2">
+        <item name="android:textColor">@color/color_A3ACBD</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.Gold">
+        <item name="android:textColor">@color/gold</item>
+    </style>
+
+    <style name="NewVersionDialog"></style>
+
+    <style name="NewVersionDialog.Animation">
+        <item name="android:windowEnterAnimation">@anim/scale_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_dialog_out</item>
+    </style>
+
+    <style name="NewVersionDialog.Button">
+        <item name="android:textColor">@color/normal_dialog_confirm_button_selector</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="NewVersionDialog.Button.Cancel">
+        <item name="android:textColor">@color/normal_dialog_cancel_button_selector</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Large.Blue">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="Moder.DialogListViewItem" parent="@style/Moder.ListViewItem">
+        <item name="android:background">@drawable/dialog_list_item_background</item>
+    </style>
+
+    <style name="Moder.ListViewItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:minHeight">@dimen/item_height</item>
+        <item name="android:background">@drawable/background_setting_item_botom_first_level</item>
+    </style>
+    <!-- 排序页面使用的checkbox -->
+    <style name="SortCheckboxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/appswitch_btn_checkbox</item>
+        <!-- <item name="android:background">@drawable/editable_mode_unchecked_tag</item> -->
+    </style>
+
+    <style name="Moder.TextAppearance.DialogNoTitle">
+        <item name="android:textSize">@dimen/dimen_18dp</item>
+        <item name="android:textColor">@color/dark_gray_66</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 弹出对话框背景样式, 7.9版本新增样式 -->
+    <style name="ModerDialogBackgroundstyle">
+        <item name="android:layout_width">@dimen/dialog_vip_guide_with</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/dialog_background</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:minWidth">288dip</item>
+        <item name="android:layout_marginLeft">14dip</item>
+        <item name="android:layout_marginRight">14dip</item>
+    </style>
+
+    <!-- 弹出对话框背景,全屏样式,  -->
+
+    <!-- sunqi add -->
+    <style name="EditCheckboxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/edit_checkbox_selector</item>
+    </style>
+
+    <style name="Moder.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@drawable/list_view_divider_drawable</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+
+    <style name="Moder.ExpandableListView" parent="@style/Moder.ListView">
+        <item name="android:childDivider">@drawable/mainlist_divider</item>
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="Moder.DialogListView" parent="Moder.ListView">
+        <item name="android:divider">@drawable/dialog_listitem_divider</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Middle.Black">
+        <item name="android:textColor">@color/blue_black</item>
+    </style>
+
+    <style name="Moder.ProgressBar.Small" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressbar_medium_blue</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">300</item>
+        <item name="android:minWidth">17dip</item>
+        <item name="android:maxWidth">17dip</item>
+        <item name="android:minHeight">17dip</item>
+        <item name="android:maxHeight">17dip</item>
+    </style>
+
+    <style name="Moder.Widget.EditText">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Moder.Widget">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="Moder.ToolBar.WithNormalButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/toolbar_background</item>
+        <item name="android:paddingLeft">@dimen/toolbar_with_normal_button_padding_left</item>
+        <item name="android:paddingRight">@dimen/toolbar_with_normal_button_padding_right</item>
+        <item name="android:paddingTop">@dimen/toolbar_with_normal_button_padding_top</item>
+        <item name="android:paddingBottom">@dimen/toolbar_with_normal_button_padding_bottom</item>
+    </style>
+
+    <style name="Moder.ToolBar.Button" />
+
+    <style name="Moder.ToolBar.Button.Icon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textColor">@drawable/bottom_tools_text_color</item>
+        <item name="android:textSize">@dimen/text_size_smallest</item>
+    </style>
+
+    <style name="Moder.ToolBar.Button.Normal">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/toolbar_background</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Moder.ToolBar.Button.Normal.Short">
+        <item name="android:layout_width">@dimen/toolbar_button_short_width</item>
+        <item name="android:layout_height">@dimen/toolbar_button_short_height</item>
+        <item name="android:layout_marginLeft">@dimen/toolbar_button_short_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/toolbar_button_short_margin_right</item>
+        <item name="android:background">@drawable/toolbar_background</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="Moder.ToolBar.Button.Normal.Long">
+        <item name="android:layout_width">@dimen/toolbar_button_long_width</item>
+        <item name="android:background">@drawable/toolbar_background</item>
+        <item name="android:layout_height">@dimen/toolbar_button_long_height</item>
+    </style>
+
+    <style name="Moder.ToolBar">
+        <!--        <item name="android:background">@color/bottom_tools_bg_color</item>-->
+        <item name="android:background">@color/color_06a6e5</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Moder.ToolBar.WithIconButton">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/toolbar_with_icon_button_padding_top</item>
+        <item name="android:paddingBottom">@dimen/toolbar_with_icon_button_padding_bottom</item>
+    </style>
+
+    <!-- 暗黑模式 -->
+
+    <style name="Moder.TextAppearance.Large.DNLighter_black">
+        <item name="android:textColor">@color/bg_dn_lighter_black</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Smaller.DarkGray99">
+        <item name="android:textColor">@color/dark_gray_99</item>
+    </style>
+
+    <!-- app recommend download progress in dialog -->
+    <style name="AppRecommendProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_app_recommend_download_drawable
+        </item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:maxHeight">3dip</item>
+    </style>
+
+    <!--播放器相关的进度条-->
+    <style name="VideoPlayerProgress" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">1.5dp</item>
+        <item name="android:minHeight">1.5dp</item>
+        <item name="android:progress">50</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/video_seekbar_style</item>
+    </style>
+
+    <!--播放器相关的拖动条-->
+    <style name="VideoPlayerProgress.SeekBar" parent="VideoPlayerProgress">
+        <item name="android:thumb">@drawable/seek_bar_thumb</item>
+        <item name="android:thumbOffset">15dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!--视频播放Topbar按钮-->
+    <style name="VideoPlayerTopbarIcon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">18dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <!--视频分享面板分享按钮-->
+    <style name="Moder.TextAppearance.AmazingLarge">
+        <item name="android:textSize">@dimen/text_size_amazing_large</item>
+    </style>
+
+    <style name="Moder.TextAppearance.AmazingLarge.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Large.Gray">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Moder.TextAppearance.Small.Bold.DNLighterBlack">
+        <item name="android:textColor">@color/bg_dn_lighter_black</item>
+    </style>
+
+    <style name="Moder.SettingItem.TopNoMargin">
+        <item name="android:background">@drawable/background_common_setting_item_single</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <!-- 选择应用打开分享对话框 -->
+    <style name="ChooseAppDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:layout_width">288dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/background_with_radian</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:minWidth">288dip</item>
+        <item name="android:layout_marginLeft">14dip</item>
+        <item name="android:layout_marginRight">14dip</item>
+    </style>
+
+    <!-- 从底部出现的activity YQH 20130206 -->
+
+    <!-- 密码锁键盘界面的按钮 -->
+
+    <!-- 密码锁键盘界面的数字键盘 -->
+    <!-- 密码锁界面的输入框风格 -->
+    <style name="CodedLockEditTextStyle">
+        <item name="android:layout_width">@dimen/dimen_50dp</item>
+        <item name="android:layout_height">@dimen/dimen_50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/coded_lock_text_background</item>
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:password">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/dimen_38dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/pop_slide_from_down_to_top</item>
+        <item name="android:windowExitAnimation">@anim/pop_slide_from_top_to_down</item>
+    </style>
+
+    <!-- 底部带 EditText 的 Dialog -->
+    <style name="BottomSheetInputDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!--我的页面Item Style-->
+    <style name="AboutMeItemStyle">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/about_me_text_selector</item>
+        <item name="android:textColor">@color/bg_dn_about_me_text_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/dimen_40dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="ModerTheme.NoActionBarForUserProfile" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <!-- 剧集列表对话框样式 -->
+    <style name="ModerDialogSeriesListTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <!--弹窗背景是否变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogContentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+      android:background="@drawable/edit_more_dialog_top_corner_shape"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_15dp"/>
+
+    <LinearLayout
+        android:id="@+id/popup_menu_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel"
+        style="@style/Moder.TextAppearance.Middle"
+        android:textColor="#FF333333"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:background="@drawable/edit_more_popup_menu_close_selector"/>
+</LinearLayout>

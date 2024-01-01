@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="my_cloud_disk">المساحة السحابية الخاصة بي</string>
+    <string name="resource_radar">رادار المحتويات</string>
+    <string name="tab_explore">استكشف</string>
+    <string name="cloud">ملفات السحابة</string>
+    <string name="upload_photo">رفع الصور</string>
+    <string name="tools_of_choice">أدوات مميزة</string>
+    <string name="hot_movie">افلام شعبية</string>
+    <string name="resource_share">شارك المحتويات</string>
+    <string name="resource_share_desc">يمكنك مشاركة المحتويات مع أي شخص بكل سهولة</string>
+    <string name="bt_parse">حّمل المحتويات</string>
+    <string name="bt_parse_desc">يمكنك تحميل المحتويات من كافة أنواع الروابط والمنصات المختلفة بكل سهولة</string>
+    <string name="resource_radar_desc">قم باكتشاف المزيد والمزيد من المحتويات الرائعة</string>
+    <string name="tab_my_files">ملفاتي</string>
+    <string name="downloaded">الملفات المُحملة</string>
+    <string name="new_version_msg_bug_fixes">إصلاح بعد المشكلات المعروفة</string>
+    <string name="new_version_msg_optimized_for_better_experience">تحسين التجربة بشكل أفضل</string>
+    <string name="new_version_title">محتوى مُحدث</string>
+    <string name="background_download">اكتمل التحميل في الخلفية</string>
+    <string name="bt_files">ملف BT</string>
+    <string name="link_url">رابط URL</string>
+    <string name="video_downloader_desc_1">تنزيل الموارد من المواقع التالية</string>
+    <string name="video_downloader_desc_2">قم بتنزيل الموارد عبر ملفات وروابط BT</string>
+    <string name="offline_upload_use_tips_link_2">بعد اكتمال التحليل، حدد المورد الذي تريد تنزيله واحفظه</string>
+    <string name="offline_upload_use_tips_3">يمكنك عرض الموارد في الموقع المقابل بعد الحفظ</string>
+    <string name="net_search_hint_1">ابحث عن المورد الذي تريد تنزيله</string>
+    <string name="net_search_hint_2">انقر فوق زر التنزيل في الزاوية اليمنى بالأسفل</string>
+    <string name="net_search_hint_3">اختر طريقة حفظ للفيديو واحفظه بنقرة واحدة</string>
+    <string name="save_to_cloud2">تخزينه في مساحة التخزين السحابية</string>
+    <string name="download_to_my_phone_too">تنزيله على الهاتف بنفس الوقت</string>
+    <string name="video_and_ext">فيديو (%s)</string>
+    <string name="audio_and_ext">الصوت (%s)</string>
+    <string name="parse_failed">فشل التحليل</string>
+    <string name="net_search_detect_shield_tips">نظرًا للقيود القانونية، لا يمكن تنزيل مقاطع الفيديو الموجودة على هذا الموقع، يرجى الانتقال إلى مواقع الويب الأخرى لتنزيلها.</string>
+    <string name="how_to_use2">كيف تستعمل؟</string>
+    <string name="video_download_desc_3">1. افتح الموقع الذي تريد تنزيل الموارد؛
+\n\n2.ابحث عن المورد الذي تريد تنزيله؛
+\n\n3.انقر فوق زر التنزيل في الزاوية اليمنى
+</string>
+    <string name="unsupported_websites">هذا الموقع لا يدعم التحليل</string>
+    <string name="data_null">نتيجة التحليل فارغة</string>
+    <string name="unknown_error">الخطأ غير معروف</string>
+    <string name="url_unavailable">هذا URL لا يدعم التحليل</string>
+    <string name="duration_unknown">المدة غير معروفة</string>
+    <string name="guide_to_explore">لا تهتم بالمحتوى؟</string>
+    <string name="title_recommendations">يوصى بمتابعة</string>
+
+    <string name="ban_adult_content_new">مرحبًا! يرجى اختيار المحتوى الذي تود رؤيته في التطبيق</string>
+    <string name="ban_adult_choice1_new">يوجد محتوى للبالغين</string>
+    <string name="ban_adult_choice1_desc">يرجى التأكد من أنك قد بلغت 18 عامًا</string>
+    <string name="ban_adult_choice3_new">لا يوجد محتوى للبالغين</string>
+    <string name="ban_adult_choice_setting_hint">يمكن تعديله في صفحة الإعدادات</string>
+    <string name="ban_adult_choice_modify_hint">تم التغيير</string>
+    <string name="setting_ban_content">المحتوى المفضّل</string>
+</resources>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基础色值 -->
+    <color name="light_black">#FF252525</color>
+    <color name="color_e5030B1A">#e5030B1A</color>
+    <color name="color_00ddc8">#00DDC8</color>
+    <color name="lightest_blue">#ffe6f6ff</color>
+    <color name="lightest_blue_60p_transparent">#99e6f6ff</color>
+    <color name="light_bulue_40p_transparent">#66006BF8</color>
+    <color name="light_blue">#ff006BF8</color>
+    <color name="green">#32c02b</color>
+    <color name="green11">#11ae57</color>
+    <color name="dark_gray">#ff7c7c7c</color>
+    <color name="dark_gray_bc">#ffbcbfc3</color>
+    <color name="gray">#ffb0b0b0</color>
+    <color name="light_gray">#ffe9e9e9</color>
+    <color name="lighter_gray">#fff1f1f1</color>
+    <color name="red">#ffe34e3d</color>
+    <color name="light_red">#ffff5a55</color>
+    <color name="dark_red">#ffff4544</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_26">#42ffffff</color>
+    <color name="white_10">#42ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="gray_c5">#c5c5c5</color>
+    <color name="yellow_ca">#ca963b</color>
+    <color name="dark_white">#eaedf0</color>
+    <color name="progress_pic_blue">#12c7a8</color>
+    <color name="progress_doc_red">#e23636</color>
+    <color name="progress_music_green">#a7cf48</color>
+    <color name="progress_video_yellow">#ffc45d</color>
+    <color name="progress_app_deepgreen">#3ca746</color>
+    <color name="progress_other_purple">#a25ec9</color>
+    <color name="progress_unuse_gray">#dddddd</color>
+    <color name="progress_bg_color">#B6B6B6</color>
+    <color name="popmenu_divider_color">#EFEFEF</color>
+    <color name="progress_background">#FFEBEBEB</color>
+    <color name="progress_normal">#06A6E5</color>
+    <color name="progress_warning">#FFF9C81E</color>
+    <color name="progress_serious">#FFF7534F</color>
+    <color name="transfer_download_path_bg">#f9f9f9</color>
+    <color name="image_preview_error_bg">#ff252525</color>
+
+    <color name="lighter_black">#FF333333</color>
+
+
+    <color name="scroll_pick_selected_item_text">#000000</color>
+    <color name="scroll_pick_normal_item_text">#5d594b</color>
+    <color name="scroll_pick_selected_background_color">#FFFFFF</color>
+    <color name="scroll_pick_normal_background_color">#FFFFFF</color>
+    <color name="scroll_pick_selected_item_line_color">@color/lighter_gray</color>
+    <color name="guide_header_text">#7082a3</color>
+
+    <color name="floating_text_color">#006BF8</color>
+    <color name="floating_layout_background">#F2F7FF</color>
+
+    <color name="permission_title">#FF212C3D</color>
+    <color name="permission_label">#FF212C3D</color>
+    <color name="permission_des">#FFABABAB</color>
+    <color name="permission_enter_netdisk">#006BF8</color>
+
+    <color name="image_preview_failed_color">#4C4C4C</color>
+
+    <color name="color_333333">#ff333333</color>
+
+    <color name="bottom_tools_bg_color">#06A6E5</color>
+
+    <!--九宫格-->
+    <color name="logout_text">#F46160</color>
+    <color name="color_e5e5e5">#E5E5E5</color>
+    <color name="color_64360D">#64360D</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_blue">#FF006BF8</color>
+    <color name="color_d4d4d4">#FFD4D4D4</color>
+    <color name="color_131313">#131313</color>
+    <color name="color_F4C576">#F4C576</color>
+    <color name="white_f5">#f5f5f5</color>
+    <color name="black_dialog_confirm">#ff1d1501</color>
+    <color name="editview_text_highlight_color">#CEDCF1</color>
+    <color name="cloud_tab_blue">#006BF8</color>
+
+    <color name="setting_item_right_text">#b9b9b9</color>
+    <color name="recent_list_divider_color">#efefef</color>
+
+    <color name="wechat_backup_setings_bg_color">#11BC4F</color>
+
+
+    <color name="transfer_backup_group_right_text">#006BF8</color>
+
+
+    <color name="timeline_image_default_bg_color">#EFEFEF</color>
+    <color name="first_level_bg_color">#FFFFFF</color>
+    <!--二级深色-->
+    <color name="second_level_bg_color">#FFFFFF</color>
+    <!--三级深色-->
+    <color name="third_level_bg_color">#f7f7f7</color>
+    <color name="auxiliary_text_color">#797A8D</color>
+
+    <!--分割线-->
+    <color name="dark_mode_partition_line">#EDEDED</color>
+    <!--辅助文字-->
+    <color name="text_assist_color">#999999</color>
+    <!--正文-->
+    <color name="text_content_color">#000000</color>
+
+    <!--通用item按压态-->
+    <color name="bg_dn_common_item_color">#FFF1F1F1</color>
+
+    <color name="bg_dn_text_color">#000000</color>
+
+    <color name="bg_dn_home_page">#FFFFFF</color>
+
+    <color name="bg_dn_titlebar_color">#FFFFFF</color>
+
+    <color name="bg_dn_my_netdisk_content">#FFFFFF</color>
+
+    <color name="bg_dn_search_text">#f8f8f8</color>
+
+    <color name="bg_dn_item_file_text_color">#999999</color>
+
+    <color name="bg_dn_search_page_text_color">#ff333333</color>
+
+    <color name="bg_dn_good_title_bar_text_center_color">#333333</color>
+
+    <color name="bg_dn_file_list_pressed">#f7f7f7</color>
+
+    <color name="bg_dn_file_list">#FFFFFF</color>
+
+    <color name="bg_dn_about_me_text_color">#000000</color>
+
+    <color name="bg_dn_about_me_grid_item">#FFFFFF</color>
+
+    <color name="bg_dn_home_title_text_color">#999999</color>
+
+    <color name="bg_dn_lighter_black">#ff333333</color>
+
+    <color name="bg_dn_color_999999">#999999</color>
+
+    <color name="bg_dn_about_me_storage_text_color">#999999</color>
+
+    <color name="bg_dn_about_me_setting_item">#FFFFFF</color>
+
+    <color name="bg_dn_dividing_line_color">#FFE5E5E5</color>
+
+    <color name="bg_dn_about_me_pressed_item_color">#FFF1F1F1</color>
+
+    <color name="bg_dn_search_titlebar_text">#c5c5c5</color>
+
+    <color name="bg_dn_good_title_bar_text_left_color">#3D3D3D</color>
+
+    <color name="bg_dn_color_666666">#ff666666</color>
+
+    <color name="bg_dn_popmenu_divider_color">#EFEFEF</color>
+
+    <color name="bg_dn_service_style_background">#FAFAFB</color>
+
+    <color name="bg_dn_home_page_search_background_color">#FFF5F5F5</color>
+
+    <color name="bg_dn_lighter_black_40transparent">#66333333</color>
+
+    <color name="bg_dn_popup_menu_gray">#ffb0b0b0</color>
+
+    <color name="bg_dn_home_page_audio_player">#EBF3FF</color>
+
+    <color name="bg_dn_color_333333">#ff333333</color>
+
+    <color name="bg_dn_blue_black">#FF313B4B</color>
+
+    <color name="bg_dn_white">#FFFFFF</color>
+
+    <color name="bg_dn_title_line_start">#2ecdcdcd</color>
+
+    <color name="bg_dn_title_line_end">#00000000</color>
+
+    <color name="bg_dn_dialog_text_frame_color">#F8F8F8</color>
+
+    <color name="black_333333">#333333</color>
+
+    <color name="gray_999999">#999999</color>
+
+    <color name="cloudp2p_red_point">#FFFC3856</color>
+
+    <color name="character_lable_bg">#f9f9f9</color>
+    <color name="white_50p_transparent">#80ffffff</color>
+    <color name="white_20p_transparent">#33ffffff</color>
+    <color name="white_30p_transparent">#4Dffffff</color>
+    <color name="white_40p_transparent">#66ffffff</color>
+    <color name="white_15p_transparent">#26ffffff</color>
+    <color name="white_10p_transparent">#1AFFFFFF</color>
+    <color name="white_70p_transparent">#BBFFFFFF</color>
+
+    <!--基础色值-->
+    <color name="black">#FF000000</color>
+    <color name="black_60p_transparent">#99000000</color>
+    <color name="black_70p_transparent">#BB000000</color>
+    <color name="black_10p_transparent">#19000000</color>
+    <color name="black_50p_transparent">#7f000000</color>
+    <color name="black_40p_transparent">#66000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_666666">#ff666666</color>
+    <color name="common_color_999">#ff999999</color>
+    <color name="common_white">#ffffff</color>
+
+    <color name="empty_refresh_text_color">#1f94ff</color>
+    <color name="gold">#CA963B</color>
+    <color name="new_version_dialog_content">#FF666666</color>
+    <color name="blue">#ff3995e3</color>
+    <color name="disable_new_dialog_blue_color">#802486F5</color>
+    <color name="new_dialog_blue_color">#2486F5</color>
+    <color name="new_dialog_40p_blue_color">#662486F5</color>
+    <color name="dark_gray_99">#FF999999</color>
+    <color name="dark_gray_99_40p_transparent">#66999999</color>
+    <color name="dialog_item_normal_bg">#fff1f1f1</color>
+    <color name="dark_gray_66">#FF666666</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+
+    <color name="btn_pressed_color">#19999999</color>
+    <color name="blue_black">#FF313B4B</color>
+    <color name="white_60p_transparent">#99ffffff</color>
+    <color name="light_blue_60p_transparent">#99006BF8</color>
+    <color name="light_blue_70p_transparent">#BB006BF8</color>
+    <color name="list_item_divider_line">#DCDBDC</color>
+
+
+    <!-- activity的背景 -->
+    <color name="lightest_gray">#fff4f6f7</color>
+    <color name="activity_view_bg">@color/lightest_gray</color>
+    <color name="bg_dn_common_color_999">#ff999999</color>
+    <color name="bg_dn_dialog_page">#FFFFFF</color>
+    <color name="bg_dn_btn_pressed_color">#19999999</color>
+    <color name="common_color_666">#ff666666</color>
+    <color name="business_platform_text_color_dark_gray">#333333</color>
+
+    <!--10.0.130 -->
+    <color name="image_bottom_detail_title">#333333</color>
+
+    <color name="color_16_tran_999999">#29999999</color>
+    <color name="card_image_view_bg_loading">#FF006BF8</color>
+    <color name="black_80p_transparent">#cc000000</color>
+    <color name="speed_hint_bg">#D81A1A1A</color>
+    <color name="black_30p_transparent">#4d000000</color>
+    <color name="black_96p_transparent">#f6000000</color>
+    <color name="black_90p_transparent">#e5000000</color>
+    <color name="bg_dn_transparent">#121212</color>
+    <color name="bg_dn_common_color_666">#999999</color>
+    <color name="video_play_page_select_list_item_title_normal">#FFAEAEAE</color>
+    <color name="card_guide_dialog_lint">#F2F2F2</color>
+
+
+    <color name="bg_dn_search">#FFFFFF</color>
+    <color name="bg_dn_searching_text">#ff666666</color>
+    <color name="bg_dn_black_write_reverse">#FF313B4B</color>
+    <color name="bg_dn_search_hint_item">#FFFFFF</color>
+    <color name="bg_dn_search_result">#F2F2F2</color>
+    <color name="bg_dn_search_result_text_color">#474747</color>
+
+    <color name="dialog_share_background">#f5f5f5</color>
+    <color name="color_share_text">#333333</color>
+    <color name="first_share_notice_dialog_background_transparent">#80000000</color>
+    <color name="first_share_notice_dialog_button_text">#06a7ff</color>
+    <color name="first_share_notice_dialog_link_background">#08333333</color>
+
+    <color name="bg_dn_gray_black">#f9f9f9</color>
+    <color name="bg_dn_button_gray">#F9F9F9</color>
+
+    <!-- 倍速切换tost颜色 -->
+    <color name="speed_svip_hint_color">#F9D680</color>
+    <color name="speed_normal_hint_color">#0797c4</color>
+    <color name="speed_hint_color_white">#FFFFFF</color>
+    <color name="audio_speedup_top_tip">#999999</color>
+    <color name="color_f3f3f3">#FFF3F3F3</color>
+    <color name="video_resolution_origin_divider_line_color">#B3FFFFFF</color>
+    <color name="gold_speed">#F9D680</color>
+    <color name="color_bababa">#BABABA</color>
+
+    <!-- 密码锁键盘颜色 -->
+    <color name="code_locked_keybord_background">#FF282C31</color>
+    <color name="code_locked_keybord_pressed">#FF393E46</color>
+    <color name="code_locked_keybord_normal">#FF33373E</color>
+    <color name="color_7FB4FB">#7fb4fb</color>
+    <color name="color_1F7FB4FB">#1f7fb4fb</color>
+
+    <!--  dubox文件传输列表顶部速度提示条-->
+    <color name="bg_top_tip_label">#EFF6FE</color>
+
+    <color name="color_F5F6FA">#F5F6FA</color>
+    <color name="color_06A7FF">#FF06A7FF</color>
+    <color name="color_F0FAFF">#FFF0FAFF</color>
+    <color name="color_03081A">#FF03081A</color>
+    <color name="color_0F03081A">#0F03081A</color>
+    <color name="color_FF436A">#FFFF436A</color>
+    <color name="color_AFB3BF">#FFAFB3BF</color>
+    <color name="color_0F006bf8">#0F006bf8</color>
+    <color name="bg_share_right_bar">#B5000000</color>
+    <color name="color_EDEDED">#EDEDED</color>
+    <color name="color_FAEDC7">#FAEDC7</color>
+    <color name="color_B3D3FD">#B3D3FD</color>
+    <color name="color_white_half_alpha">#80ffffff</color>
+    <color name="color_E02021">#E02021</color>
+    <color name="color_20alpha_white">#33ffffff</color>
+    <color name="color_EED9AE">#EED9AE</color>
+    <color name="color_E5C585">#E5C585</color>
+    <color name="color_FBFBFB">#FFFBFBFB</color>
+    <color name="color_2A2A2A">#2A2A2A</color>
+    <color name="color_ED3F3F">#ED3F3F</color>
+    <color name="color_F8F8F8">#F8F8F8</color>
+    <color name="color_C9C9C9">#C9C9C9</color>
+    <color name="color_1B86FF">#1B86FF</color>
+    <color name="color_30alpha_FFFFFF">#4DFFFFFF</color>
+    <color name="color_vip_content">#64360D</color>
+    <color name="color_vio_guide_bg">#FEF8EA</color>
+    <color name="color_b3ffffff">#B3FFFFFF</color>
+    <color name="color_8A8A8D">#8A8A8D</color>
+    <color name="color_878C9C">#878C9C</color>
+    <color name="color_d8d8d8">#D8D8D8</color>
+    <color name="color_f5f5f5">#F5F5F5</color>
+    <color name="color_0065dd">#0065DD</color>
+    <color name="color_0060df">#0060df</color>
+    <color name="color_99006bf8">#99006BF8</color>
+    <color name="color_19006bf8">#19006BF8</color>
+    <color name="color_4D006bf8">#4D006BF8</color>
+    <color name="color_e4effe">#E4EFFE</color>
+    <color name="color_006BF8">#006BF8</color>
+    <color name="color_5a95fe">#2F93F9</color>
+    <color name="color_66006BF8">#66006BF8</color>
+    <color name="color_A3ACBD">#A3ACBD</color>
+    <color name="color_030B1A">#030B1A</color>
+    <color name="color_f0030b1a">#F0030B1A</color>
+    <color name="color_016BF8">#016BF8</color>
+    <color name="color_0074ff">#0074ff</color>
+    <color name="color_818999">#818999</color>
+    <color name="color_495366">#495366</color>
+    <color name="color_e2e2e2">#e2e2e2</color>
+    <color name="color_a2abbd">#a2abbd</color>
+    <color name="color_66a2abbd">#66a2abbd</color>
+    <!-- 3秒运营位置跳过按钮颜色  -->
+    <color name="color_B3030B1A">#B3030B1A</color>
+    <color name="color_ff7004">#FF7004</color>
+    <color name="color_404042">#404042</color>
+    <color name="color_c2a264">#C2A264</color>
+    <color name="color_f6f6f6">#F6F6F6</color>
+
+    <!-- 离线下载分割线颜色  -->
+    <color name="color_F1F3F8">#F1F3F8</color>
+    <color name="color_99F1F3F8">#99F1F3F8</color>
+    <color name="color_F7F9FC">#F7F9FC</color>
+    <color name="color_DBDBDB">#DBDBDB</color>
+    <color name="bg_dn_fcfcfc">#16162B</color>
+    <color name="bg_dn_common_color_light">#006BF8</color>
+    <color name="color_1A006BF8">#1A006BF8</color>
+
+    <color name="color_E5E6E8">#E5E6E8</color>
+
+    <!--  二维码扫描页  -->
+    <color name="business_zxing_result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="business_zxing_result_view">#b0000000</color>
+    <color name="business_zxing_viewfinder_laser">#ffcc0000
+    </color> <!-- Android standard ICS color -->
+    <color name="business_zxing_viewfinder_mask">#60000000</color>
+    <color name="color_4797FF">#4797FF</color>
+    <color name="color_DCDFE6">#DCDFE6</color>
+    <color name="color_33FFFFFF">#33FFFFFF</color>
+    <color name="color_FFDB4A">#FFDB4A</color>
+    <color name="color_FFDA99">#FFDA99</color>
+    <color name="color_FAFAFC">#FAFAFC</color>
+    <color name="color_F9F9F9">#F9F9F9</color>
+    <color name="color_F9F9FB">#F9F9FB</color>
+    <color name="color_dde1e5">#dde1e5</color>
+
+    <color name="color_1AD8D8D8">#1AD8D8D8</color>
+    <color name="color_FCF6E7">#FCF6E7</color>
+    <color name="color_E9B866">#E9B866</color>
+    <color name="color_35D0A9_20">#3335D0A9</color>
+    <color name="color_49B1FE_20">#3349B1FE</color>
+
+    <color name="color_0088FA">#0088FA</color>
+    <color name="color_f5f9ff">#f5f9ff</color>
+    <color name="color_b5b5b5">#b5b5b5</color>
+    <color name="color_78aafe">#78aafe</color>
+    <color name="color_FF6600">#FF6600</color>
+    <color name="color_1AFF6600">#1AFF6600</color>
+    <color name="color_A2ABBD">#A2ABBD</color>
+    <color name="color_e5bd81">#E5BD81</color>
+    <color name="color_532b07">#532B07</color>
+    <color name="color_f3e5c1">#F3E5C1</color>
+    <color name="color_e5bb7d">#E5BB7D</color>
+    <color name="color_944F01">#944F01</color>
+    <color name="color_664100">#664100</color>
+    <color name="color_1F1D46">#1F1D46</color>
+    <color name="color_ffd080">#ffd080</color>
+    <color name="color_ffeccc">#ffeccc</color>
+    <color name="color_383840">#383840</color>
+    <color name="color_353435">#353435</color>
+    <color name="color_bf8726">#BF8726</color>
+    <color name="color_402200">#402200</color>
+    <color name="color_fde3b7">#FDE3B7</color>
+    <color name="color_f9d280">#F9D280</color>
+    <color name="color_ff715c">#FF715C</color>
+    <color name="color_fe2b38">#FE2B38</color>
+
+    <color name="color_0F030B1A">#0f030B1A</color>
+    <color name="color_fef8ea">#FEF8EA</color>
+    <color name="color_ca963b">#CA963B</color>
+    <color name="color_3a3c4a">#3A3C4A</color>
+    <color name="color_191b29">#191B29</color>
+    <color name="color_3d372c">#3D372C</color>
+    <color name="color_141417">#141417</color>
+    <color name="color_0c5fea">#0C5FEA</color>
+    <color name="color_660c5fea">#660C5FEA</color>
+    <color name="color_e6f0fe">#E6F0FE</color>
+
+    <color name="audio_circle_bg_color">#F2A9ABAF</color>
+    <color name="color_ff5252">#FF5252</color>
+
+    <color name="color_ccffffff">#CCFFFFFF</color>
+    <color name="color_99ffffff">#99FFFFFF</color>
+    <color name="color_c8c8c8">#C8C8C8</color>
+    <color name="color_4e4e4f">#4E4E4F</color>
+    <color name="color_33a2abbd">#33A2ABBD</color>
+    <color name="color_0fa2abbd">#0FA2ABBD</color>
+
+    <color name="color_1a1b22">#1A1B22</color>
+    <color name="color_801a1b22">#801A1B22</color>
+    <color name="color_141414">#141414</color>
+    <color name="color_09162e">#09162E</color>
+    <color name="color_0009162e">#0009162E</color>
+    <color name="color_1fffffff">#1FFFFFFF</color>
+    <color name="color_66FFFFFF">#66FFFFFF</color>
+    <color name="color_99000000">#99000000</color>
+    <color name="color_f2f7fe">#F2F7FE</color>
+    <color name="color_0fffffff">#0FFFFFFF</color>
+    <color name="color_ffffff_80">#BCFFFFFF</color>
+    <color name="color_ffffff_65">#a6FFFFFF</color>
+    <color name="color_6b2e2e">#6B2E2E</color>
+    <color name="color_fff6e6">#fff6e6</color>
+    <color name="color_08152E">#08152E</color>
+    <color name="color_111E37">#111E37</color>
+    <color name="color_59000000">#59000000</color>
+    <color name="color_384860">#384860</color>
+
+    <color name="color_12c5ac">#12c5ac</color>
+    <color name="color_07a6e5">#07a6e5</color>
+    <color name="color_8E8E8E">#8E8E8E</color>
+    <color name="color_ADB8F3">#ADB8F3</color>
+    <color name="color_FA3E3E">#FA3E3E</color>
+    <color name="color_E8E7FE">#E8E7FE</color>
+    <color name="color_D3D5FE">#D3D5FE</color>
+    <color name="color_8791FF">#8791FF</color>
+    <color name="color_FEE8E8">#FEE8E8</color>
+    <color name="color_FED6D6">#FED6D6</color>
+    <color name="color_FB7878">#FB7878</color>
+    <color name="color_E8AFD0">#E8AFD0</color>
+    <color name="color_D0D8FF">#D0D8FF</color>
+    <color name="color_F2C2DF">#F2C2DF</color>
+    <color name="color_FB3E31">#FB3E31</color>
+    <color name="color_FC8955">#FC8955</color>
+    <color name="color_FF5A22">#FF5A22</color>
+    <color name="color_BDBDBD_60p_transparent">#99BDBDBD</color>
+    <color name="color_92a1f3">#92A1F3</color>
+    <color name="color_e897c6">#E897C6</color>
+    <color name="color_525252">#525252</color>
+    <color name="color_7a808c">#7a808c</color>
+    <color name="color_f9c81e">#F9C81E</color>
+    <color name="color_ff3333">#FF3333</color>
+    <color name="color_737373">#737373</color>
+    <color name="color_737373_60">#66737373</color>
+    <color name="color_b9b9b9">#B9B9B9</color>
+    <color name="color_6c6c6c">#6C6C6C</color>
+    <color name="color_a5a5a5">#A5A5A5</color>
+    <color name="color_C7C7C7">#C7C7C7</color>
+    <color name="color_80383838">#80383838</color>
+    <color name="color_252525">#252525</color>
+    <color name="color_f0f0f5">#F0F0F5</color>
+    <color name="color_0797c4">#0797C4</color>
+    <color name="color_1a0797c4">#1a0797C4</color>
+    <color name="color_190797c4">#190797C4</color>
+    <color name="color_0797c4_60">#990797C4</color>
+    <color name="color_0797c4_40">#660797C4</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_e6e6e6">#E6E6E6</color>
+    <color name="color_12c7a8">#12C7A8</color>
+    <color name="color_06a6e5">#06A6E5</color>
+    <color name="color_06a6e5_10">#1A06a6e5</color>
+    <color name="color_06a6e5_30">#4D06a6e5</color>
+    <color name="color_06a6e5_40">#9906A6E5</color>
+    <color name="color_06a6e5_60">#6606a6e5</color>
+    <color name="color_06a6e5_90">#1A06a6e5</color>
+    <color name="color_0bafe5">#0BAFE5</color>
+    <color name="color_14cc9d">#14CC9D</color>
+    <color name="color_a8a8a8">#A8A8A8</color>
+    <color name="color_616060">#616060</color>
+    <color name="color_cacaca">#cacaca</color>
+    <color name="color_08bfd8">#08bfd8</color>
+    <color name="color_f8f9fa">#f8f9fa</color>
+    <color name="color_f4f9fa">#f4f9fa</color>
+    <color name="color_db00171f">#db00171F</color>
+    <color name="color_6db9ff">#6db9ff</color>
+    <color name="color_f8f8fa">#F8F8FA</color>
+    <color name="color_173c45">#173c45</color>
+    <color name="color_0007A6E5">#0007A6E5</color>
+    <color name="color_021b22">#021b22</color>
+    <color name="color_0caadc">#0caadc</color>
+    <color name="color_f7f8fa">#F7F8FA</color>
+    <color name="color_e3f3ff">#E3F3FF</color>
+    <color name="color_0096b7">#0096B7</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="color_e16f56">#e16f56</color>
+    <color name="color_0ec3e2">#0ec3e2</color>
+    <color name="color_330797c4">#330797c4</color>
+    <color name="color_5564FF_10">#1A5564FF</color>
+    <color name="white_80">#cdffffff</color>
+    <color name="color_191919">#191919</color>
+
+    <color name="color_6614cc9d">#6614CC9D</color>
+    <color name="color_6606a6e5">#6606A6E5</color>
+
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_b4b6ba">#b4b6ba</color>
+    <color name="color_0096C8">#0096C8</color>
+    <color name="color_F8F6E6">#F8F6E6</color>
+    <color name="color_FFFEF2">#FFFEF2</color>
+    <color name="color_EC9C00">#EC9C00</color>
+</resources>

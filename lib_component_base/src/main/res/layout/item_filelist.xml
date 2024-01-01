@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moder.compass.ui.widget.CheckableItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/checkable_layout"
+    style="@style/Moder.FileListViewItem"
+    android:layout_height="57dp"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+  <com.moder.compass.ui.widget.roundedimageview.RoundedImageView
+      android:id="@+id/image1"
+      android:layout_width="@dimen/dimen_21dp"
+      android:layout_height="@dimen/dimen_18dp"
+      android:layout_marginHorizontal="22.5dp"
+      android:layout_marginTop="@dimen/dimen_20dp"
+      android:scaleType="centerCrop"
+      app:riv_corner_radius="4dp"
+      android:visibility="invisible"
+      tools:src="@drawable/icon_list_folder_n" />
+
+  <com.moder.compass.ui.widget.roundedimageview.RoundedImageView
+      android:id="@+id/image2"
+      style="@style/Moder.ListViewItem.Icon"
+      android:layout_centerVertical="true"
+      app:riv_corner_radius="4dp" />
+
+  <ImageView
+      android:id="@+id/badge"
+      android:layout_width="@dimen/dimen_15dp"
+      android:layout_height="@dimen/dimen_15dp"
+      android:layout_alignStart="@id/image1"
+      android:layout_alignTop="@id/image1"
+      android:layout_marginStart="@dimen/dimen_14dp"
+      android:layout_marginTop="7.5dp"
+      android:visibility="invisible"
+      tools:src="@drawable/icon_list_folder_bt" />
+
+  <ImageButton
+      android:id="@android:id/button1"
+      android:layout_width="40dp"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_gravity="center_vertical"
+      android:background="@null"
+      android:focusable="false"
+      android:src="@drawable/checkbox_icon_normal" />
+
+  <TextView
+      android:id="@+id/text1"
+      style="@style/ModerListViewBigText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignWithParentIfMissing="true"
+      android:layout_toLeftOf="@android:id/button1"
+      android:layout_toRightOf="@+id/image1"
+          android:gravity="left"
+      android:ellipsize="middle"
+      android:paddingTop="@dimen/item_content_padding_top"
+      android:singleLine="true"
+      android:textColor="@color/bg_dn_text_color"
+      android:text="文件名htytyertyetryetryetrytrytryterteytyetyeyt"/>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/text1"
+      android:layout_alignParentBottom="true"
+      android:layout_toLeftOf="@android:id/button1"
+      android:layout_toRightOf="@+id/image1"
+      android:layout_below="@+id/text1"
+      android:layout_marginTop="4dp"
+      >
+
+    <ImageView
+        android:id="@+id/iv_offline"
+        android:layout_width="@dimen/dimen_13dp"
+        android:layout_height="@dimen/dimen_13dp"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:layout_marginRight="@dimen/dimen_6dp"
+        android:src="@drawable/status_offline_icon"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/server_mtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+            android:gravity="left"
+        android:text="2014-06-10"
+        android:textColor="@color/bg_dn_item_file_text_color"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/filesize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+            android:gravity="left"
+        android:textSize="12dp"
+        android:textColor="@color/bg_dn_item_file_text_color"
+        android:text="1.5M"/>
+
+    <TextView
+      android:id="@+id/file_location"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:maxLines="1"
+      android:ellipsize="end"
+      android:textSize="12dp"
+      android:textColor="@color/bg_dn_item_file_text_color"
+      android:visibility="gone"
+      tools:text="位置：202221234567890202221234567890202221234567890"/>
+
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/new_change"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:layout_marginRight="6dp"
+      android:layout_toLeftOf="@id/text1"
+      android:visibility="gone"
+      android:background="#F7534F"/>
+
+</com.moder.compass.ui.widget.CheckableItemLayout>

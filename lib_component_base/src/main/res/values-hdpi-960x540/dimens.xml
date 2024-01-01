@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- userguide -->
+    <!--
+      相册浏览浮层底部按钮区域高度 YQH 20121019
+      <dimen name="imagepager_bottons_heigth">54dip</dimen>
+    -->
+  <!-- Margin 80px 左右 -->
+
+  <!-- video插件 -->
+    <!-- 图片集选择框 -->
+
+  <!-- 设备管理引导弹层 -->
+
+  <!-- 验证码输入框 -->
+
+  <!-- 提速使用引导 -->
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_mode_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_tittle_bar_height"
+    android:background="@color/bg_dn_home_page"
+    app:layout_collapseMode="pin">
+
+    <Button
+        android:id="@+id/edit_left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_14dp"
+        android:paddingRight="@dimen/dimen_14dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/color_0797c4"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edit_title"
+        style="@style/Moder.AppTitleBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerInParent="true"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/bg_dn_lighter_black"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit_right_button"
+        app:layout_constraintStart_toEndOf="@+id/edit_left_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/edit_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_14dp"
+        android:paddingRight="@dimen/dimen_14dp"
+        android:textAllCaps="false"
+        android:textColor="@color/color_0797c4"
+        android:textSize="@dimen/text_size_16"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

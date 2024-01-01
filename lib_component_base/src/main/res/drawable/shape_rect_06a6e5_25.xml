@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2022 Baidu, Inc. All Rights Reserved.
+  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+
+    <solid android:color="@color/color_06a6e5"/>
+
+    <corners android:radius="25dp" />
+
+</shape>

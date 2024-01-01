@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- 通用定义 BEGIN -->
+  <dimen name="item_height">57dp</dimen>
+  <dimen name="item_content_padding_top">12dp</dimen>
+  <dimen name="item_content_padding_bottom">12dp</dimen>
+  <!-- 左边图标的上边距，fullname模式使用 -->
+  <dimen name="item_icon_padding_top">10dp</dimen>
+
+  <!-- 容量条高度 -->
+  <dimen name="quota_progress_bar_height">20dip</dimen>
+
+  <!-- 通用定义 END -->
+
+  <!-- MainActivity BEGIN -->
+  <dimen name="main_tab_background_height">60dp</dimen>
+  <!-- MainActivity END -->
+
+    <dimen name="about_text_magin_bottom">40dip</dimen>
+
+  <!-- rotate progress -->
+  <dimen name="rotate_progress_rectangle_width">27dip</dimen>
+  <dimen name="rotate_progress_rectangle_height">27dip</dimen>
+  <dimen name="rotate_progress_width">3dip</dimen>
+  <!-- video插件 -->
+
+    <!-- 倍速页面 -->
+
+</resources>

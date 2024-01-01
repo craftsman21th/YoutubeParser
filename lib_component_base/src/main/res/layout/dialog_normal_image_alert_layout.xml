@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/ModerDialogBackgroundstyle"
+  android:background="@drawable/background_with_radian"
+  android:padding="0dp"
+  android:gravity="center"
+  android:orientation="vertical">
+
+    <FrameLayout
+      android:layout_width="288dp"
+      android:layout_height="wrap_content">
+
+        <ImageView
+          android:id="@+id/dialog_content_image"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:scaleType="fitXY"
+          android:src="@drawable/dialog_guide_vip_video"/>
+
+        <ImageView
+          android:id="@+id/dialog_cancel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/dimen_15dp"
+          android:src="@drawable/dialog_guide_red_close_icon"
+          android:layout_gravity="top|right"/>
+    </FrameLayout>
+
+    <!-- dialog footer -->
+    <RelativeLayout
+      android:id="@+id/dialog_footer"
+      android:layout_width="288dp"
+      android:layout_height="wrap_content"
+      android:paddingLeft="@dimen/dimen_14dp"
+      android:paddingRight="@dimen/dimen_14dp"
+      android:paddingBottom="@dimen/dimen_20dp"
+      android:paddingTop="@dimen/dimen_20dp">
+
+        <TextView
+          android:id="@+id/sub_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="7dp"
+          android:visibility="gone"
+          android:textColor="@color/dark_gray_99"
+          android:gravity="center"/>
+
+        <TextView
+          android:id="@+id/content_info"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/lighter_black"
+          android:visibility="visible"
+          android:layout_below="@+id/sub_content"
+          android:gravity="center"/>
+
+        <Button
+          android:id="@+id/button_confirm"
+          style="@style/Moder.TextAppearance.Middle"
+          android:textColor="@color/black_dialog_confirm"
+          android:layout_width="210dp"
+          android:layout_height="44dp"
+          android:layout_marginTop="20dp"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/dialog_red_button_selector"
+          android:layout_below="@id/content_info"
+          android:layout_centerHorizontal="true"
+          android:text="延长至30天"/>
+
+        <TextView
+          android:id="@+id/text_chain"
+          style="@style/Moder.TextAppearance.Middle"
+          android:textColor="@color/yellow_ca"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dimen_14dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_below="@+id/button_confirm"
+          android:layout_centerHorizontal="true"
+          android:visibility="gone"
+          android:text="确认删除"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dialogContentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_entry_home_bottom_dialog">
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_18dp"
+        android:includeFontPadding="false"
+        android:text="@string/cancel"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/color_999999"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_18dp"
+        android:includeFontPadding="false"
+        android:text="@string/sure"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/color_06a6e5"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:includeFontPadding="false"
+        android:text="@string/passwd_input_nothing"
+        android:textColor="@color/color_030B1A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/tv_confirm"
+        app:layout_constraintLeft_toRightOf="@+id/tv_cancel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mars.united.widget.LengthLimitedEditText
+        android:id="@+id/input_edittext"
+        style="@style/Moder.TextAppearance.Middle.LighterBlack"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:background="@drawable/edit_background_normal_yq"
+        android:singleLine="true"
+        android:textColorHighlight="@color/editview_text_highlight_color"
+        android:textColorHint="@color/gray_c5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:includeFontPadding="false"
+        android:text="@string/unzip_password_dialog_title"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_edittext"
+        app:layout_constraintWidth_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

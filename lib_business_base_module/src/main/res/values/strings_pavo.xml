@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="my_cloud_disk">My cloud space</string>
+    <string name="resource_radar">Resource radar</string>
+    <string name="tab_explore">Explore</string>
+    <string name="cloud">Cloud Files</string>
+    <string name="upload_photo">Upload Photos</string>
+    <string name="tools_of_choice">Tools</string>
+    <string name="hot_movie">Popular</string>
+    <string name="resource_share">Share resources</string>
+    <string name="resource_share_desc">Share resources with anyone easily</string>
+    <string name="bt_parse">Download resources</string>
+    <string name="bt_parse_desc">Download resources from top sites or BT files</string>
+    <string name="resource_radar_desc">Discover more interesting resources</string>
+    <string name="tab_my_files">My Files</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="new_version_msg_bug_fixes">Bug fixes</string>
+    <string name="new_version_msg_optimized_for_better_experience">Optimized for a better experience</string>
+    <string name="new_version_title">Updates</string>
+    <string name="background_download">Downloading in background</string>
+    <string name="bt_files">BT Files</string>
+    <string name="link_url">URL Links</string>
+    <string name="video_downloader_desc_1">Download resources on the sites below</string>
+    <string name="video_downloader_desc_2">Download resources via BT files and links</string>
+    <string name="offline_upload_use_tips_link_2">After parsing, select the resource to download and a location to save</string>
+    <string name="offline_upload_use_tips_3">View the resource at the specified location</string>
+    <string name="net_search_hint_1">Find the resource you want to download</string>
+    <string name="net_search_hint_2">Click the download button in the lower right corner</string>
+    <string name="net_search_hint_3">Select a location to save the video</string>
+    <string name="save_to_cloud2">Save to cloud storage</string>
+    <string name="download_to_my_phone_too">Download to my phone too</string>
+    <string name="video_and_ext">Video (%s)</string>
+    <string name="audio_and_ext">Audio (%s)</string>
+    <string name="parse_failed">Oops！Parsing failed</string>
+    <string name="net_search_detect_shield_tips">Due to legal restrictions, videos on this website cannot be downloaded, please downloaded from other websites</string>
+    <string name="how_to_use2">How to use?</string>
+    <string name="video_download_desc_3">1. Open the website where you want to download resource;\n\n2.Find the resource you want to download;\n\n3.Click the download button in the lower right corner</string>
+    <string name="unsupported_websites">Unable to parse the website</string>
+    <string name="data_null">No result</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="url_unavailable">Unable to parse the URL</string>
+    <string name="duration_unknown">Unknown duration</string>
+    <string name="guide_to_explore">Didn\'t find anything interesting?</string>
+    <string name="title_recommendations">Recommendations</string>
+    <string name="tab_earn" translatable="false">@string/home_earn</string>
+
+    <string name="ban_adult_content_new">Welcome! Please select the content you wish to see within the app</string>
+    <string name="ban_adult_choice1_new">Includes adult content</string>
+    <string name="ban_adult_choice1_desc">Please ensure you are over 18</string>
+    <string name="ban_adult_choice3_new">Does not include adult content</string>
+    <string name="ban_adult_choice_setting_hint">Modifiable in settings</string>
+    <string name="ban_adult_choice_modify_hint">Modification succeeded</string>
+    <string name="setting_ban_content">Content preferences</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ViewStub
+        android:id="@+id/viewstub_general_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_tittle_bar_height"
+        android:layout="@layout/title_bar_common" />
+
+    <!-- 搜索页的title -->
+
+    <ViewStub
+        android:id="@+id/viewstub_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_tittle_bar_height"
+        android:layout="@layout/search_title_bar" />
+
+    <!--新文件列表titlebar-->
+    <ViewStub
+        android:id="@+id/viewstub_file_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_tittle_bar_height"
+        android:layout="@layout/file_list_title_bar" />
+
+    <!--新文件列表titlebar-->
+    <ViewStub
+        android:id="@+id/viewstub_recycle_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_tittle_bar_height"
+        android:layout="@layout/title_bar_recyclebin" />
+
+</LinearLayout>

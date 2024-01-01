@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources translatable="false">
+
+    <string name="youtube_login_url">https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Dm%26hl%3Dzh-CN%26next%3Dhttps%253A%252F%252Fm.youtube.com%252F&amp;hl=zh-CN&amp;passive=true&amp;service=youtube&amp;uilel=3&amp;ifkv=AXo7B7XsJFpJ8DJLy6HUtHhi8Xm7zeQmjvHIfcOJw2h3ttMWLSfEHa7Bj1eupoM-osf3FG5FSZjx&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin</string>
+    <string name="youtube_logout_url">https://m.youtube.com/logout</string>
+    <string-array name="youtube_url_arr">
+        <item>https://www.youtube.com</item>
+        <item>http://www.youtube.com</item>
+        <item>https://m.youtube.com</item>
+        <item>http://m.youtube.com</item>
+    </string-array>
+    <string name="youtube_get_avatar_url">https://m.youtube.com/youtubei/v1/guide?key=%s&amp;prettyPrint=false</string>
+    <string name="youtube_channel_home_url">https://m.youtube.com/%s</string>
+    <string name="youtube_subscribe_url">https://m.youtube.com/youtubei/v1/subscription/subscribe?key=%s&amp;prettyPrint=false</string>
+    <string name="youtube_unsubscribe_url">https://m.youtube.com/youtubei/v1/subscription/unsubscribe?key=%s&amp;prettyPrint=false</string>
+    <string name="youtube_my_subscribed_list">https://www.youtube.com/feed/channels?app=desktop</string>
+
+</resources>

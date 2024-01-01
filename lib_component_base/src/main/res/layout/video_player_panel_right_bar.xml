@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:background="@color/black_80p_transparent"
+    android:translationX="307dp">
+
+    <!--右边栏信息-->
+    <include
+        android:id="@+id/video_right_bar_info"
+        layout="@layout/video_right_bar_info"
+        android:visibility="gone" />
+
+    <!--右边栏画质-->
+    <!--<include
+        android:id="@+id/video_right_bar_quality"
+        layout="@layout/video_right_bar_quality"
+        android:visibility="gone" />-->
+
+    <!--右边栏倍速-->
+<!--    <include-->
+<!--        android:id="@+id/video_right_bar_speed"-->
+<!--        layout="@layout/video_right_bar_speed"-->
+<!--        android:visibility="gone" />-->
+
+    <!--右边栏选集-->
+    <FrameLayout
+        android:id="@+id/video_right_bar_selection"
+        android:layout_width="307dp"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!--右侧字幕-->
+    <ViewStub
+        android:id="@+id/vs_subtitle_view"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</FrameLayout>

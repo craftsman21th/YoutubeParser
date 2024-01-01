@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp">
+
+    <com.moder.compass.ui.widget.roundedimageview.RoundedImageView
+        android:id="@+id/ivFileImg"
+        style="@style/Moder.ListViewItem.Icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="4dp" />
+
+    <TextView
+        android:id="@+id/tvFileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="@color/bg_dn_text_color"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintBottom_toTopOf="@+id/tvFileSize"
+        app:layout_constraintLeft_toRightOf="@+id/ivFileImg"
+        app:layout_constraintRight_toLeftOf="@+id/ivSelect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="AE engineering documents.mp4" />
+
+    <TextView
+        android:id="@+id/tvFileParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="@color/color_A2ABBD"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="@+id/tvFileName"
+        app:layout_constraintRight_toLeftOf="@+id/tvFileSize"
+        app:layout_constraintTop_toBottomOf="@+id/tvFileName"
+        tools:text="---adada---------------AE engineering documents.mp4AE engineering documents.mp4---------" />
+
+    <TextView
+        android:id="@+id/tvFileSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_6dp"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:textColor="@color/color_A3ACBD"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvFileParent"
+        app:layout_constraintRight_toRightOf="@+id/tvFileName"
+        app:layout_constraintTop_toBottomOf="@+id/tvFileName"
+        tools:text="24.6M" />
+
+    <ImageView
+        android:id="@+id/ivSelect"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="15dp"
+        android:src="@drawable/image_checkbox_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/bg_dn_list_view_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

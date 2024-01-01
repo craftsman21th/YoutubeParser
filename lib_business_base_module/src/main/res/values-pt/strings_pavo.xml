@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="my_cloud_disk">espaço em nuvem</string>
+    <string name="resource_radar">Radar de recursos</string>
+    <string name="tab_explore">Explorar</string>
+    <string name="cloud">Arquivo em nuvem</string>
+    <string name="upload_photo">Fazer upload de fotos</string>
+    <string name="tools_of_choice">Ferramentas em destaque</string>
+    <string name="hot_movie">Filmes e séries populares</string>
+    <string name="resource_share">Compartilhar recursos</string>
+    <string name="resource_share_desc">Compartilhar facilmente recursos com qualquer pessoa</string>
+    <string name="bt_parse">Baixar recursos</string>
+    <string name="bt_parse_desc">Salvar facilmente recursos de vários links e plataformas</string>
+    <string name="resource_radar_desc">Descobrir mais recursos interessantes</string>
+    <string name="tab_my_files">Arquivos</string>
+    <string name="downloaded">Baixado</string>
+    <string name="new_version_msg_bug_fixes">Corrigidos alguns problemas conhecidos</string>
+    <string name="new_version_msg_optimized_for_better_experience">Melhor otimização da experiência</string>
+    <string name="new_version_title">Conteúdo de atualização</string>
+    <string name="background_download">Já baixado em segundo plano</string>
+    <string name="bt_files">Arquivos BT</string>
+    <string name="link_url">Links de URL</string>
+    <string name="video_downloader_desc_1">Baixe recursos dos seguintes sites</string>
+    <string name="video_downloader_desc_2">Baixe recursos através de arquivos BT e links</string>
+    <string name="offline_upload_use_tips_link_2">Após a conclusão da análise, selecione os recursos que você deseja baixar e a maneira de salvar</string>
+    <string name="offline_upload_use_tips_3">Depois de salvar, pode visualizar os recursos no local correspondente</string>
+    <string name="net_search_hint_1">Encontre os recursos que você deseja baixar</string>
+    <string name="net_search_hint_2">Clique no botão de download no canto inferior direito</string>
+    <string name="net_search_hint_3">Selecione a maneira de salvar vídeos, salvar com um clique</string>
+    <string name="save_to_cloud2">Armazene no espaço em nuvem</string>
+    <string name="download_to_my_phone_too">Baixe simultaneamente para o celular</string>
+    <string name="video_and_ext">Vídeo (%s)</string>
+    <string name="audio_and_ext">Áudio (%s)</string>
+    <string name="parse_failed">Falha ao analisar</string>
+    <string name="net_search_detect_shield_tips">Devido a restrições legais, os vídeos deste site não podem ser baixados, acesse outros sites para fazer download.</string>
+    <string name="how_to_use2">Como usar?</string>
+    <string name="video_download_desc_3">1. Abra o site que deseja baixar os recursos;\n\n2. Encontre os recursos que deseja baixar;\n\n3. Clique no botão de download no canto inferior direito</string>
+    <string name="unsupported_websites">Este site não suporta análise</string>
+    <string name="data_null">O resultado da análise está vazio</string>
+    <string name="unknown_error">Erro desconhecido</string>
+    <string name="url_unavailable">Esta URL não suporta análise</string>
+    <string name="duration_unknown">Duração desconhecida</string>
+    <string name="guide_to_explore">Não há conteúdo interessado?</string>
+    <string name="title_recommendations">Recomendados</string>
+
+
+    <string name="ban_adult_content_new">Bem-vindo! Por favor, selecione o conteúdo que deseja ver no aplicativo</string>
+    <string name="ban_adult_choice1_new">Contém conteúdo adulto</string>
+    <string name="ban_adult_choice1_desc">Por favor, certifique-se de que você tem mais de 18 anos</string>
+    <string name="ban_adult_choice3_new">Não inclui conteúdo adulto</string>
+    <string name="ban_adult_choice_setting_hint">Pode ser modificado na página de configurações</string>
+    <string name="ban_adult_choice_modify_hint">Modificado com sucesso</string>
+    <string name="setting_ban_content">Preferência de conteúdo</string>
+</resources>

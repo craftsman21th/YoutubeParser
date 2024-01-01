@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- userguide -->
+    <dimen name="about_text_magin_bottom">20dip</dimen>
+</resources>

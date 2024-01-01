@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout_lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.moder.compass.ui.lottie.DynamicHostLottieView
+            android:id="@+id/loading_lottie"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="7dp"
+            app:lottie_autoPlay="true"
+            app:lottie_imageAssetsFolder="images"
+            app:lottie_url="@string/lottie_loading_bg"
+            app:lottie_loop="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refresh_tip"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:textColor="#666666"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            />
+    </LinearLayout>
+</LinearLayout>

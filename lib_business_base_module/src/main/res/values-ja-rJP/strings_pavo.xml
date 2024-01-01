@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="my_cloud_disk">クラウドストレージ</string>
+    <string name="resource_radar">リソースレーダー</string>
+    <string name="tab_explore">探索</string>
+    <string name="cloud">クラウドファイル</string>
+    <string name="upload_photo">写真をアップロード</string>
+    <string name="tools_of_choice">厳選ツール</string>
+    <string name="hot_movie">人気映画・ドラマ</string>
+    <string name="resource_share">リソースを共有</string>
+    <string name="resource_share_desc">リソースを誰にでも簡単に共有することが可能</string>
+    <string name="bt_parse">リソースをダウンロード</string>
+    <string name="bt_parse_desc">様々なリンクやプラットフォームのリソースを便利に保存</string>
+    <string name="resource_radar_desc">その他のリソースを探す</string>
+    <string name="tab_my_files">ファイル</string>
+    <string name="downloaded">ダウンロード済み</string>
+    <string name="new_version_msg_bug_fixes">不具合を修正しました</string>
+    <string name="new_version_msg_optimized_for_better_experience">より良い体験を最適化にしました</string>
+    <string name="new_version_title">更新内容</string>
+    <string name="background_download">バックグラウンドでダウンロード中</string>
+    <string name="bt_files">BTファイル</string>
+    <string name="link_url">URLリンク</string>
+    <string name="video_downloader_desc_1">以下のサイトからリソースをダウンロード</string>
+    <string name="video_downloader_desc_2">BTファイルとリンクを通してリソースをダウンロード</string>
+    <string name="offline_upload_use_tips_link_2">解析後ダウンロードしたいリソースと保存方法を選択します</string>
+    <string name="offline_upload_use_tips_3">保存後、保存先でリソースを確認することができます</string>
+    <string name="net_search_hint_1">ダウンロードしたいリソースが見つかります</string>
+    <string name="net_search_hint_2">右下のダウンロードボタンをタップしてください</string>
+    <string name="net_search_hint_3">動画の保存方法を選択してワンタップで保存します</string>
+    <string name="save_to_cloud2">クラウドに保存</string>
+    <string name="download_to_my_phone_too">同時にスマホにダウンロード</string>
+    <string name="video_and_ext">動画 (%s)</string>
+    <string name="audio_and_ext">音声 (%s)</string>
+    <string name="parse_failed">解析に失敗しました</string>
+    <string name="net_search_detect_shield_tips">規制によって、このサイト上の動画をダウンロードすることはできません。他のサイトからダウンロードしてください。</string>
+    <string name="how_to_use2">使い方は？</string>
+    <string name="video_download_desc_3">1. リソースをダウンロードするウェブサイトを開きます。\n\n2. ダウンロードしたいリソースが見つかります。\n\n3. 右下のダウンロードボタンをタップしてください</string>
+    <string name="unsupported_websites">このサイトは解析できません</string>
+    <string name="data_null">解析結果は空です</string>
+    <string name="unknown_error">不明なエラーが発生しました</string>
+    <string name="url_unavailable">このURLは解析できません</string>
+    <string name="duration_unknown">長さ不明</string>
+    <string name="guide_to_explore">興味のある内容はありませんか？</string>
+    <string name="title_recommendations">おすすめ</string>
+
+
+    <string name="ban_adult_content_new">ようこそ！アプリ内でご覧になりたいコンテンツを選択してください</string>
+    <string name="ban_adult_choice1_new">成人向けのコンテンツが含まれています</string>
+    <string name="ban_adult_choice1_desc">18歳以上であることをご確認ください</string>
+    <string name="ban_adult_choice3_new">成人コンテンツが含まれていません</string>
+    <string name="ban_adult_choice_setting_hint">設定ページにて変更可能</string>
+    <string name="ban_adult_choice_modify_hint">修正完了</string>
+    <string name="setting_ban_content">お気に入りの内容</string>
+</resources>

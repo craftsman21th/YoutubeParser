@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setavatar_options">
+        <item>@string/pick_photo_type_capture</item>
+        <item>@string/pick_photo_type_gallery</item>
+    </string-array>
+
+    <string-array name="login_issues_array">
+        <item>@string/login_with_email</item>
+        <item>@string/login_with_phone_number</item>
+        <item>@string/login_with_apple_google_facebook</item>
+    </string-array>
+
+    <integer-array name="login_issues_types">
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+    </integer-array>
+
+    <string-array name="sign_up_issues_array">
+        <item>@string/sign_up_with_email</item>
+        <item>@string/sign_up_with_phone_number</item>
+        <item>@string/sign_up_with_app_google_facebook</item>
+    </string-array>
+
+    <integer-array name="sign_up_issues_types">
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+    </integer-array>
+
+    <string-array name="upload_issues_array">
+        <item>@string/upload_issues_failed</item>
+        <item>@string/upload_slow</item>
+    </string-array>
+
+    <integer-array name="upload_issues_types">
+        <item>23</item>
+        <item>24</item>
+    </integer-array>
+
+    <string-array name="download_issues_array">
+        <item>@string/download_issues_failed</item>
+        <item>@string/download_slow</item>
+    </string-array>
+
+    <integer-array name="download_issues_types">
+        <item>25</item>
+        <item>26</item>
+    </integer-array>
+
+    <string-array name="my_app_premium_issues_array">
+        <item>@string/premium_unable_purchase</item>
+        <item>@string/premium_no_membership</item>
+    </string-array>
+
+    <integer-array name="my_app_premium_issues_types">
+        <item>25</item>
+        <item>26</item>
+    </integer-array>
+
+    <string-array name="file_operation_issues_array">
+        <item>@string/file_share</item>
+        <item>@string/file_transfer</item>
+        <item>@string/file_missing</item>
+        <item>@string/file_delete_copy_move</item>
+    </string-array>
+
+    <integer-array name="file_operation_issues_types">
+        <item>13</item>
+        <item>16</item>
+        <item>15</item>
+        <item>14</item>
+    </integer-array>
+
+    <string-array name="common_functions_array">
+        <item>@string/image_view</item>
+        <item>@string/video_play</item>
+        <item>@string/remote_upload</item>
+        <item>@string/local_cleanup</item>
+    </string-array>
+
+    <integer-array name="common_functions_types">
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+    </integer-array>
+
+    <string-array name="others_array">
+        <item>@string/others_issues</item>
+    </string-array>
+
+    <integer-array name="others_types">
+        <item>6</item>
+    </integer-array>
+</resources>

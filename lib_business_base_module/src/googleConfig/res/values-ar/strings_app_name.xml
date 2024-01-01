@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE
+  resources [
+  <!ENTITY base_app_name "Moder">
+  <!ENTITY homesite_domain "www.heybox.ai">
+  ]
+  >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="account_error_toast"> لم يتم تسجيل الدخول &base_app_name;، يرجى إعادة المحاولة بعد تسجيل الدخول</string>
+  <string name="agreement_dialog_content">مرحبا بكم في استخدام &base_app_name;! تحتاج إلى فتح شبكة جوال أو WLAN عند استخدامه. يرجى استشارة المشغل المحلي بك لمعرفة رسوم شبكة جوال الناتجة. نولي أهمية كبيرة لحماية خصوصيتك ومعلوماتك الشخصية. وقبل استخدام خدمة تطبيق &base_app_name;
+        ، يرجى قراءة جميع شروط "اتفاقية الخصوصية" و "اتفاقية المستخدم"ل&base_app_name; بعناية ،وبعد الموافقة على جميع الشروط وقبولها ، يمكنك البدء في استخدام خدمتنا.</string>
+  <string name="already_lastet_version">&base_app_name; هو أحدث إصدار</string>
+  <string name="apk_version_info">إصدار &base_app_name;%s s</string>
+  <string name="app_name">&base_app_name;</string>
+  <string name="app_name_with_space">حفظ في &base_app_name;</string>
+  <string name="backup_my_app">\t| &base_app_name;</string>
+  <string name="backup_introduce_thanks_for_your_affirmation">شكرا لك على دعمك لـ &base_app_name;</string>
+  <string name="category_my_app">&base_app_name; بتاعي</string>
+  <string name="cloudp2p_pick_netdisk_file_cloudimage_header">اختيار الصور في &base_app_name;</string>
+  <string name="download_apk">يجري تنزيل إصدار &base_app_name;%s</string>
+  <string name="my_app_account">حساب &base_app_name;</string>
+  <string name="my_app_album">ألبوم &base_app_name;</string>
+  <string name="my_app_website_desktop_guide_title">موقع إنترنت للكمبيوتر &base_app_name;</string>
+  <string name="exit_tips">اضغط مرة أخرى لمغادرة &base_app_name;</string>
+  <string name="file_list_title">&base_app_name;</string>
+  <string name="live_photo_export_title">تصدير إلى دليل تنزيل &base_app_name;</string>
+  <string name="login_page_bottom_info">انقر لتسجيل الدخول ويفترض النظام أنك قرأت ووافقت على اتفاقية الخصوصية واتفاقية خدمة المستخدم لتطبيق &base_app_name;</string>
+  <string name="my_app_net_error">فشل رابط &base_app_name; ، فشل في عرض المحتوى</string>
+  <string name="new_version">تم تحديث &base_app_name;</string>
+  <string name="permission_advance_one_title">يتطلب &base_app_name; الأذونات التالية \n لاستخدام الوظيفة المقابلة</string>
+  <string name="permission_advance_two_next">أدخل &base_app_name;</string>
+  <string name="plugin_head_view_select_text">حدد %s في &base_app_name;</string>
+  <string name="root_cloud">&base_app_name;</string>
+  <string name="safety_ability_text">يضمن &base_app_name; آمان البيانات</string>
+  <string name="select_secondary_warning_content">إذا اخترت بطاقة تخزين خارجية لتنزيل الملف ، سيتم حذف الملف الذي تم تنزيله  في نفس الوقت بعد حذف &base_app_name;
+        ، هل أنت متأكد؟</string>
+  <string name="server_ban_appeal_title">استئناف حساب &base_app_name;</string>
+  <string name="signature_check_failed">Please download &base_app_name; from http://&homesite_domain;/</string>
+  <string name="share_other_muti_item_text">مرحبا ، أنا أستخدم &base_app_name;
+        ، وأشارك معك\"<xliff:g>%s</xliff:g>\"(و<xliff:g>   %d</xliff:g> ملفات) ، تعال وعرض~</string>
+  <string name="share_other_one_item_text">مرحبا ، أنا أستخدم &base_app_name; ، وأشارك معك\"%s\" ، تعال وعرض~</string>
+  <string name="my_app_share">مشاركة &base_app_name;</string>
+  <string name="personalpage_datail_footer_button_conserve">حفظ في &base_app_name;</string>
+  <string name="backup_setting_safe_title"> يحمي &base_app_name; آمن بياناتك</string>
+  <string name="set_coded_lock">فتح قفل &base_app_name;</string>
+  <string name="account_security_desc_title">يحمي &base_app_name; آمان حسابك</string>
+  <string name="rating_my_app">شجع &base_app_name;</string>
+  <string name="rating_guide_dialog_title_sub">انقر وجهًا تعبيريًا لتقييم &base_app_name;</string>
+  <string name="rating_guide_dialog_title_sub_bad">تستمر &base_app_name; في العمل الجاد لتزويدك بخدمة أفضل!</string>
+  <string name="speed_svip_only">كن &base_app_name; Premium لإستمتاع بتشغيل مزدوج السرعة</string>
+  <string name="vip_video_speed_title">كن &base_app_name;
+        Premium لإستمتاع بتشغيل مزدوج السرعة</string>
+  <string name="vip_video_resolution_title">كن &base_app_name; Premium ، يمكنك استخدام كل الوضوح لفيديو</string>
+  <string name="feedback_msg">شكرا على اهتمامك ودعمك لـ &base_app_name; ، سنتعامل مع ملاحظتك بجدية ، ونصلح الوظائف ذات الصلة ونحسنها في أقرب وقت ممكن</string>
+  <string name="privi_normal_over_limit_content">افتح &base_app_name; Premium ، مبلغ التحويل يصل إلى 50،000</string>
+  <string name="priv_my_app_video_backup">افتح &base_app_name; Premium ، واستمتع بالنسخ الاحتياطي التلقائي للفيديو الأصلي</string>
+  <string name="privi_normal_upload_over_limit_content">افتح &base_app_name; Premium ، واستمتع بنسخة احتياطية كبيرة الحجم</string>
+  <string name="priv_my_app_no_space_title">افتح &base_app_name; Premium ، واستمتع بمساحة كبيرة تبلغ 2 تيرابايت</string>
+        بسرعة مضاعفة ، ومساحة كبيرة 2 تيرابايت ، والتنزيل عالي السرعة وغيرها.
+  <string name="server_google_network_exception_message">شبكة Google غير متاحة ، يرجى انتظار &base_app_name;
+        لتأكيد المعاملة</string>
+  <string name="my_app_update_agreement">قام &base_app_name; بتحديث الاتفاقية</string>
+  <string name="my_app_update_agreement_content"> من أجل السماح لك بالاستمتاع بخدمات تخزين سحابية أفضل ، قامت &base_app_name;
+        بتحديث اتفاقية المستخدم واتفاقية الخصوصية لضمان أمان وخصوصية بيانات المستخدم. إذا واصلت استخدام التطبيق ، فإنك تقبل المحتوى المحدث.</string>
+  <string name="free_up_space_on_your_dev">يمكن نسخ صور الهاتف احتياطيًا إلى &base_app_name;
+        لتحرير مساحة الهاتف</string>
+  <string name="desc_video_to_backup">يمكن نسخ الفيديو المحمول احتياطيًا إلى &base_app_name;
+        لتحرير مساحة الهاتف</string>
+  <string name="desc_clean_backup_files">نظف الملفات المحلية التي تم نسخها احتياطيًا إلى &base_app_name;
+        لتحرير مساحة محلية</string>
+  <string name="bottom_bar_action_add_to_netdisk">حفظ في &base_app_name;</string>
+  <string name="category_netdisk"> &base_app_name;الخاص بي</string>
+  <string name="save_to_cloud">حفظ في &base_app_name;</string>
+  <string name="url_link_tips">يمكنك تحميل المورد إلى &base_app_name; عن طريق لصق الرابط التالي ، على سبيل المثال: \n1 ارتباط من موقع المصدر \n2. ارتباط إلى المورد المرسل من قبل صديق  \n3. يتضمن تنسيق هذا الرابطhttp, https, magent.</string>
+  <string name="complete_offline_task">تم حفظ المورد بنجاح في &base_app_name;</string>
+  <string name="saved_at">تم الحفظ في: &base_app_name; %s </string>
+  <string name="transfer_error_save_myself_album">فشل الحفظ ، الملف موجود بالفعل في &base_app_name;</string>
+  <string name="dasdja_yun_no_storage">مساحة&base_app_name; غير كافية</string>
+  <string name="resource_saved">تم الحفظ بنجاح في &base_app_name;</string>
+  <string name="crash_hint_content">ايرجي إرسال رسائل بالبريد الإلكتروني لإصلاح هذه المشكلة واعتذار عن الإزعاج الذي سببته عندما تم الكشف عن العديد من الانهيارات غير العادية في &base_app_name;.</string>
+  <string name="save_video_to_continue_watching">احفظ في &base_app_name; ، فلن تضيع أثناء مشاهدة الفيلم</string>
+  <string name="save_video_to_everytime_watching">الشبكة غير مستقرة ، يمكنك حفظها في &base_app_name;
+        لمشاهدتها في أي وقت</string>
+  <string name="save_video_to_everytime_watching_match">حفظ في &base_app_name;</string>
+  <string name="business_scan_result_mac_login">%s &base_app_name; تسجيل الدخول إلى </string>
+  <string name="home_new_user_guide_text_1">كل صورة تمثل ذكرى ، ويقوم &base_app_name;
+        بحفظها لك</string>
+  <string name="home_tools_user_guide">ما هو &base_app_name;</string>
+  <string name="login_with_email">تسجيل الدخول ببريد &base_app_name;</string>
+  <string name="sign_up_with_email">تسجيل الحساب ببريد &base_app_name;</string>
+  <string name="my_app_premium_issues">مشكلة في &base_app_name; Premium</string>
+  <string name="warning_content_one">بمجرد إلغاء الحساب، لا يمكن تسجيل الدخول، وسيتم تسجيل الخروج من &base_app_name;
+        على كافة الأجهزة</string>
+  <string name="warning_content_two">سوف يتم حذف ملفاتك بشكل دائم من خوادم &base_app_name;</string>
+  <string name="search_hint">يدعم البحث عن الملفات في &base_app_name;
+        والبحث عن المحتوى في Google</string>
+  <string name="search_from_google_hint">حفظ أحدث وأكمل مقاطع الفيديو العامة المجانية في &base_app_name;
+        بنقرة واحدة</string>
+  <string name="network_search_empty_desc">لم يتم اكتشاف ملفات فيديو يمكن حفظها إلى &base_app_name;
+        في الصفحة الحالية</string>
+  <string name="search_box_hint_from_my_app">بحث عن ملفات &base_app_name;</string>
+  <string name="offline_upload_use_tips_bt_2">انقر للحفظ إلى &base_app_name;، من أجل عدم استحواذ على مساحة الهاتف</string>
+  <string name="guide_welcome_to_my_app">أهلا بكم في &base_app_name;</string>
+  <string name="guide_welcome_tips">يمكنك استخدام &base_app_name; لفعل الأمور التالية:</string>
+  <string name="dynamic_feature_module_res_not_found_err">يوجد مشكلة بحزمة التثبيت، يرجى التوجه إلى Google Play أو القنوات الرسمية الأخرى لتنزيل وإعادة تثبيت &base_app_name;</string>
+  <string name="share_tab_search_hint">ابحث عن ملفات في &base_app_name;</string>
+  <string name="share_from_my_app">&base_app_name;</string>
+  <string name="cleanup_open_premium_info">تحول إلى Premium لتتمكن من نسخ فيديوهات الهاتف المحمول إلى &base_app_name;، حرر مساحة الهاتف</string>
+  <string name="video_downloader_description">احفظ فيديوهاتك المفضلة إلى &base_app_name;</string>
+  <string name="search_file_in_my_app">البحث عن الملفات داخل &base_app_name;</string>
+  <string name="my_app_premium">&base_app_name; Premium</string>
+  <string name="net_search_save_video_title">كيف تحفظ الفيديوهات على &base_app_name;</string>
+  <string name="net_search_save_video_method_2_info">انسخ رابط الفيديو وافتح &base_app_name;، انتظر حتى يظهر إشعار بالمكان الأعلى، وانقر لعرض وحفظ الفيديو</string>
+  <string name="net_search_save_video_method_1_info">افتح TikTok/ Instagram/ FaceBook، اعثر على الفيديوهات التي تحبها وانقر على زر مشاركة، اختر [حفظ إلى &base_app_name;]</string>
+  <string name="offline_download_disclaimers_content">برجاء الانتباه إلى أن كافة الملفات التي تحفظها آتية من شبكة الإنترنت، &base_app_name;
+        غير مسؤولة عن مشروعية المحتوى الذي تقوم بحفظه. إذا اكتشفت أي ملفات أو روابط تنتهك الحقوق، فيمكنك إرسال ملاحظاتك عبر البريد الإلكتروني.</string>
+  <string name="play_audio_in_my_app">استخدام &base_app_name; للتشغيل</string>
+  <string name="business_widget_not_support_add_widget_in_app">ضم اصبعيك فوق سطح المكتب، اختر إضافة &base_app_name;
+        في "widget"</string>
+  <string name="coupon_type_repurchase_subTitle">لقد أصبحت مستخدمًا متمرسًا لـ &base_app_name;</string>
+  <string name="search_videos_in_my_app">ابحث عن الفيديوهات في &base_app_name;</string>
+  <string name="clean_storage_push_content">استخدام المساحة التخزينية بالهاتف يتجاوز %70، قم بالحفظ فورا إلى &base_app_name;
+        وقم بتنظيف الهاتف</string>
+  <string name="safe_mode_clean_desc">تنظيف البيانات المؤقتة الناتجة أثناء عملية استخدام &base_app_name;، لا يؤثر على الملفات التي تم تنزيلها وبيانات الرسائل، بعد النقر، تحتاج إلى تسجيل الدخول إلى &base_app_name;
+        مجددًا</string>
+  <string name="safe_mode_restart_desc">بعد النقر ينقطع تقدم الخلفية، أعد تشغيل &base_app_name;
+        مجددا</string>
+  <string name="disclaimer_content">برجاء الانتباه أن &base_app_name; لن تتحمل المسؤولية القانونية عن الملفات التي تقوم بحفظها. إذا اكتشفت ملفات أو روابط تنتهك حقوقك، فيمكنك إرسال ملاحظاتك عبر البريد الإلكتروني.</string>
+  <string name="upload_file_guide_one_content">يمكنك من خلال النقر هنا، اختيار أي نوع من الملفات تريد نسخه احتياطيًا وتحميله إلى &base_app_name;.</string>
+  <string name="newbie_task_guide_invite_tips">أرسل الرابط أدناه إلى صديقك، إذا نجح بتسجيل حساب في &base_app_name;
+        عبر الرابط الخاص بك، عندها يمكنك إكمال المهمة.</string>
+  <string name="newbie_share_link_declare">يرجى تحويل وحفظ ملف &base_app_name;
+        الرسمي أدناه</string>
+  <string name="newbie_share_link_file_declare">هذا ملف &base_app_name; الرسمي في الرابط</string>
+  <string name="newbie_guide_welcome">مرحبًا بك لاستخدام &base_app_name;</string>
+  <string name="report_text">سوف يستجيب تطبيق &base_app_name; سريعًا لجميع انتهاكات حقوق النشر، بما في ذلك حقوق الأفلام والدراما، وحقوق الموسيقى، وحقوق البرامج، والحقوق الأدبية وغيرها من الحقوق</string>
+  <string name="newbie_share_link_file_desc">نقل المستندات من &base_app_name;</string>
+  <string name="radar_description">الكثير من المحتوى المثير للاهتمام \ nتمت مشاركته من مستخدمي &base_app_name;
+        الذين شاركوا في برنامج الإحالة</string>
+    <string name="no_video_dialog_desc">الرجاء زيارة موقع فيديو وتشغيل الفيديو أولاً.بعد ذلك، سوف يقوم &base_app_name;
+        بتحديد مصدر الفيديو تلقائيا لكم، ويمكنكم النقر فوق زر التنزيل</string>
+  <string name="get_all_youtube_features_on_my">احصل على جميع ميزات Youtube على &base_app_name;</string>
+</resources>

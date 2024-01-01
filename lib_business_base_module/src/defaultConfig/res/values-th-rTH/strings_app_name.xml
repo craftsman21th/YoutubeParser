@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE
+  resources [
+  <!ENTITY base_app_name "CoCoBox">
+  <!ENTITY homesite_domain "www.cocoboxapp.com">
+  ]
+  >
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="account_error_toast">ไม่ได้เข้าสู่ระบบ&base_app_name; กรุณาลองใหม่อีกครั้ง</string>
+    <string name="agreement_dialog_content">ยินดีต้อนรับสู่ &base_app_name;! เมื่อคุณใช้งานคุณจะต้องเชื่อมต่อกับอินเตอร์เน็ตหรือเครือข่าย WLAN โปรดปรึกษาผู้ให้บริการในพื้นที่ของคุณ ความสำคัญกับการปกป้องความเป็นส่วนตัวและการปกป้องข้อมูลส่วนบุคคลของคุณเป็นอย่างมาก ก่อนที่คุณจะใช้บริการ &base_app_name; App โปรดอ่านข้อกำหนด "ความเป็นส่วนตัว" และ "ข้อตกลงผู้ใช้" ของ &base_app_name; อย่างรอบคอบคุณยอมรับและยอมรับข้อกำหนดทั้งหมดก่อนที่จะเริ่มใช้บริการของเรา</string>
+    <string name="already_lastet_version">&base_app_name; ของคุณเป็นรุ่นล่าสุดแล้ว</string>
+    <string name="apk_version_info">&base_app_name; เวอร์ชั่น <xliff:g id="version">%s</xliff:g></string>
+    <string name="app_name">&base_app_name;</string>
+    <string name="backup_my_app">\t| &base_app_name;</string>
+    <string name="backup_delete_tips">ไม่ลบไฟล์ที่อัปโหลดไปยัง &base_app_name;</string>
+    <string name="backup_introduce_thanks_for_your_affirmation">ขอบคุณที่ท่านให้ความไว้วางใจใน &base_app_name;</string>
+    <string name="category_my_app">My &base_app_name;</string>
+    <string name="download_apk">กำลังดาวน์โหลด &base_app_name; <xliff:g id="version">%s</xliff:g> version</string>
+    <string name="my_app_account">บัญชี&base_app_name;</string>
+    <string name="my_app_album">&base_app_name;Album</string>
+    <string name="my_app_desktop_desc">&base_app_name; Desktop</string>
+    <string name="my_app_website_desktop_guide_title">เว็บไซต์คอมพิวเตอร์ &base_app_name;</string>
+    <string name="file_list_title">&base_app_name;</string>
+    <string name="live_photo_export_title">ส่งออกไปยังพื้นที่จัดเก็บดาวน์โหลด &base_app_name;</string>
+    <string name="my_app_net_error">&base_app_name; การเชื่อมล้มเหลว ，ไม่สามารถเนื้อหาได้</string>
+    <string name="new_version">อัปเดต &base_app_name;</string>
+    <string name="result_advanced_permission_dialog_content">โปรดเปิดการอนุญาต%1$sใน [ตั้งค่า-แอป -&base_app_name;-อนุญาต] คุณสามารถใช้ฟังก์ชั่น%2$s ได้หลังจากเปิดใช้งาน</string>
+    <string name="result_advanced_permission_dialog_content_without_des">โปรดเปิดการอนุญาต%sใน[ตั้งค่า-แอป -&base_app_name;-อนุญาต] คุณสามารถใช้ฟังก์ชั่นนี้ได้หลังจากเปิด</string>
+    <string name="root_cloud">&base_app_name;</string>
+    <string name="safety_ability_text">&base_app_name; ทำให้ข้อมูลของคุณปลอดภัย</string>
+    <string name="select_secondary_warning_content">เลือกการ์ดจัดเก็บข้อมูลภายนอกเพื่อดาวน์โหลดไฟล์หลังจากลบ &base_app_name; ไฟล์ที่ดาวน์โหลดจะถูกลบด้วย จะเลือกหรือไม่?</string>
+    <string name="signature_check_failed">Please download &base_app_name; from http://&homesite_domain;/</string>
+    <string name="video_notification_title">&base_app_name; กำลังเปิดเล่นวิดีโอ</string>
+    <string name="share_other_muti_item_text">Hi ท่านกำลังใช้ &base_app_name; แบ่งปันให้ทุกคน \"<xliff:g>%s</xliff:g>\"(รอสักครู่<xliff:g>   %d</xliff:g>เอกสาร)รีบมาดูเถอะ~</string>
+    <string name="share_other_one_item_text">Hi，ท่านกำลังใช้ &base_app_name;  แบ่งปันให้ทุกท่าน \"<xliff:g>%s</xliff:g>\"รีบมาดูกันเถอะ~</string>
+    <string name="my_app_share">การแบ่งปัน &base_app_name;</string>
+    <string name="personalpage_datail_footer_button_conserve">บันทึกไปยัง&base_app_name;</string>
+    <string name="backup_setting_safe_title">&base_app_name; ปกป้องความปลอดภัยข้อมูลของท่าน</string>
+    <string name="set_coded_lock">ปลดล็อก &base_app_name;</string>
+    <string name="account_security_desc_title">&base_app_name; ปกป้องความปลอดภัยของบัญชีของคุณ</string>
+    <string name="rating_my_app">ให้กำลังใจ &base_app_name;</string>
+    <string name="rating_guide_dialog_title_sub">คลิกอีโมจิเพื่อให้คะแนน &base_app_name;</string>
+    <string name="rating_guide_dialog_title_sub_bad">&base_app_name; จะพยายามให้มากยิ่งขึ้นเพื่อเสนอบริการระดับพรีเมียมให้กับคุณ</string>
+    <string name="speed_svip_only">เปิดการใช้งาน &base_app_name; Premium สัมผัสกับประสบการณ์เล่นวิดิโอที่รวดเร็ว</string>
+    <string name="vip_video_speed_title">เปิดใช้งาน &base_app_name; Premium สามารถสัมผัสประสบการณ์เพิ่มความเร็วในการเล่นได้เป็นเท่าตัว</string>
+    <string name="vip_video_resolution_title">เปิดใช้งาน  &base_app_name; Premium  สามารถปลดล็อกระดับความคมชัดทั้งหมดได้</string>
+    <string name="feedback_msg">ขอบพระคุณที่ให้ความสนใจและสนับสนุน &base_app_name; พวกเราจะจัดการกับคำแนะนำของคุณด้วยความตั้งใจ ดำเนินการแก้ไขด้วยความรวดเร็วและพัฒนาฟังก์ชั่นที่เกี่ยวข้องให้สมบูรณ์</string>
+    <string name="privi_normal_over_limit_content">เปิดใช้งาน &base_app_name; Premium ปริมาณการส่งต่อเพื่อบันทึกสูงถึง 50000</string>
+    <string name="priv_my_app_video_backup">สมัครสมาชิก &base_app_name; Premium ได้รับสิทธิสำรองข้อมูลวิดีโอต้นฉบับ</string>
+    <string name="privi_normal_upload_over_limit_content">สมัครสมาชิก &base_app_name; Premium ได้รับสิทธิสำรองไฟล์ขนาดใหญ่</string>
+    <string name="priv_my_app_no_space_title">สมัครสมาชิก &base_app_name; Premium ได้รับพื้นที่จัดเก็บกว่า 2T</string>
+    <string name="server_google_network_exception_message">Google ผิดปกติ กรุณารอให้ &base_app_name; ยืนยันการสั่งซื้อ</string>
+    <string name="my_app_update_agreement">&base_app_name; มีการอัพเดตเงื่อนไขข้อกำหนด</string>
+    <string name="my_app_update_agreement_content">เพื่อให้คุณได้รับบริการคลาวด์ที่ดียิ่งขึ้น &base_app_name; อัพเดตเงื่อนไขการใช้งานและข้อตกลงความปลอดภัยส่วนบุคคล เพื่อเป็นการรับประกันความปลอดภัยและการปกปิดข้อมูลของผู้ใช้งาน หากทำการใช้งานต่อไปจะถือว่ายอมรับเงื่อนไขดังกล่าว</string>
+    <string name="desc_video_to_backup">วิดีโอในโทรศัพท์สามารถบันทึกได้ใน &base_app_name; เพื่อเพิ่มที่ว่าง</string>
+    <string name="desc_clean_backup_files">จัดการไฟล์ที่สำรองในโทรศัพท์ไปยัง &base_app_name; เพื่อเพิ่มพื้นที่ว่าง</string>
+    <string name="bottom_bar_action_add_to_netdisk">บันทึกไปยัง &base_app_name;</string>
+    <string name="category_netdisk">&base_app_name; ของฉัน</string>
+    <string name="save_to_cloud">บันทึกไปยัง&base_app_name;</string>
+    <string name="url_link_tips">คุณสามารถอัพโหลดแหล่งต้นทางทาง &base_app_name; โดยการวางลิงก์ดังกล่าว ตัวอย่าง \n1. ลิงก์จากเว็บไซต์ต้นทาง\n2.ลิ้งก์จากต้นทางที่ส่งมาจากเพื่อน\n3.รูปแบบลิ้งก์นี้ประกอบด้วย http, https, magent.</string>
+    <string name="complete_offline_task">บันทึกต้นทางที่ &base_app_name; สำเร็จ</string>
+    <string name="saved_at">บันทึกไปยัง&base_app_name;%s</string>
+    <string name="transfer_error_save_myself_album">บันทึกล้มเหลว ไฟล์นี้มีอยู่ใน &base_app_name; แล้ว</string>
+    <string name="djadjksa_yun_no_storage">พื้นที่จัดเก็บ &base_app_name; ไม่เพียงพอ</string>
+    <string name="resource_saved">บันทึกไปยัง &base_app_name; สำเร็จ</string>
+    <string name="crash_hint_content">ตรวจพบ &base_app_name; เกิดความผิดพลาดหลายครั้ง กรุณาส่งอีเมลติดต่อเราเพื่อแก้ไขปัญหาโดยเร่งด่วน​
+ขออภัยในความไม่สะดวก</string>
+    <string name="save_video_to_continue_watching">บันทึกไปยัง &base_app_name; รับชมภาพยนต์ได้ไม่สูญหาย</string>
+    <string name="save_video_to_everytime_watching">อินเตอร์เน็ตไม่เสถียร บันทึกไปยัง &base_app_name; เพื่อรับชมได้ตลอดเวลา</string>
+    <string name="save_video_to_everytime_watching_match">บันทึกไปยัง &base_app_name;</string>
+    <string name="business_scan_result_mac_login">เข้าสู่ระบบ%s &base_app_name;</string>
+    <string name="home_new_user_guide_text_1">รูปภาพแต่ละรูปเป็นตัวแทนของความทรงจำ\n&base_app_name; จะเก็บรักษาให้คุณ</string>
+    <string name="home_tools_user_guide">&base_app_name; คืออะไร</string>
+    <string name="login_with_email">เข้าสู่ระบบด้วยอีเมล &base_app_name;</string>
+    <string name="sign_up_with_email">ลงทะเบียนด้วยอีเมล &base_app_name;</string>
+    <string name="my_app_premium_issues">ปัญหา &base_app_name; Premium</string>
+    <string name="warning_content_one">เมื่อบัญชีถูกยกเลิกแล้ว จะไม่สามารถเข้าสู่ระบบได้และ&base_app_name; จะออกจากระบบบนอุปกรณ์ทั้งหมด</string>
+    <string name="warning_content_two">ไฟล์ของคุณจะถูกลบออกจากเซิร์ฟเวอร์ &base_app_name; ถาวร</string>
+    <string name="search_hint">รองรับการค้นหาไฟล์ใน &base_app_name; และค้นหาเนื้อหาใน Google</string>
+    <string name="search_from_google_hint">วิดีโอสาธารณะใหม่ฟรีและสมบูรณ์ที่สุดจะถูกเก็บไว้ใน &base_app_name; ในคลิกเดียว</string>
+    <string name="network_search_empty_desc">ไม่พบไฟล์วิดีโอที่สามารถบันทึกลงใน &base_app_name; ในหน้าปัจจุบันได้</string>
+    <string name="search_box_hint_from_my_app">ค้นหาไฟล์ใน &base_app_name;</string>
+    <string name="offline_upload_use_tips_bt_2">คลิกเพื่อบันทึกลงใน &base_app_name; โดยไม่ต้องใช้พื้นที่ในโทรศัพท์</string>
+    <string name="guide_welcome_to_my_app">ยินดีต้อนรับสู่ &base_app_name;</string>
+    <string name="guide_welcome_tips">คุณสามารถใช้ &base_app_name; เพื่อทำสิ่งต่อไปนี้ได้</string>
+    <string name="dynamic_feature_module_res_not_found_err">หากมีปัญหากับแพ็คเกจการติดตั้ง โปรดไปที่ Google Play หรือช่องทางการอื่นเพื่อดาวน์โหลดและติดตั้ง &base_app_name; ใหม่</string>
+    <string name="share_tab_search_hint">ค้นหาไฟล์ใน &base_app_name;</string>
+    <string name="share_from_my_app">&base_app_name;</string>
+    <string name="cleanup_open_premium_info">อัพเดทเป็นPremiumสามารถสำรองวิดีโอในโทรศัพท์ไปยัง&base_app_name; เพิ่มพื้นที่ว่างในโทรศัพท์</string>
+    <string name="video_downloader_description">บันทึกวิดีโอโปรดไปที่ &base_app_name;</string>
+    <string name="search_file_in_my_app">ค้นหาไฟล์ใน &base_app_name;</string>
+    <string name="my_app_premium">&base_app_name; พรีเมียม</string>
+    <string name="net_search_save_video_title">วิธีบันทึกวิดีโอไปยัง &base_app_name; อย่างไร</string>
+    <string name="net_search_save_video_method_2_info">คัดลอกลิงก์วิดีโอแล้วเปิด &base_app_name; หลังจากได้รับที่ด้านบน คลิกเพื่อดูและบันทึกวิดีโอ</string>
+    <string name="net_search_save_video_method_1_info">เปิด TikTok/Instagram/Facebook ค้นหาวิดีโอที่ชอบ แล้วคลิกปุ่มแชร์ เลือก [บันทึกไปที่ &base_app_name;]</string>
+    <string name="offline_download_disclaimers_content">ไฟล์ที่คุณบันทึกทั้งหมดมาจากอินเทอร์เน็ต &base_app_name; ไม่รับผิดชอบต่อความถูกต้องตามกฎหมายของเนื้อหาที่คุณบันทึก หากพบไฟล์หรือลิงก์ที่ละเมิดสิทธิ์ คุณสามารถให้ข้อเสนอแนะทางอีเมลได้</string>
+    <string name="play_audio_in_my_app">เล่นใน&base_app_name;</string>
+    <string name="business_widget_not_support_add_widget_in_app">วางบนเดสก์ท็อป เลือกเพิ่ม &base_app_name; ใน "Widget"</string>
+    <string name="coupon_type_repurchase_subTitle">คุณได้เป็นผู้ใช้ที่มีประสบการณ์ของ &base_app_name; แล้ว</string>
+    <string name="search_videos_in_my_app">ค้นหาวิดีโอใน &base_app_name;</string>
+    <string name="clean_storage_push_content">การใช้ที่จัดเก็บข้อมูลโทรศัพท์เกิน 70% บันทึกไปที่ &base_app_name; ทันทีและล้างโทรศัพท์</string>
+    <string name="safe_mode_clean_desc">ล้างข้อมูลชั่วคราวที่สร้างขึ้นระหว่างการใช้ &base_app_name; โดยไม่ส่งผลกระทบต่อไฟล์ที่ดาวน์โหลดและข้อมูลข้อความ หลังจากคลิก คุณจะต้องเข้าสู่ระบบ &base_app_name; อีกครั้ง</string>
+    <string name="safe_mode_restart_desc">หลังจากคลิกแล้ว ให้ระงับกระบวนการพื้นหลังและรีสตาร์ท &base_app_name;</string>
+    <string name="disclaimer_content">โปรดทราบว่า &base_app_name; จะไม่รับผิดชอบต่อความถูกต้องตามกฎหมายของไฟล์ที่คุณบันทึก หากพบไฟล์หรือลิงก์ที่ละเมิดสิทธิ์ คุณสามารถให้ข้อเสนอแนะทางอีเมลได้</string>
+    <string name="upload_file_guide_one_content">คุณสามารถอัปโหลดไฟล์ประเภทใดก็ได้ที่คุณต้องการสำรองข้อมูลลงใน &base_app_name; โดยคลิ๊กที่นี่</string>
+    <string name="newbie_task_guide_invite_tips">ส่งลิงก์ด้านล่างให้เพื่อนของคุณ เขาลงทะเบียนแอป &base_app_name; ผ่านลิงก์ของคุณสำเร็จ คุณถือว่าทำงานให้สำเร็จ</string>
+    <string name="newbie_share_link_declare">ดัมพ์ไฟล์ &base_app_name; อย่างเป็นทางการด้านล่าง</string>
+    <string name="newbie_share_link_file_declare">นี่คือไฟล์ &base_app_name; อย่างเป็นทางการในลิงก์</string>
+    <string name="newbie_guide_welcome">ยินดีต้อนรับสู่ &base_app_name;</string>
+    <string name="report_text">&base_app_name; จะจัดการทุกการละเมิดลิขสิทธิ์อย่างรวดเร็ว อันประกอบไปด้วย สิทธิในภาพยนตร์และละครทีวี สิทธิในดนตรีกรรม สิทธิในซอฟต์แวร์ สิทธิในวรรณกรรม และสิทธิอื่น ๆ</string>
+    <string name="newbie_share_link_file_desc">ถ่ายโอนไฟล์จาก &base_app_name;</string>
+    <string name="radar_description">เนื้อหาที่น่าสนใจมากมาย\nแชร์จากผู้ใช้ &base_app_name; ที่เข้าร่วมโปรแกรมแนะนำ</string>
+    <string name="no_video_dialog_desc">โปรดไปที่ไซต์วิดีโอและเล่นวิดีโอก่อน หลังจากนั้น &base_app_name; จะค้นหาทรัพยากรวิดีโอให้คุณโดยอัตโนมัติ และปุ่มดาวน์โหลดจะใช้งานได้ ให้กดคลิก</string>
+    <string name="get_all_youtube_features_on_aa">&base_app_name; รองรับฟังก์ชันทั้งหมดของ YouTube</string>
+</resources>

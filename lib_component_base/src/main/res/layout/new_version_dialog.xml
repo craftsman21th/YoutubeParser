@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal">
+    <LinearLayout
+            android:id="@+id/dialogContentView"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_width="288dp"
+            android:background="@drawable/background_with_radian">
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+            <ImageView android:id="@+id/img_close"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentEnd="true"
+                       android:paddingTop="14dip"
+                       android:paddingRight="14dip"
+                       android:paddingLeft="14dip"
+                       android:src="@drawable/guide_close"
+                       android:visibility="gone"/>
+            <LinearLayout android:id="@+id/title_content"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/dimen_25dp"
+                          android:layout_marginLeft="24dp"
+                          android:layout_marginRight="24dp"
+                          android:layout_marginBottom="@dimen/dimen_11dp"
+                          android:orientation="horizontal"
+                          android:visibility="gone">
+                <com.moder.compass.ui.widget.CircleImageView
+                        android:id="@+id/image_title"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:src="@drawable/default_user_head_icon"
+                        android:layout_marginRight="@dimen/new_dialog_item_text_padding_left"
+                        android:visibility="gone"/>
+                <TextView android:id="@+id/title"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/text_size_large"
+                          android:visibility="gone"
+                          android:text="title"
+                          android:textStyle="bold"
+                          android:textColor="@color/lighter_black"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView android:id="@+id/sub_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:text="@string/quick_action_rename"
+                  style="@style/Moder.TextAppearance.Small.Gray"
+                  android:visibility="gone"/>
+
+        <!-- 一下三个content选择其中一个显示 -->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <FrameLayout
+                    android:id="@+id/customContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/content_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/new_dialog_content_padding_left"
+                    android:paddingStart="@dimen/new_dialog_content_padding_left"
+                    android:paddingRight="@dimen/new_dialog_content_padding_right"
+                    android:paddingEnd="@dimen/new_dialog_content_padding_right"
+                    android:overScrollMode="never"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/new_dialog_main_margin_top"
+                    android:layout_marginBottom="@dimen/new_dialog_main_margin_bottom">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView android:id="@+id/content_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="@dimen/new_dialog_content_padding_left"
+                      android:paddingStart="@dimen/new_dialog_content_padding_left"
+                      android:paddingRight="@dimen/new_dialog_content_padding_right"
+                      android:paddingEnd="@dimen/new_dialog_content_padding_right"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textSize="@dimen/text_size_middle"
+                      android:textColor="@color/new_version_dialog_content"
+                      android:visibility="gone"
+                      android:layout_marginBottom="@dimen/new_dialog_main_margin_bottom"/>
+        </LinearLayout>
+
+
+        <!-- 一下三个智能选择其其一进行显示 接收用户点击操作 -->
+        <TextView android:id="@+id/bottom_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:paddingLeft="@dimen/new_dialog_item_text_padding_left"
+                  android:paddingStart="@dimen/new_dialog_item_text_padding_left"
+                  android:paddingRight="@dimen/new_dialog_item_text_padding_right"
+                  android:paddingEnd="@dimen/new_dialog_item_text_padding_right"
+                  android:paddingBottom="@dimen/new_dialog_main_padding_bottom"
+                  android:gravity="center"
+                  style="@style/Moder.TextAppearance.Large.Blue"
+                  android:visibility="gone"/>
+
+        <LinearLayout
+                android:id="@+id/bottom_two_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:background="@color/color_e5e5e5"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <Button
+                        android:id="@+id/cancel"
+                        style="@style/NewVersionDialog.Button.Cancel"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:text="@string/cancel"/>
+                <View android:layout_width="1px"
+                      android:layout_height="@dimen/dimen_18dp"
+                      android:id="@+id/divider_cancel_ok_line"
+                      android:layout_gravity="center_vertical"
+                      android:background="@color/color_e5e5e5"/>
+                <Button
+                        android:id="@+id/confirm"
+                        style="@style/NewVersionDialog.Button"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:text="@string/confirm"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/bottom_one_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+            <View android:layout_width="match_parent"
+                  android:layout_height="1px"
+                  android:background="@color/color_e5e5e5"/>
+            <Button
+                    android:id="@+id/single_confirm_button"
+                    style="@style/NewVersionDialog.Button"
+                    android:background="@null"
+                    android:text="@string/know_it"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

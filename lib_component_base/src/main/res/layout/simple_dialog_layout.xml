@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/dialogContentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_with_radian"
+    android:layout_marginHorizontal="@dimen/dimen_14dp">
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_22dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/delete_file_dialog_title"
+            android:textColor="@color/color_030B1A"
+            android:textSize="@dimen/dimen_14dp" />
+        
+        
+        <TextView
+            android:id="@+id/tv_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginHorizontal="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:textColor="@color/color_495366"
+            android:textSize="@dimen/dimen_12dp"
+            android:visibility="visible"
+            tools:text="@string/video_download_desc_3" />
+        
+        <TextView
+            android:id="@+id/tv_dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginTop="@dimen/dimen_23dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_selector_btn"
+            android:elevation="1px"
+            android:gravity="center"
+            android:minWidth="@dimen/dimen_165dp"
+            android:paddingHorizontal="@dimen/dimens15dp"
+            android:text="@string/button_iknow"
+            android:textColor="@drawable/chain_dialog_btn_text_selector"
+            android:textSize="@dimen/dimen_14dp"
+            android:visibility="visible" />
+    
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/dialog_top_cancel"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_gravity="right"
+        android:scaleType="center"
+        android:src="@drawable/dialog_normal_cancel_icon"
+        android:visibility="visible"
+        app:tint="@color/color_737373" />
+</FrameLayout>

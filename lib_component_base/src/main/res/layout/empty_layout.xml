@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empty_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <com.moder.compass.ui.lottie.DynamicHostLottieView
+        android:id="@+id/empty_loading_lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:maxWidth="240dp"
+        android:text="@string/transfer_list_empty"
+        android:textColor="@color/color_8E8E8E"
+        android:textSize="@dimen/dimen_13dp" />
+
+    <TextView
+        android:id="@+id/empty_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:maxWidth="240dp"
+        android:textColor="@color/color_8E8E8E"
+        android:textSize="@dimen/dimen_13dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/vip_empty_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:maxWidth="240dp"
+        android:textColor="@color/gold"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/btn_forward"
+        style="@style/Moder.TextAppearance.Middle.White"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_selector_btn"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/fl_upload_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/dimen_50dp"
+        android:paddingTop="@dimen/dimen_27dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/btn_upload_file"
+            style="@style/Moder.TextAppearance.Middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_selector_btn"
+            android:gravity="center"
+            android:minHeight="@dimen/dimen_40dp"
+            android:paddingLeft="@dimen/dimen_25dp"
+            android:paddingRight="@dimen/dimen_25dp"
+            android:text="@string/empty_folder_upload_file"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/dimen_14dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_premium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="-8dp"
+            android:layout_marginRight="-12dp"
+            android:background="@drawable/premium_radius_12_gradient_bg"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dimen_6dp"
+            android:paddingVertical="1dp"
+            android:text="@string/vip_call"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btn_refresh"
+        style="@style/Moder.TextAppearance.Middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/null_drawable"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/menu_item_refresh"
+        android:textColor="@color/color_0797c4"
+        android:textSize="@dimen/dimen_14dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</merge>

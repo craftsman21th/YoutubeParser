@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ModerDialogBackgroundstyle"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buy_unzip_vip_dialog_background"
+    android:gravity="center"
+    android:paddingBottom="@dimen/dimen_10dp">
+
+    <RelativeLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/content_info"
+            style="@style/Moder.TextAppearance.Large.LighterBlack.Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:textSize="@dimen/dimen_18dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/sub_content"
+            style="@style/Moder.TextAppearance.Small.DarkGray99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_info"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2" />
+
+        <ImageView
+            android:id="@+id/dialog_content_image"
+            android:layout_below="@+id/sub_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_below="@+id/dialog_content_image"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_footer_one_button"
+        android:layout_width="@dimen/dialog_vip_guide_with"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_button_one"
+            style="@style/Moder.TextAppearance.Middle.LightBlue"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null" />
+    </LinearLayout>
+
+</LinearLayout>

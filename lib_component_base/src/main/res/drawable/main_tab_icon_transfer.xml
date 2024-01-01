@@ -1,0 +1,15 @@
+<!--
+  ~ Copyright (C) 2021 Baidu, Inc. All Rights Reserved.
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:pathData="M512,512m-512,0a512,512 0,1 0,1024 0,512 512,0 1,0 -1024,0Z"
+      android:fillColor="#00000000"/>
+  <path
+      android:pathData="M426.67,290.13c18.84,0 34.13,16.55 34.13,36.97v369.8c0,14.95 -8.33,28.43 -21.06,34.13a32.22,32.22 0,0 1,-37.21 -7.99l-102.4,-110.93a39.19,39.19 0,0 1,0 -52.29,32.29 32.29,0 0,1 48.26,0l44.13,47.79V327.1c0,-20.41 15.29,-36.97 34.13,-36.97zM597.33,733.87c-18.84,0 -34.13,-16.55 -34.13,-37V327.1c0,-14.95 8.33,-28.43 21.06,-34.13a32.26,32.26 0,0 1,37.21 7.99l102.4,110.93c13.31,14.44 13.31,37.89 0,52.29a32.32,32.32 0,0 1,-48.26 0L631.47,416.43v280.47c0,20.45 -15.29,37 -34.13,37z"
+      android:fillColor="#030B1A"/>
+</vector>

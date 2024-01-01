@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_pressed="true"> <!-- 点击状态 -->
+    <layer-list>
+      <item>
+        <shape>
+          <solid android:color="@android:color/transparent" />
+          <stroke android:color="@color/dark_mode_partition_line" android:width="1px"/>
+        </shape>
+      </item>
+      <!-- 边框线 -上下边框 -->
+      <item android:bottom="1px" android:top="1px">
+        <shape>
+          <solid android:color="@color/bg_dn_about_me_pressed_item_color" />
+        </shape>
+      </item>
+      <!-- 背景色 FFF1F1F1 -->
+    </layer-list>
+  </item>
+  <item android:state_pressed="false"> <!-- 正常状态 -->
+    <layer-list>
+      <item>
+        <shape>
+          <solid android:color="@android:color/transparent" />
+          <stroke android:color="@color/dark_mode_partition_line" android:width="1px"/>
+        </shape>
+      </item>
+      <!-- 边框线 -上下边框 -->
+      <item android:bottom="1px" android:top="1px">
+        <shape>
+          <solid android:color="@color/first_level_bg_color" />
+        </shape>
+      </item>
+      <!-- 背景色 -->
+    </layer-list>
+  </item>
+
+</selector>

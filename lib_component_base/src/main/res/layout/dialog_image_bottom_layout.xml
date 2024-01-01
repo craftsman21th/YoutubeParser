@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/ModerDialogBackgroundstyle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+    android:background="@drawable/white50_white_reverse_drawable"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_20dp">
+    <!--头部图片-->
+    <ImageView
+            android:id="@+id/dialog_content_image"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back_up_trans_default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <!--右上角取消按钮-->
+    <ImageView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_normal_cancel_icon"
+            android:padding="@dimen/dimen_10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <!--开启照片自动备份-->
+    <TextView
+            android:id="@+id/content_info"
+            android:layout_width="@dimen/dialog_vip_guide_with"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_19"
+            android:text="@string/quicksetting_album_backup_item_check_title_open"
+            android:textColor="@color/gray_21_A90"
+            android:paddingLeft="@dimen/dimen_23dp"
+            android:paddingRight="@dimen/dimen_23dp"
+
+            android:gravity="center"
+            android:textSize="@dimen/dimen_17dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_content_image" />
+
+    <!--重要照片永不丢失-->
+    <TextView
+            android:id="@+id/sub_content"
+            android:layout_width="@dimen/dialog_vip_guide_with"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/album_backup_dialog_info"
+            android:textColor="@color/gray_21_A90"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content_info" />
+
+
+    <!-- dialog footer -->
+
+    <TextView
+            android:id="@+id/dialog_button_cancel"
+            style="@style/Moder.TextAppearance.Small"
+            android:layout_width="145dp"
+            android:layout_height="@dimen/dimen_46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/dimen_13dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/cancel"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/gray_21_A90"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/dialog_button_confirm"
+            app:layout_constraintTop_toBottomOf="@+id/sub_content" >
+    </TextView>
+
+    <TextView
+            android:id="@+id/dialog_button_confirm"
+            android:textColor="#ffffff"
+            android:layout_width="145dp"
+            android:layout_height="@dimen/dimen_46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/blue_button_bg"
+            android:text="@string/ok"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/dialog_button_cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub_content" >
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

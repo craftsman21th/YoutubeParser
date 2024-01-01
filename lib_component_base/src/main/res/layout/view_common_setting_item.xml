@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:skin="http://schemas.android.com/android/skin"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/view_common_setting_item_root"
+  android:layout_width="match_parent"
+  android:layout_height="56dp"
+  android:paddingHorizontal="@dimen/dimen_13dp">
+  
+  <ImageView
+    android:id="@+id/item_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="13dp"
+    android:src="@drawable/icon_settings"
+    android:visibility="gone"
+    skin:enable="false"
+    tools:visibility="visible" />
+  
+  <LinearLayout
+    android:id="@+id/title_layout"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@+id/item_icon"
+    android:orientation="vertical">
+    
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:orientation="horizontal">
+      
+      <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_remind"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxLines="2"
+        android:text="测试测试试"
+        android:textColor="@color/text_content_color" />
+      
+      <View
+        android:id="@+id/item__hint"
+        android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="gone" />
+      
+      <TextView
+        android:id="@+id/item_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_9dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="测试测试试"
+        android:textColor="@color/bg_dn_about_me_storage_text_color"
+        android:textSize="@dimen/text_size_smaller"
+        android:visibility="gone"
+        tools:visibility="visible" />
+    
+    </LinearLayout>
+    
+    <TextView
+      android:id="@+id/item_info"
+      style="@style/Moder.TextAppearance.Smaller"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="3dip"
+      android:ellipsize="end"
+      android:singleLine="true"
+      android:text="测试测试试测试"
+      android:textColor="@color/text_assist_color"
+      android:visibility="gone"
+      tools:visibility="visible" />
+  
+  </LinearLayout>
+  
+  <ImageView
+    android:id="@+id/item_single_check_box"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignWithParentIfMissing="true"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/item_guide_arrow"
+    android:src="@drawable/ic_chb_single_selected"
+    android:visibility="gone" />
+  
+  <CheckBox
+    android:id="@+id/item_check_box"
+    style="@style/CheckboxStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:visibility="invisible"
+    tools:visibility="visible" />
+  
+  <ProgressBar
+    android:id="@+id/item_check_box_loading"
+    style="@style/Moder.ProgressBar.Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/item_check_box"
+    android:layout_alignRight="@+id/item_check_box"
+    android:layout_centerVertical="true"
+    android:visibility="invisible" />
+  
+  <ImageView
+    android:id="@+id/item_guide_arrow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/icon_enter" />
+  
+  <TextView
+    android:id="@+id/item_status_text"
+    style="@style/Moder.TextAppearance.Smaller"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignWithParentIfMissing="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="8dp"
+    android:layout_toLeftOf="@+id/item_guide_arrow"
+    android:layout_toRightOf="@+id/title_layout"
+    android:ellipsize="end"
+    android:gravity="right"
+    android:singleLine="true"
+    android:text="已开启"
+    android:textColor="@color/text_assist_color" />
+  
+  <ImageView
+    android:id="@+id/item_status_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignWithParentIfMissing="true"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/item_guide_arrow"
+    android:src="@drawable/icon_backup_running"
+    android:visibility="gone" />
+  
+  <LinearLayout
+    android:id="@+id/setting_item_bottom_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone">
+    
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@color/dark_mode_partition_line" />
+  </LinearLayout>
+
+</RelativeLayout>

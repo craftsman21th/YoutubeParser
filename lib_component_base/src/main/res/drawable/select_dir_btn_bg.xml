@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- 点击状态 -->
+  <item android:state_pressed="true">
+    <shape android:shape="rectangle">
+      <corners android:radius="@dimen/dimen_22dp" />
+      <solid android:color="@color/color_F1F3F8" />
+    </shape>
+  </item>
+
+  <!-- 正常状态 -->
+  <item android:state_pressed="false">
+    <shape android:shape="rectangle">
+      <corners android:radius="@dimen/dimen_22dp" />
+      <solid android:color="@color/color_F1F3F8" />
+    </shape>
+  </item>
+
+</selector>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string-array name="type_title_items">
+    <item>@string/type_all</item>
+    <item>@string/type_video</item>
+    <item>@string/type_audio</item>
+    <item>@string/type_pic</item>
+    <item>@string/type_document</item>
+    <item>@string/type_app</item>
+    <item>@string/type_other</item>
+    <item>@string/type_bt</item>
+  </string-array>
+
+  <!-- 设置页面网盘各种文件使用量的颜色值 -->
+  <integer-array name="settings_colors">
+    <item>@color/progress_pic_blue</item>
+    <item>@color/progress_doc_red</item>
+    <item>@color/progress_music_green</item>
+    <item>@color/progress_video_yellow</item>
+    <item>@color/progress_app_deepgreen</item>
+    <item>@color/progress_other_purple</item>
+    <item>@color/progress_unuse_gray</item>
+  </integer-array>
+
+  <!-- 专辑菜单 -->
+
+</resources>

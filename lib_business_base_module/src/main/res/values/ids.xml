@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item type="id" name="image_load_from_info"/>
+  <item name="time_line_image_tag_position" type="id"/>
+  <item name="time_line_image_tag_request" type="id"/>
+
+</resources>

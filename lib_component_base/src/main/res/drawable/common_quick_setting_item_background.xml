@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_pressed="true"> <!-- 点击状态 -->
+    <shape>
+      <solid android:color="@color/bg_dn_about_me_pressed_item_color" />
+    </shape>
+  </item>
+  <item android:state_pressed="false"> <!-- 正常状态 -->
+    <shape>
+      <solid android:color="@color/first_level_bg_color" />
+    </shape>
+  </item>
+</selector>

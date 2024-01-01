@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~
+  -->
+<resources>
+    <color name="color_1a_000000">#1a000000</color>
+    <!-- 文件缩略图色值 -->
+    <!-- DOC文档类型的背景色色值 #3e9ae8 -->
+    <color name="thumb_doc">#FF3E9AE8</color>
+    <!-- XLS文档类型的背景色色值 #2fb266 -->
+    <color name="thumb_xls">#FF2FB266</color>
+    <!-- PPT文档类型的背景色色值 #eb8b18 -->
+    <color name="thumb_ppt">#FFEB8B18</color>
+    <!-- TXT文档类型的背景色色值 #91a7b9 -->
+    <color name="thumb_txt">#FF91a7b9</color>
+    <!-- PDF文档类型的背景色色值 #e33737 -->
+    <color name="thumb_pdf">#e33737</color>
+    <!-- HTML文档类型的背景色色 #9198f2 -->
+    <color name="thumb_html">#9198f2</color>
+    <!-- 图片类型的背景色色值 #c9c9c9 -->
+    <color name="thumb_image">#c9c9c9</color>
+    <!-- 音乐类型的背景色色值 #8183f1 -->
+    <color name="thumb_music">#8183f1</color>
+    <!-- 视频类型的背景色色值 #6d8aab -->
+    <color name="thumb_video">#6d8aab</color>
+    <!-- VCF类型的背景色色值 #59b6ef -->
+    <color name="thumb_vcf">#59b6ef</color>
+    <!-- VSD类型的背景色色值 #54abf3 -->
+    <color name="thumb_vsd">#54abf3</color>
+    <!-- APK类型的背景色色值 #97c932 -->
+    <color name="thumb_apk">#97c932</color>
+    <!-- BT类型的背景色色值 #72af46 -->
+    <color name="thumb_bt">#72af46</color>
+    <!-- ZIP类型的背景色色值 #8d9ca6 -->
+    <color name="thumb_zip">#8d9ca6</color>
+    <!-- 未知类型的背景色色值 #bec3c7 -->
+    <color name="thumb_unknow">#bec3c7</color>
+    <color name="welcome_bg">#FFFEFEFE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ic_default_image">#FFF8F8F9</color>
+
+    <color name="bg_dn_home_page">#FFFFFF</color>
+    <color name="timeline_image_default_bg_color">#EFEFEF</color>
+    <color name="color_4e4c4f">#4E4C4F</color>
+    <color name="color_5564FF">#5564FF</color>
+    <color name="color_efefef">#EFEFEF</color>
+    <color name="color_F9F9FB">#F9F9FB</color>
+    <color name="color_5564ff_40">#995564FF</color>
+    <color name="color_5564FF_10">#1A5564FF</color>
+    <color name="color_cceb4e">#CCEB4E</color>
+    <color name="color_33cceb50">#33CCEB50</color>
+    <color name="color_0797C4">#0797C4</color>
+</resources>

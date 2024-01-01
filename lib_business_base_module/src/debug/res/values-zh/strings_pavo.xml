@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="my_cloud_disk">我的云空间</string>
+    <string name="resource_radar">资源雷达</string>
+    <string name="tab_explore">探索</string>
+    <string name="cloud">云文件</string>
+    <string name="upload_photo">上传照片</string>
+    <string name="tools_of_choice">精选工具</string>
+    <string name="hot_movie">热门影视</string>
+    <string name="resource_share">分享资源</string>
+    <string name="resource_share_desc">便捷的将资源分享给任何人</string>
+    <string name="bt_parse">下载资源</string>
+    <string name="bt_parse_desc">便捷保存各种链接和平台的资源</string>
+    <string name="resource_radar_desc">发现更多有趣的资源</string>
+    <string name="tab_my_files">文件</string>
+    <string name="downloaded">已下载</string>
+    <string name="new_version_msg_bug_fixes">修复了一些已知问题</string>
+    <string name="new_version_msg_optimized_for_better_experience">更好的体验优化</string>
+    <string name="new_version_title">更新内容</string>
+    <string name="background_download">已在后台下载</string>
+    <string name="bt_files">BT文件</string>
+    <string name="link_url">链接URL</string>
+    <string name="video_downloader_desc_1">从以下站点下载资源</string>
+    <string name="video_downloader_desc_2">通过BT文件和链接下载资源</string>
+    <string name="offline_upload_use_tips_link_2">解析完成后选择你想下载的资源及保存方式</string>
+    <string name="offline_upload_use_tips_3">保存完成后可在对应位置查看资源</string>
+    <string name="net_search_hint_1">找到你想下载的资源</string>
+    <string name="net_search_hint_2">点击右下角的下载按钮</string>
+    <string name="net_search_hint_3">选择视频保存方式，一键保存</string>
+    <string name="save_to_cloud2">存入云空间</string>
+    <string name="download_to_my_phone_too">同时下载到手机</string>
+    <string name="video_and_ext">Video (%s)</string>
+    <string name="audio_and_ext">Audio (%s)</string>
+    <string name="parse_failed">解析失败</string>
+    <string name="net_search_detect_shield_tips">由于法律的限制，此网站上的视频不能下载，请到其他网站下载。</string>
+    <string name="how_to_use2">如何使用？</string>
+    <string name="video_download_desc_3">1.打开你想下载资源的网站；\n\n2.找到你想下载的资源；\n\n3.点击右下角的下载按钮</string>
+    <string name="guide_to_explore">没有感兴趣内容？</string>
+    <string name="unsupported_websites">不支持的网站</string>
+    <string name="data_null">数据为空</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="url_unavailable">URL不可用</string>
+    <string name="duration_unknown">时长未知</string>
+    <string name="title_recommendations">推荐关注</string>
+
+    <string name="ban_adult_content_new">欢迎！请选择你希望在App内看到的内容</string>
+    <string name="ban_adult_choice1_new">包含成人内容</string>
+    <string name="ban_adult_choice1_desc">请确保你已满18岁</string>
+    <string name="ban_adult_choice3_new">不包含成人内容</string>
+    <string name="ban_adult_choice_setting_hint">可在设置页修改</string>
+    <string name="ban_adult_choice_modify_hint">修改成功</string>
+
+    <string name="setting_ban_content">内容偏好</string>
+</resources>

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-parcelize'
+apply from: '../versions.gradle'
+
+android {
+    namespace "com.mars.united.international.webplayer"
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 33
+        buildFeatures {
+            dataBinding = true
+        }
+    }
+
+    //jdk配置
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main.res.srcDirs = [
+                'src/main/res',
+                'src/main/res-public'
+        ]
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation project(':lib_network')
+    implementation project(':lib_component_base')
+    implementation project(':lib_business_kernel')
+
+    implementation deps.support.app_compat
+    implementation deps.support.recyclerview
+    implementation deps.constraint_layout
+    implementation deps.support.core_ktx
+    implementation deps.lifecycle.runtime_ktx
+    implementation deps.mediarouter
+    implementation deps.gson
+    implementation deps.mozilla_rhino
+    implementation deps.databinding.runtime
+
+    api deps.support.exoplayer
+    api deps.support.exoplayer_ui
+}

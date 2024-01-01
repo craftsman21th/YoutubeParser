@@ -1,0 +1,101 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+apply from: '../versions.gradle'
+
+android {
+    namespace  "com.dubox.drive.basemodule"
+    compileSdkVersion 33
+    buildToolsVersion "29.0.3"
+
+    //默认配置
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 33
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+    //jdk配置
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            //So路径配置
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi'
+            universalApk true
+        }
+    }
+    //androidExtensions {
+    //    experimental = true
+    //}
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(include: ['*.aar'], dir: 'libs')
+//    compileOnly fileTree(include: ['*.jar'], dir: 'libs')
+//    compileOnly fileTree(include: ['*.aar'], dir: 'libs')
+//    api project(path: ':lib_security')
+
+    // multidex
+    api deps.support.multidex
+    api deps.mars.glideplus
+    implementation deps.mars.widget
+    //    implementation project(':lib_kernel')
+    implementation project(':lib_business_kernel')
+    implementation deps.mars.core
+    implementation deps.support.design
+    implementation deps.support.activity
+    implementation deps.support.exifinterface
+    implementation deps.lifecycle.viewmodel_ktx
+    implementation deps.rxjava.rxjava
+    implementation deps.rxjava.rxandroid
+    api deps.firebase.config
+    implementation platform(deps.firebase.bom)
+    api deps.firebase.appsflyer
+    api deps.firebase.installreferrer
+    implementation deps.firebase.analytics
+    api deps.firebase.config
+    api deps.mars.videosdk
+    implementation deps.kotlin.stdlib
+
+    implementation deps.autoservice.service
+    implementation deps.autoservice.annotation
+    implementation deps.autodata.database
+    // implementation deps.rubik.rubik
+    implementation deps.mars.kotlinx
+    implementation deps.mars.scheduler
+    implementation deps.mars.thread_scheduler_android
+    implementation deps.mars.thread_scheduler_monitor
+    //implementation project(path: ':lib_account')
+    //implementation project(path: ':lib_dynamic_so')
+    implementation deps.mars.client_monitor
+    implementation deps.google.gms_services_ads_identifier
+    implementation deps.google.gms_services_safetynet
+    implementation deps.google.gms_services_base
+    implementation deps.google.play_integrity
+    implementation deps.firebase.installations
+    implementation deps.lifecycle.runtime_ktx
+
+    // rubikKapt deps.rubik.kapt
+    kapt deps.autoservice.processor
+    kapt deps.autocode.core
+}
+
+

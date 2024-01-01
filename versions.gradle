@@ -1,0 +1,343 @@
+ext.deps = [:]
+
+def versions = [:]
+versions.support = "1.2.0"
+versions.fragment = "1.2.4"
+versions.recyclerview = "1.1.0"
+versions.gridlayout = "1.0.0"
+versions.design = "1.2.1"
+versions.legacy = "1.0.0"
+versions.android_gradle_plugin = "4.0.1"
+versions.neenbedankt = "1.8"
+versions.glide = "3.7.0"
+versions.imagezoom = "1.0.4"
+versions.advrecyclerview = "0.11.0@aar"
+versions.javapoet = "1.7.0"
+versions.mmkv = "1.2.12"
+versions.relinker = "1.3.1"
+versions.mediarouter = "1.3.1"
+versions.autoservice_annotation = "1.1.2"
+versions.autoservice_processor = "1.6.4"
+versions.autoservice_service = "1.5.1"
+versions.autodata_annotation = "1.2.1"
+versions.autodata_processor = "1.9.1"
+versions.autodata_databse = "2.3.9"
+versions.autocode_core = "1.3.1"
+//versions.rubik = "1.7.6.5-K1_5"
+versions.rubik_kapt = "1.9.3.2-K1_5"
+versions.rubik_plugins = "1.9.3.8-AGBT4-K1_5"
+versions.rubik_router = "1.9.3.3-K1_5"
+versions.kotlinx = "2.0"
+versions.arch_lifecycle_version = "2.1.0"
+versions.lifecycle_runtime_ktx = "2.5.1"
+versions.arch_lifecycle_compiler_version = "1.1.1"
+versions.paging_version = "2.1.2"
+versions.kotlin = "1.6.21"
+versions.gson = "2.8.5"
+versions.mozilla_rhino = "1.7.10"
+versions.lottie = "5.2.0"
+versions.multidex = "2.0.0"
+versions.core_ktx = "1.6.0"
+versions.constraint_layout = "1.1.3"
+versions.rxjava = "2.2.8"
+versions.rxandroid = "2.1.1"
+versions.workmanager = "2.8.0"
+versions.google_play_core = "1.8.0"
+versions.google_play_core_ktx = "1.8.1"
+versions.google_flex_box = "3.0.0"
+versions.gms_services_auth = "16.0.0"
+versions.retrofit = "2.4.0"
+versions.okhttp_logging_interceptor = "3.12.1"
+versions.cardview = "1.0.0"
+versions.exifinterface = "1.1.0"
+versions.google_billing_ktx = "5.0.0"
+versions.coroutines = "1.3.1"
+versions.rxpermissions = "0.10.2"
+versions.mars_core = "1.0.44"
+versions.mars_client_monitor = "1.0.12-K1_5"
+versions.keep_alive = "0.0.27"
+versions.test = "1.3.0"
+versions.junit_ext = "1.1.2"
+versions.espresso = "3.3.0"
+versions.facebook = "12.2.0"
+versions.detekt = "1.14.2"
+versions.widget = "1.0.91-K1_5"
+versions.logger = "1.0"
+versions.max_ad = "11.1.3"
+versions.block_canary = "1.5.0"
+versions.schduler = "3.1.0"
+versions.dokit = "3.5.0.1"
+versions.picasso = "2.71828"
+versions.teracleaner = "1.4.8.11"
+versions.ly_img = "10.3.2"
+versions.concurrent_futures_ktx = "1.1.0"
+versions.proguard = "6.2.2"
+versions.databinding_runtime = "4.2.2"
+versions.databinding_compiler = "${versions.android_gradle_plugin}"
+versions.exoplayer = "1.1.1"
+
+
+def deps = [:]
+
+def airbnb = [:]
+airbnb.lottie = "com.airbnb.android:lottie:${versions.lottie}"
+deps.airbnb = airbnb
+
+def support = [:]
+support.app_compat = "androidx.appcompat:appcompat:$versions.support"
+support.support_fragment = "androidx.fragment:fragment:$versions.fragment"
+support.activity = "androidx.activity:activity:$versions.fragment"
+support.recyclerview = "androidx.recyclerview:recyclerview:$versions.recyclerview"
+support.cardview = "androidx.cardview:cardview:$versions.cardview"
+support.annotations = "androidx.annotation:annotation:$versions.support"
+support.gridlayout = "androidx.gridlayout:gridlayout:$versions.gridlayout"
+support.design = "com.google.android.material:material:$versions.design"
+support.v4 = "androidx.legacy:legacy-support-v4:$versions.legacy"
+support.multidex = "androidx.multidex:multidex:$versions.multidex"
+support.core_ktx = "androidx.core:core-ktx:$versions.core_ktx"
+support.workmanager = "androidx.work:work-runtime:$versions.workmanager"
+support.exifinterface = "androidx.exifinterface:exifinterface:$versions.exifinterface"
+support.exoplayer = "androidx.media3:media3-exoplayer:$versions.exoplayer"
+support.exoplayer_ui = "androidx.media3:media3-ui:$versions.exoplayer"
+deps.support = support
+
+deps.constraint_layout = "androidx.constraintlayout:constraintlayout:$versions.constraint_layout"
+deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
+deps.neenbedankt = "com.neenbedankt.gradle.plugins:android-apt:$versions.neenbedankt"
+deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
+deps.imagezoom = "it.sephiroth.android.library.imagezoom:library:$versions.imagezoom"
+deps.advrecyclerview = "com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:$versions.advrecyclerview"
+deps.javapoet = "com.squareup:javapoet:$versions.javapoet"
+deps.gson = "com.google.code.gson:gson:${versions.gson}"
+deps.mozilla_rhino = "org.mozilla:rhino:${versions.mozilla_rhino}"
+deps.mmkv = "com.tencent:mmkv-static:$versions.mmkv"
+deps.relinker = "com.getkeepsafe.relinker:relinker:$versions.relinker"
+deps.mediarouter = "androidx.mediarouter:mediarouter:${versions.mediarouter}"
+ext.deps = deps
+
+def rxjava = [:]
+rxjava.rxjava = "io.reactivex.rxjava2:rxjava:$versions.rxjava"
+rxjava.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+deps.rxjava = rxjava
+def firebase = [:]
+firebase.bom = 'com.google.firebase:firebase-bom:30.0.2'
+firebase.inappmessaging_display = 'com.google.firebase:firebase-inappmessaging-display'
+firebase.messaging = 'com.google.firebase:firebase-messaging'
+firebase.analytics = 'com.google.firebase:firebase-analytics-ktx'
+firebase.perf = 'com.google.firebase:firebase-perf'
+firebase.crashlytics = 'com.google.firebase:firebase-crashlytics-ktx'
+firebase.crashlytics_plugin = 'com.google.firebase:firebase-crashlytics-gradle:2.6.1'
+firebase.perf_plugin = 'com.google.firebase:perf-plugin:1.4.0'
+firebase.google_services = 'com.google.gms:google-services:4.3.8'
+firebase.installations = "com.google.firebase:firebase-installations"
+firebase.config = "com.google.firebase:firebase-config-ktx"
+firebase.storage = "com.google.firebase:firebase-storage"
+
+firebase.installreferrer = 'com.android.installreferrer:installreferrer:2.2'
+firebase.appsflyer = 'com.appsflyer:af-android-sdk:6.12.1'
+deps.firebase = firebase
+
+
+def mars = [:]
+mars.kotlinx = "com.mars.kotlin:x:$versions.kotlinx"
+mars.themeskin = "com.dubox.component.themeskin:themeskin:0.0.4"
+mars.glideplus = "com.dubox.netdisk.glideplus:glideplus4.8:0.0.2"
+mars.videosdk = "com.dubox.videosdk:videosdk:2.0.5.2"
+mars.cuid = "com.baidu.android.common:galaxy-lite:2.7.8"
+mars.efficiency_json_common = "com.baidu.netdisk.library.json.efficiency:common:$versions.efficiency_json_common"
+mars.core = "com.mars.united:core:$versions.mars_core"
+mars.widget = "com.mars.united:widget:$versions.widget"
+mars.logger = "com.mars.kotlin:logger:$versions.logger"
+mars.event_statis = "com.mars.united:event_statis:0.0.5"
+//mars.event_statis_plugin = "com.mars.united:event_statis_plugin:0.0.21"
+mars.client_monitor = "com.mars.united:client_monitor:$versions.mars_client_monitor"
+mars.scheduler = "com.mars.united:scheduler:$versions.schduler"
+mars.thread_scheduler_android = "com.mars.united:scheduler-android:$versions.schduler"
+mars.thread_scheduler_monitor = "com.mars.united:scheduler-monitor:$versions.schduler"
+mars.persistence = "com.baidu.netdisk.library:object-persistence:3.0.12-K1_5"
+mars.international_ads = "com.mars.united.international:ads:1.6.34-pavobox"
+mars.international_pay = "com.mars.united.international:pay:1.0.1.1"
+mars.gaea_plugin = "com.mars.android:gaea:0.1.4.3"
+mars.safemode = "com.mars.android:gaea-safemode:1.0.2"
+
+deps.mars = mars
+
+// 保活库-线下包专用
+deps.keep_alive = "com.mars.united.international.normal:keep-alive:$versions.keep_alive"
+// 保活库- Google Play 包专用
+deps.keep_alive_google = "com.mars.united.international.normal:keep-alive-google:$versions.keep_alive"
+
+def autoservice = [:]
+autoservice.annotation = "com.mars.autoservice:annotation:$versions.autoservice_annotation"
+autoservice.processor = "com.mars.autoservice:processor:$versions.autoservice_processor"
+autoservice.service = "com.mars.kotlin:service:$versions.autoservice_service"
+deps.autoservice = autoservice
+
+def autodata = [:]
+autodata.annotation = "com.mars.autodata:annotation:$versions.autodata_annotation"
+autodata.processor = "com.mars.autodata:processor:$versions.autodata_processor"
+autodata.database = "com.mars.kotlin:database:$versions.autodata_databse"
+deps.autodata = autodata
+def autocode = [:]
+autocode.core = "com.mars.autocode:core:$versions.autocode_core"
+deps.autocode = autocode
+
+def rubik = [:]
+//rubik.rubik = "com.rubik:rubik:$versions.rubik"
+rubik.kapt = "com.rubik:kapt:$versions.rubik_kapt"
+rubik.plugins = "com.rubik:plugins:$versions.rubik_plugins"
+rubik.router = "com.rubik:router:$versions.rubik_router"
+deps.rubik = rubik
+
+def lifecycle = [:]
+lifecycle.extensions = "androidx.lifecycle:lifecycle-extensions:$versions.arch_lifecycle_version"
+lifecycle.compiler = "android.arch.lifecycle:compiler:$versions.arch_lifecycle_compiler_version"
+lifecycle.viewmodel_ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.arch_lifecycle_version"
+lifecycle.runtime_ktx = "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycle_runtime_ktx"
+deps.lifecycle = lifecycle
+
+def paging = [:]
+paging.runtime = "androidx.paging:paging-runtime:$versions.paging_version"
+deps.paging = paging
+
+def kotlin = [:]
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+kotlin.coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+kotlin.stdlib_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+deps.kotlin = kotlin
+def google = [:]
+google.play_core = "com.google.android.play:core:$versions.google_play_core"
+google.play_core_ktx = "com.google.android.play:core-ktx:$versions.google_play_core_ktx"
+google.flex_box = "com.google.android.flexbox:flexbox:$versions.google_flex_box"
+google.billing_ktx = "com.android.billingclient:billing-ktx:$versions.google_billing_ktx"
+google.gms_services_auth = "com.google.android.gms:play-services-auth:18.0.0"
+google.gms_services_ads_identifier = "com.google.android.gms:play-services-ads-identifier:18.0.1"
+google.gms_services_safetynet = "com.google.android.gms:play-services-safetynet:18.0.1"
+google.gms_services_base = "com.google.android.gms:play-services-base:18.0.1"
+google.play_integrity = "com.google.android.play:integrity:1.0.1"
+deps.google = google
+
+def databinding = [:]
+databinding.runtime = "androidx.databinding:databinding-runtime:${versions.databinding_runtime}"
+databinding.compiler = "androidx.databinding:databinding-runtime:${versions.databinding_compiler}"
+deps.databinding = databinding
+
+def retrofit = [:]
+retrofit.runtime = "com.squareup.retrofit2:retrofit:$versions.retrofit"
+retrofit.gson = "com.squareup.retrofit2:converter-gson:$versions.retrofit"
+deps.retrofit = retrofit
+deps.okhttp_logging_interceptor = "com.squareup.okhttp3:logging-interceptor:${versions.okhttp_logging_interceptor}"
+
+deps.facebook_core = "com.facebook.android:facebook-core:${versions.facebook}"
+deps.facebook = "com.facebook.android:facebook-login:${versions.facebook}"
+deps.facebook_share = "com.facebook.android:facebook-share:${versions.facebook}"
+deps.facebook_link = "com.facebook.android:facebook-applinks:${versions.facebook}"
+
+def test = [:]
+test.core = "androidx.test:core:$versions.test"
+test.runner = "androidx.test:runner:$versions.test"
+test.rules = "androidx.test:rules:$versions.test"
+test.junit_ext = "androidx.test.ext:junit:$versions.junit_ext"
+test.espresso_core = "androidx.test.espresso:espresso-core:$versions.espresso"
+deps.test = test
+
+def permissions = [:]
+permissions.rx = "com.github.tbruyelle:rxpermissions:$versions.rxpermissions"
+
+deps.permissions = permissions
+
+def detekt = [:]
+detekt.plugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt"
+detekt.cli = "io.gitlab.arturbosch.detekt:detekt-cli:$versions.detekt"
+deps.detekt = detekt
+
+//def zxing = [:]
+//zxing.core = "com.google.zxing:core:$versions.zxing_core"
+//deps.zxing = zxing
+
+def dokit = [:]
+dokit.doraemonkit = "io.github.didi.dokit:dokitx:$versions.dokit"
+dokit.plugin = "io.github.didi.dokit:dokitx-plugin:$versions.dokit"
+dokit.noop = "io.github.didi.dokit:dokitx-no-op:$versions.dokit"
+deps.dokit = dokit
+
+def squareup = [:]
+squareup.picasso = "com.squareup.picasso:picasso:$versions.picasso"
+deps.squareup = squareup
+
+def flextech = [:]
+flextech.cleaner = "com.flextech:cleaner:$versions.teracleaner"
+deps.flextech = flextech
+
+def dynamicso=[:]
+dynamicso.plugin = "com.mars.united.international.plugin:dynamicso:0.0.8"
+deps.dynamicso = dynamicso
+
+def imageshrink=[:]
+imageshrink.plugin = "com.mars.united:apk-purifier:0.0.21-dev11"
+deps.imageshrink = imageshrink
+
+// R文件瘦身
+def r_shrink=[:]
+r_shrink.plugin = "com.mars.united.international.r_inline_plugin:r_inline_box:0.0.2"
+deps.r_shrink = r_shrink
+
+deps.window = "androidx.window:window:1.0.0-alpha09"
+deps.localbroadcastmanager = "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+
+deps.block_canary = "com.github.markzhai:blockcanary-android:$versions.block_canary"
+
+deps.ly_img = "ly.img.android.pesdk:plugin:$versions.ly_img"
+deps.concurrent_futures_ktx = "androidx.concurrent:concurrent-futures-ktx:$versions.concurrent_futures_ktx"
+
+deps.proguard = "net.sf.proguard:proguard-gradle:$versions.proguard"
+def addRepos(RepositoryHandler handler) {
+    handler.mavenCentral()
+    handler.maven {
+        url 'https://maven.aliyun.com/repository/public'
+    }
+    handler.maven {
+        url 'https://maven.aliyun.com/repository/central'
+    }
+    handler.maven {
+        url 'https://maven.aliyun.com/repository/google'
+    }
+    handler.maven {
+        url 'https://maven.aliyun.com/repository/public'
+    }
+    handler.maven {
+        url 'http://10.138.47.202:8081/repository/releases/'
+    }
+    handler.maven {
+        url 'http://10.138.47.202:8081/repository/maven-public/'
+    }
+
+    handler.maven {
+        url 'http://10.12.192.187:8082/nexus/content/repositories/releases/'
+    }
+    handler.maven {
+        url 'http://10.12.192.187:8082/nexus/content/repositories/maven-public/'
+    }
+    handler.maven { url uri("${rootDir}/local-maven") }
+
+    handler.maven { url 'http://maven.applib.baidu-int.com:8681/repository/applib-public' }
+    handler.maven {
+        url 'http://10.12.192.187:8082/nexus/content/groups/public/'
+    }
+    handler.maven { url "https://artifact.bytedance.com/repository/pangle" }
+    handler.maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea" }
+    handler.google()
+    handler.mavenLocal()
+    // target 31 之后针对反射白名单的特殊开源库
+    handler.maven {
+        url "https://jitpack.io"
+    }
+    // @since Terabox 2.21.0 图片编辑库
+    handler.maven {
+        url "https://artifactory.img.ly/artifactory/imgly"
+    }
+    handler.maven { url "https://verve.jfrog.io/artifactory/verve-gradle-release" }
+}
+
+ext.addRepos = this.&addRepos
+

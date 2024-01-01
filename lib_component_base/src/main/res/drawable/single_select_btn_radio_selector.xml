@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item android:drawable="@drawable/appswitch_btn_radio_checked" android:state_selected="true"/>
+  <item android:drawable="@drawable/appswitch_btn_radio_normal" android:state_selected="false"/>
+
+</selector>

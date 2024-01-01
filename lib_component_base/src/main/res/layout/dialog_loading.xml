@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogContentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_loading_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:layout_marginHorizontal="@dimen/dimen_100dp"
+        android:minWidth="120dp"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dimen_24dp"
+            android:layout_height="@dimen/dimen_24dp"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            android:src="@drawable/ic_loading_icon" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:layout_marginBottom="@dimen/dimen_18dp"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_14dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_18dp"
+            android:text="@string/cancel"
+            android:textColor="@color/color_5564FF"
+            android:textSize="@dimen/dimen_14dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

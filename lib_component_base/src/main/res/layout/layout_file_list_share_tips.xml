@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cs_share_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/bg_dn_gray_black"
+        tools:visibility="visible">
+
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/dimen_16dp"
+      android:ellipsize="end"
+      android:maxLines="2"
+      android:paddingTop="8dp"
+      android:paddingBottom="8dp"
+          android:gravity="left"
+      android:text="@string/share_link_dir_head_share_tips"
+      android:textColor="@color/color_share_text"
+      android:textSize="@dimen/dimen_11dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@+id/tv_manage_share"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/tv_manage_share"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="@dimen/dimen_17dp"
+      android:ellipsize="end"
+      android:gravity="right|center_vertical"
+      android:maxWidth="100dp"
+      android:maxLines="2"
+      android:text="@string/manage"
+      android:textColor="@color/color_06a6e5"
+      android:textSize="@dimen/dimen_11dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toLeftOf="@+id/img_close_tips"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:id="@+id/img_close_tips"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="@dimen/dimen_16dp"
+      android:background="@drawable/guide_close"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:opacity="opaque">
+
+  <item tools:width="500dp"
+      tools:height="1000dp">
+    <shape android:shape="rectangle">
+      <gradient android:startColor="#0085FF" android:endColor="#26CBFF"/>
+    </shape>
+  </item>
+
+  <item>
+    <bitmap
+        android:src="@drawable/navigate_decor_line_top_left"
+        android:gravity="top|left" />
+  </item>
+
+  <item>
+    <bitmap
+        android:src="@drawable/navigate_decor_line_top_right"
+        android:gravity="top|right" />
+  </item>
+
+  <item android:drawable="@drawable/app_icon"
+      android:width="94.5dp"
+      android:height="94.5dp"
+      android:gravity="center_horizontal"
+      android:top="195dp">
+  </item>
+
+  <item android:drawable="@drawable/navigate_icon_text"
+      android:width="@dimen/navigation_icon_text_width"
+      android:height="@dimen/navigation_icon_text_height"
+      android:gravity="center_horizontal"
+      android:top="312dp">
+  </item>
+
+</layer-list>

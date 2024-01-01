@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_rect_06a6e5_22" android:state_enabled="true"/>
+    <item android:drawable="@drawable/blue_bg_button_ok_not_enabled" android:state_enabled="false"/>
+    <item android:drawable="@drawable/shape_rect_06a6e5_22"/>
+</selector>

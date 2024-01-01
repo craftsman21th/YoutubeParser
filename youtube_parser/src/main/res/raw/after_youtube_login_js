@@ -1,0 +1,46 @@
+/**
+ * 从cookie中获取sapisid
+ */
+window.getSAPISID = function() {
+	const cookies = document.cookie.split(';')
+	for (let i = 0; i < cookies.length; i++) {
+		const cookie = cookies[i].trim();
+		if (cookie.startsWith('SAPISID=')) {
+			return cookie.substring(8);
+		}
+	}
+	return null;
+}
+
+/**
+ * 检查登录状态
+ */
+window.checkLoginState = function() {
+	try {
+		var SAPISID = window.getSAPISID();
+		// 检查SAPISID，判断是否登录成功
+		if (SAPISID !== null && SAPISID !== undefined) {
+			const ytConfig = JSON.stringify(yt.config_);
+			console.log(`ytConfig: ${ytConfig}`);
+			try {
+				window.NativeBridge.onLoginSucceed(
+					ytConfig,
+					location.href
+				)
+			} catch (err) {}
+		} else {
+			console.log(`登陆状态检查：false, SAPISID = ${SAPISID}`);
+			try {
+				window.NativeBridge.onLoginFailed();
+			} catch (err) {}
+		}
+	} catch (err) {
+		console.log(`登陆状态检查：false, err: ${err}`)
+		try {
+			window.NativeBridge.onLoginFailed();
+		} catch (err) {}
+	}
+};
+
+// 立即执行，回调登陆状态到Native
+window.checkLoginState();

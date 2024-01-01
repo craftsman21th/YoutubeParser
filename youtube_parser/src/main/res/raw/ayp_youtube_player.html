@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            overflow: hidden;
+            position: fixed;
+        }
+
+
+    </style>
+
+    <head>
+        <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- defer forces the library to execute after the html page is fully parsed. -->
+        <!-- This is needed to avoid race conditions, where the library executes and calls `onYouTubeIframeAPIReady` before the page is fully parsed. -->
+        <!-- See #873 on GitHub -->
+        <script
+                defer
+                src="https://www.youtube.com/iframe_api"></script>
+    </head>
+
+    <body>
+        <div id="youTubePlayerDOM"></div>
+        <div id="mask" class="mask" style="position:absolute;width:100%;height:100%;background-color:#000000;z-index: 999999"></div>
+    </body>
+
+    <script type="text/javascript">
+
+	function removeMask() {
+		var iframe = document.querySelector("iframe");
+		if (iframe == null) return;
+
+		var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+		if (iframeDoc == null) return;
+
+		var hasYtpLargePlayButton = iframeDoc.querySelector('.ytp-large-play-button');
+		if (hasYtpLargePlayButton != null) return;// 按钮还在，保持蒙层，退出
+
+		document.getElementById('mask')?.remove();
+	}
+
+    var UNSTARTED = "UNSTARTED";
+    var ENDED = "ENDED";
+    var PLAYING = "PLAYING";
+    var PAUSED = "PAUSED";
+    var BUFFERING = "BUFFERING";
+    var CUED = "CUED";
+
+    var YouTubePlayerBridge = window.YouTubePlayerBridge;
+    var player;
+    var curVideoId;
+    var timerId;
+
+    function onYouTubeIframeAPIReady() {
+
+      YouTubePlayerBridge.sendYouTubeIFrameAPIReady();
+
+    	player = new YT.Player('youTubePlayerDOM', {
+
+        height: '100%',
+    	  width: '100%',
+
+        events: {
+    	    onReady: function(event) { YouTubePlayerBridge.sendReady();initPlayer() },
+    		  onStateChange: function(event) { sendPlayerStateChange(event.data) },
+    		  onPlaybackQualityChange: function(event) { YouTubePlayerBridge.sendPlaybackQualityChange(event.data) },
+    		  onPlaybackRateChange: function(event) { YouTubePlayerBridge.sendPlaybackRateChange(event.data) },
+    		  onError: function(error) { YouTubePlayerBridge.sendError(error.data) },
+    		  onApiChange: function(event) { YouTubePlayerBridge.sendApiChange() }
+    	  },
+
+    	  playerVars: <<injectedPlayerVars>>
+
+      });
+    }
+
+    function sendPlayerStateChange(playerState) {
+      clearTimeout(timerId);
+
+      switch (playerState) {
+        case YT.PlayerState.UNSTARTED:
+          sendStateChange(UNSTARTED);
+          sendVideoIdFromPlaylistIfAvailable(player);
+          return;
+
+        case YT.PlayerState.ENDED:
+          sendStateChange(ENDED);
+          return;
+
+        case YT.PlayerState.PLAYING:
+          removeMask()
+          sendStateChange(PLAYING);
+          loadVideoInfo();
+          startSendCurrentTimeInterval();
+          sendVideoData(player);
+          return;
+
+        case YT.PlayerState.PAUSED:
+          sendStateChange(PAUSED);
+          return;
+
+        case YT.PlayerState.BUFFERING:
+          sendStateChange(BUFFERING);
+          return;
+
+        case YT.PlayerState.CUED:
+          sendStateChange(CUED);
+          return;
+      }
+
+      function sendVideoData(player) {
+        var videoDuration = player.getDuration();
+
+        YouTubePlayerBridge.sendVideoDuration(videoDuration);
+      }
+
+      // This method checks if the player is playing a playlist.
+      // If yes, it sends out the video id of the video being played.
+      function sendVideoIdFromPlaylistIfAvailable(player) {
+        var playlist = player.getPlaylist();
+        if ( typeof playlist !== 'undefined' && Array.isArray(playlist) && playlist.length > 0 ) {
+          var index = player.getPlaylistIndex();
+          var videoId = playlist[index];
+          YouTubePlayerBridge.sendVideoId(videoId);
+        }
+      }
+
+      function sendStateChange(newState) {
+        YouTubePlayerBridge.sendStateChange(newState)
+      }
+
+      function startSendCurrentTimeInterval() {
+        timerId = setInterval(function() {
+          YouTubePlayerBridge.sendVideoCurrentTime( player.getCurrentTime() )
+          YouTubePlayerBridge.sendVideoLoadedFraction( player.getVideoLoadedFraction() )
+		  if(player.getCurrentTime() > 0){
+			  //开始播放后移除黑色遮罩
+			  removeMask()
+		  }
+        }, 100 );
+      }
+    }
+
+    // JAVA to WEB functions
+
+    function seekTo(startSeconds) {
+      player.seekTo(startSeconds, true);
+    }
+
+    function pauseVideo() {
+      player.pauseVideo();
+    }
+
+    function playVideo() {
+      player.playVideo();
+    }
+
+    function loadVideo(videoId, startSeconds) {
+      curVideoId = videoId;
+      player.loadVideoById(videoId, startSeconds);
+      YouTubePlayerBridge.sendVideoId(videoId);
+    }
+
+    function cueVideo(videoId, startSeconds) {
+      curVideoId = videoId;
+      player.cueVideoById(videoId, startSeconds);
+      YouTubePlayerBridge.sendVideoId(videoId);
+    }
+
+    function mute() {
+      player.mute();
+    }
+
+    function unMute() {
+      player.unMute();
+    }
+
+    function setVolume(volumePercent) {
+      player.setVolume(volumePercent);
+    }
+
+    function setPlaybackRate(playbackRate) {
+      player.setPlaybackRate(playbackRate);
+    }
+
+    function loadVideoInfo() {
+        YouTubePlayerBridge.sendVideoInfo(curVideoId,player.getPlaybackQuality(),JSON.stringify(player.getAvailableQualityLevels()), player.getPlaybackRate(),JSON.stringify(player.getAvailablePlaybackRates()));
+    }
+
+    function loadVideoQuality() {
+        YouTubePlayerBridge.sendVideoCurQuality(curVideoId,player.getPlaybackQuality());
+    }
+
+  const qualityTable = {
+    "auto": 0,
+    "tiny": 144,
+    "light": 144,
+    "small": 240,
+    "medium": 360,
+    "large": 480,
+    "hd720": 720,
+    "hd1080": 1080,
+    "hd1440": 1440,
+    "hd2160": 2160,
+    "hd2880": 2880,
+    "highres": 4320
+  }
+
+ /**
+   *  设置播放质量
+   *  @param {String} playbackQuality 播放质量  "auto" | "tiny" | "light" ……
+   **/
+  function setPlaybackQuality(playbackQuality) {
+    if (playbackQuality == "auto") {
+      localStorage.removeItem("yt-player-quality");
+    } else {
+       var now = Date.now();
+    // this will set `playbackQuality` as the selected video quality, untile it expires
+    localStorage.setItem("yt-player-quality", JSON.stringify({
+      data: playbackQuality,
+      creation: now,
+      expiration: now + 2419200000
+    }));
+    }
+
+    // after changing the quality you need to reload the video to see changes.
+    // reload the video and start playing where it was.
+    if (player) {
+      const currentTime = player.getCurrentTime();
+      player.loadVideoById(player.getVideoData().video_id, currentTime);
+    }
+  }
+
+  function setPlaybackQuality2(playbackQuality) {
+    player.setPlaybackQuality(playbackQuality)
+  }
+
+
+    function toggleFullscreen() {
+      player.toggleFullscreen();
+    }
+
+	// 需要保留的元素
+	const validElClass = [
+		'html5-video-container',
+		'mask'
+	];
+
+	var playerEl;
+
+	// 初始化player，移除无用元素，调用入口
+	function initPlayer() {
+		try {
+			removeYtbEls();
+		} catch(err) {
+			console.log('err:', err);
+		}
+		const config = { childList: true, subtree: true, attributes: true };
+		const callback = function (mutationsList, observer) {
+			try {
+				for(let mutation of mutationsList) {
+					if (mutation.attributeName === 'style' && mutation.target.tagName === 'VIDEO') {
+						playerEl = mutation.target;
+						const player = mutation.target;
+
+						const screenWidth = window.YouTubePlayerBridge.getScreenWidth()
+						const screenHeight = window.YouTubePlayerBridge.getScreenHeight()
+
+						const originWidth = player.clientWidth;
+						const originHeight = player.clientHeight;
+
+						if(screenWidth < screenHeight) {
+						    // 竖屏
+						    player.style.width = '100vw';
+                            player.style.height = Math.floor(player.clientWidth * originHeight / originWidth) + 'px';
+						} else {
+						    // hengp
+						    player.style.height = '100vh';
+                            player.style.width = Math.floor(player.clientHeight * originWidth / originHeight) + 'px';
+						}
+                        player.style.left = '50%';
+                        player.style.transform = 'translate(-50%,0)';
+					}
+				}
+				removeYtbEls();
+			} catch(e) {
+				console.log('err:', e);
+			}
+		};
+		const observer = new MutationObserver(callback);
+		observer.observe(document.querySelector("iframe").contentDocument.body, config);
+	}
+	// 移除无用元素
+	function removeYtbEls() {
+		const validEls = document.querySelector("iframe").contentDocument.getElementsByClassName('html5-video-container');
+		if (validEls.length) {
+			const playerContainer = validEls[0];
+			const list = playerContainer.parentNode.children;
+			Array.from(list).forEach((item) => {
+				if (!checkElValidation(item.className)) {
+					item.remove();
+				}
+			});
+		}
+	}
+	// 检查目标className是否在有效className列表中
+	function checkElValidation(className) {
+		let isValid = false;
+		for (let item of validElClass) {
+			if (className.includes(item)) {
+				isValid = true;
+				break;
+			}
+		}
+		return isValid;
+	}
+    function setPlayerStyle(width, height) {
+        if(playerEl == null || playerEl == undefined) {
+            console.log('playerEl未初始化')
+            return
+        }
+        console.log('playerEl已初始化')
+
+        const originWidth = player.clientWidth;
+        const originHeight = player.clientHeight;
+
+        if(width != 0) {
+            playerEl.style.width = width + 'px';
+            player.style.height = Math.floor(player.clientWidth * originHeight / originWidth) + 'px';
+        } else {
+            playerEl.style.height = height + 'px';
+            player.style.width = Math.floor(player.clientHeight * originWidth / originHeight) + 'px';
+        }
+        playerEl.style.top = '50%';
+        playerEl.style.left = '50%';
+        playerEl.style.transform = 'translate(-50%,-50%)';
+    }
+
+    </script>
+</html>

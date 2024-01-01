@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:minWidth="@dimen/dimen_300dp"
+    android:padding="16dp">
+    
+    <LinearLayout
+        android:id="@+id/content_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_radius_12_e61e1f24"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="17dp"
+        android:paddingTop="9dp"
+        android:paddingRight="17dp"
+        android:paddingBottom="9dp">
+        
+        <TextView
+            android:id="@+id/tv_path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:maxLines="3"
+            android:textColor="@color/color_FFFFFF"
+            tools:text="这是路径这是路径这是路径这是路径" />
+        
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view_line"
+            android:background="@drawable/bg_selector_btn"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="@string/p2pshare_operation_open_photo"
+            android:textColor="@color/color_FFFFFF" />
+    
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+
+.ytp-large-play-button {
+    display:none;
+}
+.ytp-watermark {
+    display:none;
+}
+.ytp-watermark-small {
+    display:none;
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE
+  resources [
+    <!ENTITY base_app_name "Moder">
+    <!ENTITY homesite_domain "www.heybox.ai">
+  ]
+>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" tools:ignore="MissingTranslation">
+  <string name="account_error_toast">Not logged in to &base_app_name; yet. Please try again after logging in.</string>
+  <string name="agreement_dialog_content">Welcome to &base_app_name;. Using &base_app_name; requires cellular data or a Wi-Fi connection. Please contact your carrier for the cellular data costs.We value your privacy and strive to protect your personal information. Please read and confirm you agree with our Privacy Policy and Terms of Service before using &base_app_name;
+    App.</string>
+  <string name="already_lastet_version">Your &base_app_name; is the latest version</string>
+  <string name="apk_version_info">&base_app_name; Ver. %s</string>
+  <string name="app_name">&base_app_name;</string>
+  <string name="app_name_with_space">Save to &base_app_name;</string>
+  <string name="backup_my_app">\t| &base_app_name;</string>
+  <string name="backup_introduce_thanks_for_your_affirmation">Thank you for supporting &base_app_name;</string>
+  <string name="buckup_setting_guide_hint">&base_app_name; guarantees your privacy and security.</string>
+  <string name="category_my_app">My &base_app_name;</string>
+  <string name="cloudp2p_pick_netdisk_file_cloudimage_header">Select photos from &base_app_name;</string>
+  <string name="download_apk">Downloading &base_app_name; Version %s</string>
+  <string name="my_app_account">&base_app_name; Account</string>
+  <string name="my_app_album">&base_app_name; Album</string>
+  <string name="my_app_desktop_desc">&base_app_name; Desktop</string>
+  <string name="my_app_website_desktop_guide_title">&base_app_name; Desktop Site</string>
+  <string name="exit_tips">Tap again to close &base_app_name;</string>
+  <string name="file_list_title">&base_app_name;</string>
+  <string name="live_photo_export_title">Exporting to the &base_app_name; download folder</string>
+  <string name="login_page_bottom_info">By logging in, you indicate that you have read and agree to &base_app_name; Privacy Policy and Terms of Service</string>
+  <string name="move_in_to_safe_box">Confirm to move the file to hidden space? After being moved to the hidden space, it cannot be viewed in &base_app_name;
+    list</string>
+  <string name="my_app_net_error">&base_app_name; connection failed, failed to display contents</string>
+  <string name="permission_advance_one_title">&base_app_name; requires the following permissions to use the corresponding function</string>
+  <string name="permission_advance_two_next">Go to &base_app_name;</string>
+  <string name="plugin_head_view_select_text">Select %s from &base_app_name;</string>
+  <string name="root_cloud">&base_app_name;</string>
+  <string name="safety_ability_text">&base_app_name; keeps your data secure</string>
+  <string name="select_download_warning_content">Due to the limitations of Android 4.4, you cannot download to the original path. &base_app_name;
+    has changed the download path to your SD card</string>
+  <string name="select_secondary_warning_content">Downloaded files will be deleted if you select an external storage card to download file and decide to delete &base_app_name;. Confirm the selection?</string>
+  <string name="too_much_dlg_context">Too many files on your &base_app_name; may affect using experience. Please visit web version to clean up your files.</string>
+  <string name="signature_check_failed">Please download &base_app_name; from http://&homesite_domain;/</string>
+  <string name="video_notification_title">&base_app_name; is playing video</string>
+  <string name="share_other_muti_item_text">Hi, I am using &base_app_name;
+    to share \"%1$s\"( %2$d file(s)) with you. Come and take a look!</string>
+  <string name="share_other_one_item_text">Hi, I am using &base_app_name; to share \"%s\" with you. Come and take a look!</string>
+  <string name="my_app_share">&base_app_name; share</string>
+  <string name="personalpage_datail_footer_button_conserve">Save to &base_app_name;</string>
+  <string name="backup_setting_safe_title">&base_app_name; protects your account security</string>
+  <string name="set_coded_lock">Unlock &base_app_name;</string>
+  <string name="account_security_desc_title">&base_app_name; protects your account security</string>
+  <string name="rating_my_app">Review &base_app_name;</string>
+  <string name="rating_guide_dialog_title_sub">Tap stars to rate &base_app_name;</string>
+  <string name="rating_guide_dialog_title_sub_bad">&base_app_name; will strive to provide you with better services!</string>
+  <string name="speed_svip_only">Upgrade to &base_app_name; Premium to enjoy multi-speed playback</string>
+  <string name="vip_video_speed_title">Upgrade to &base_app_name; Premium and enjoy multi-speed video playback</string>
+  <string name="vip_video_resolution_title">Upgrade to &base_app_name; Premium to unlock all definitions for this video</string>
+  <string name="feedback_msg">Thank you for your attention and support to &base_app_name;. We will take your feedback seriously and repair / improve related functions as soon as possible</string>
+  <string name="privi_normal_over_limit_content">Upgrade to &base_app_name; Premium to enable transferring of up to 50,000 files</string>
+  <string name="priv_my_app_video_backup">Upgrade to &base_app_name;
+    Premium to enjoy the privilege of backing up the original videos</string>
+  <string name="privi_normal_upload_over_limit_content">Upgrade to &base_app_name;
+    Premium to enjoy the privilege of backing up large files</string>
+  <string name="priv_my_app_no_space_title">Upgrade to &base_app_name; Premium to enjoy an extra large storage space of 2TB</string>
+  <string name="server_google_network_exception_message">Google network is abnormal, please wait for &base_app_name; to confirm the transaction</string>
+  <string name="my_app_update_agreement">&base_app_name; has updated the agreement</string>
+  <string name="my_app_update_agreement_content">To make a better cloud storage service available for you, &base_app_name; has updated User Agreement &amp; Privacy Agreement to ensure user data security and privacy. By continuing to use the application, you are accepting the updated content.</string>
+  <string name="desc_video_to_backup">Videos on the phone can be backed up to &base_app_name; to free local space</string>
+  <string name="desc_clean_backup_files">Clear files backed up to &base_app_name; to free local storage</string>
+  <string name="bottom_bar_action_add_to_netdisk">Save to &base_app_name;</string>
+  <string name="category_netdisk">My &base_app_name;</string>
+  <string name="save_to_cloud">Save to &base_app_name;</string>
+  <string name="url_link_tips">You can upload the resource to &base_app_name; by pasting the following link, for example: \n1.a link from the resource site\n2.a link to the resource sent by a friend\n3.the format of this link includes http, https, magnet.</string>
+  <string name="complete_offline_task">The resource has been saved to &base_app_name; successfully</string>
+  <string name="saved_at">Saved to: &base_app_name; %s</string>
+  <string name="transfer_error_save_myself_album">Failed to save the file because it already exists in &base_app_name;</string>
+  <string name="dasdja_yun_no_storage">Insufficient space in &base_app_name;</string>
+  <string name="resource_saved">Successfully saved to &base_app_name;</string>
+  <string name="delete_offline_file_hint_content2">You can still download it from &base_app_name; after you\'ve deleted it.</string>
+  <string name="crash_hint_content">Multiple abnormal crashes of &base_app_name; have been detected, please contact us by email to fix the problem. We apologize for any inconvenience caused.</string>
+  <string name="save_video_to_continue_watching">Save to &base_app_name; and find your way watching movies</string>
+  <string name="save_video_to_everytime_watching">The network is unstable, you can save it to &base_app_name; and watch at any time</string>
+  <string name="save_video_to_everytime_watching_match">Save to &base_app_name;</string>
+  <string name="business_scan_result_mac_login">%s &base_app_name; login</string>
+  <string name="home_new_user_guide_text_1">Every photo represents a piece of memory\n&base_app_name; guards them for you</string>
+  <string name="home_tools_user_guide">What is &base_app_name;</string>
+  <string name="login_with_email">Login with &base_app_name; Email</string>
+  <string name="sign_up_with_email">Sign up with &base_app_name; Email</string>
+  <string name="my_app_premium_issues">&base_app_name; Premium issues</string>
+  <string name="warning_content_one">Unable to log in and &base_app_name; logged out on all devices when your account is deleted</string>
+  <string name="warning_content_two">Your files will be permanently deleted from the &base_app_name; Server</string>
+  <string name="search_hint">Supports file search on &base_app_name; and content search on Google</string>
+  <string name="search_from_google_hint">Save videos to &base_app_name; with one easy click and free up cellphone storage space</string>
+  <string name="network_search_empty_desc">No video files on the webpage can be saved to &base_app_name;</string>
+  <string name="search_box_hint_from_my_app">Search for &base_app_name; files</string>
+  <string name="offline_upload_use_tips_bt_2">Tap to save the file into &base_app_name;, without taking up space in the cellphone</string>
+  <string name="email_bind_hint_info">After you bind the e-mail address, you can log into &base_app_name; with your e-mail address in a safer way</string>
+  <string name="guide_welcome_to_my_app">Welcome to &base_app_name;</string>
+  <string name="guide_welcome_tips">You can use &base_app_name; to do the following:</string>
+  <string name="dynamic_feature_module_res_not_found_err">There is a problem with the installation package. Please go to Google Play or another official platform to download and re-install &base_app_name;</string>
+  <string name="share_tab_search_hint">Search files in &base_app_name;</string>
+  <string name="share_from_my_app">&base_app_name;</string>
+  <string name="cleanup_open_premium_info">Upgrade to Premium to back up mobile video to &base_app_name;
+    and free up space on your phone.</string>
+  <string name="video_downloader_description">Save your favorite videos to &base_app_name;</string>
+  <string name="search_file_in_my_app">Search files in &base_app_name;</string>
+  <string name="my_app_premium">&base_app_name; Premium</string>
+  <string name="net_search_save_video_title">How to save a video to &base_app_name;</string>
+  <string name="net_search_save_video_method_2_info">Copy the video link and then open &base_app_name;.
+        When a prompt pops up at the top of the screen, touch it to save the video.</string>
+  <string name="net_search_save_video_method_1_info">On TikTok, Instagram, or Facebook, find
+        the video you like and touch Share. Then select [Save to &base_app_name;].</string>
+  <string name="offline_download_disclaimers_content">Please note that all files you have saved are from the Internet, and &base_app_name;
+    does not assume any responsibility for the legality of their content. Please notify us by email should you find any infringing files or links.</string>
+  <string name="folder_backup_no_disk_space">Backup suspended. Please try to free up your &base_app_name; space</string>
+  <string name="play_audio_in_my_app">Play with &base_app_name;</string>
+  <string name="business_widget_not_support_add_widget_in_app">Pinch inward on the homescreen and select &base_app_name;
+    from the Widget</string>
+  <string name="coupon_type_repurchase_subTitle">You are now a senior &base_app_name; user</string>
+  <string name="search_videos_in_my_app">Search for videos in &base_app_name;</string>
+  <string name="clean_storage_push_content">Over 70% of available storage space on your phone is being used. Move your files to &base_app_name;
+    right now to free up that space</string>
+  <string name="safe_mode_clean_desc">Clearing temporary data will not affect downloaded files or message data. After tapping the button, you will need to log in to &base_app_name;
+    again.</string>
+  <string name="safe_mode_restart_desc">After you’ve tapped the button, the background process will be interrupted, and &base_app_name; will restart.</string>
+  <string name="disclaimer_content">Please note that &base_app_name; is not responsible for the legality of the files you lock and save. If you find any files or links infringing your rights, you can give feedback by email.</string>
+  <string name="upload_file_guide_one_content">Tap here to select and upload any type of file(s) you want to back up to &base_app_name;.</string>
+  <string name="newbie_task_guide_invite_tips">Send the following link to a friend and complete the task after they sign up for &base_app_name;.</string>
+  <string name="newbie_share_link_declare">Please forward the official &base_app_name; file below</string>
+  <string name="newbie_share_link_file_declare">This is &base_app_name;\'s official file in the link</string>
+  <string name="newbie_guide_welcome">Welcome to &base_app_name;</string>
+  <string name="report_text">&base_app_name; will respond quickly to all infringements to copyrights, including film &amp; TV rights, music rights, software rights, literary rights and other rights</string>
+  <string name="newbie_share_link_file_desc">Copy files from &base_app_name;</string>
+  <string name="radar_description">Abundant and wonderful content \n Shared by &base_app_name; users in the Referral Program</string>
+  <string name="no_video_dialog_desc">Pleas visit a video site and play the video at first. After that, &base_app_name; will automatically find the video resource for you, and the download button will avalable to click</string>
+  <string name="my_app_name" tools:ignore="ExtraTranslation">My &base_app_name;</string>
+  <string name="my_app_desktop_url">&homesite_domain;</string>
+  <string name="invite_newbie_code_copy_str">&homesite_domain;/wap/activity/recipient2?code=%s<![CDATA[&]]>pid=aCompressedTask<![CDATA[&]]>task=newbie</string>
+  <string name="get_all_youtube_features_on_my">Access all YouTube features on &base_app_name;</string>
+  <string name="get_all_youtube_features_on_aa">Access all YouTube features on &base_app_name;</string>
+  <string name="djadjksa_yun_no_storage">Insufficient space in &base_app_name;</string>
+</resources>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: '../versions.gradle'
+
+android {
+    namespace "com.moder.compass.lib_business_kernel"
+    compileSdkVersion 33
+    buildToolsVersion "29.0.3"
+    //默认配置
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 33
+        multiDexEnabled = true
+    }
+    //jdk配置
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            //So路径配置
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api deps.support.v4
+    api deps.support.gridlayout
+    api deps.support.recyclerview
+    api deps.gson
+    api deps.mars.cuid
+
+    // MMKV
+    implementation deps.mmkv
+    api deps.relinker
+    implementation deps.autoservice.annotation
+    implementation deps.autoservice.service
+    implementation deps.mars.kotlinx
+    implementation deps.mars.client_monitor
+    api deps.mars.core
+
+    // multidex
+    api deps.support.multidex
+}

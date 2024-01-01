@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    style="@style/ModerDialogBackgroundstyle"
+        android:id="@+id/dialogContentView"
+    android:background="@drawable/bg_dn_background_with_radian"
+    android:gravity="center">
+
+<!-- dialog title -->
+
+  <LinearLayout
+    android:layout_width="288dip"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/dimen_25dp"
+    android:layout_marginBottom="@dimen/dimen_12dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp">
+
+    <TextView
+      android:id="@+id/txt_confirmdialog_title"
+      style="@style/Moder.TextAppearance.Large.DNLighter_black"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:gravity="center_vertical"
+      android:textStyle="bold"
+      android:text="@string/new_folder">
+    </TextView>
+  </LinearLayout>
+  <!-- Dialog Content -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen_20dp"
+    android:paddingLeft="@dimen/dimen_20dp"
+    android:paddingRight="@dimen/dimen_20dp">
+
+    <TextView
+        style="@style/Moder.TextAppearance.Smaller.Gray"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_marginBottom="@dimen/dimen_6dp"
+      android:visibility="gone"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dimen_44dp"
+      android:gravity="center_horizontal"
+      android:orientation="horizontal">
+
+      <ImageView
+        android:id="@+id/button_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="13dp"
+        android:visibility="gone"/>
+
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <com.mars.united.widget.LengthLimitedEditText
+          android:id="@+id/input_edittext"
+          style="@style/Moder.TextAppearance.Middle.DNLighterBlack"
+          android:layout_width="fill_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentRight="true"
+          android:layout_centerInParent="true"
+          android:background="@drawable/bg_dn_edit_background_normal_yq"
+          android:paddingRight="@dimen/dimen_40dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="10dp"
+          android:textColorHighlight="@color/editview_text_highlight_color"
+          android:textColorHint="@color/gray_c5"
+          android:singleLine="true"/>
+
+        <ImageView
+          android:id="@+id/delete_edit_text"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:src="@drawable/popup_icon_input_close"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:paddingRight="@dimen/dimen_12dp"
+          android:paddingLeft="@dimen/dimen_12dp"/>
+
+        <TextView
+          android:id="@+id/input_text_num"
+          style="@style/Moder.TextAppearance.Smaller.DNBlack"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_alignParentRight="true"
+          android:gravity="center_vertical"
+          android:layout_marginRight="@dimen/dimen_10dp"
+          android:text="3/12"
+          android:visibility="gone" />
+      </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/dialog_text_error"
+      style="@style/Moder.TextAppearance.Smaller.DarkRed"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/p2pshare_nickname_dialog_error_height"
+      android:layout_marginTop="@dimen/p2pshare_nickname_dialog_error_margin_vertical"
+      android:visibility="gone" />
+  </LinearLayout>
+
+  <!-- dialog footer -->
+
+
+  <RelativeLayout
+      android:layout_width="288dp"
+    android:layout_height="52dp"
+    android:background="@drawable/shape_rect_blr_12_f9f9fb">
+
+    <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="horizontal">
+
+      <Button
+        android:id="@+id/alertdialog_btn_cancel"
+        style="@style/Moder.TextAppearance.Large"
+        android:textColor="@color/normal_dialog_cancel_button_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:background="@null"
+          skin:enable="false"
+          android:text="@string/cancel">
+      </Button>
+
+      <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"/>
+
+      <Button
+        android:id="@+id/alertdialog_btn_confirm"
+        style="@style/Moder.TextAppearance.Large"
+        android:textColor="@color/normal_dialog_confirm_button_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@null"
+          skin:enable="false"
+          android:text="@string/create">
+      </Button>
+
+      <LinearLayout
+        android:id="@+id/loadingBox"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ProgressBar
+          android:id="@+id/loading_icon"
+          style="@style/Moder.ProgressBar.Small"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      </LinearLayout>
+    </LinearLayout>
+
+  </RelativeLayout>
+
+</LinearLayout>

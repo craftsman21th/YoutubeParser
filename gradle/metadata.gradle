@@ -1,0 +1,92 @@
+ext.isDefaultConfig = {
+    return gradle.startParameter.taskNames.find {
+        it.toLowerCase().contains("defaultconfig")
+    } != null
+}
+
+ext.getDuboxManifestPlaceholders = {
+    def defaultDomain
+    def shareDomain
+    def homeSiteDomain
+    def channel
+    def oneLink
+    def duboxScheme
+    def appName
+    def facebookCpAuthorities
+    def feedbackEmail
+    def firebasePushService
+    def contentProviderPrefix
+    if (isDefaultConfig()) {
+        println(" manifestPlaceholders task put MENIFEST_CHANNEL=outofstore")
+        channel = "outofstore"
+        defaultDomain = "safepavo.com"
+        shareDomain = "funpavo.com"
+        homeSiteDomain = "cocoboxapp.com"
+        oneLink = "cocobox.onelink.me"
+        duboxScheme = "moder"
+        appName = "CoCoBox"
+        facebookCpAuthorities = "com.facebook.app.FacebookContentProvider2322057368183507"
+        feedbackEmail = "cocoboxhelp@gmail.com"
+        firebasePushService = "com.moder.compass.push.WebChannelPushService"
+        contentProviderPrefix = "com.moder.compass"
+    } else {
+        println(" manifestPlaceholders task put MENIFEST_CHANNEL=google_play")
+        channel = "google_play"
+        defaultDomain = "heybox.ai"
+        shareDomain = "heyboxshare.com"
+        homeSiteDomain = "heybox.ai"
+        oneLink = "heybox.onelink.me"
+//        duboxScheme = "heybox"
+        duboxScheme = "moder"
+        appName = "HeyBox"
+        facebookCpAuthorities = "com.facebook.app.FacebookContentProvider877657207316785"
+        feedbackEmail = "heyboxhelp@gmail.com"
+        firebasePushService = "com.moder.compass.push.GoogleChannelPushService"
+        contentProviderPrefix = "com.moder.tube"
+    }
+    return [
+            DUBOX_SCHME             : duboxScheme,
+            app_icon                : "@drawable/app_icon",
+            app_icon_v1             : "@drawable/app_icon",
+            app_icon_v2             : "@drawable/app_icon",
+            app_icon_v3             : "@drawable/app_icon",
+            app_name                : appName,
+            app_round_icon          : "@drawable/app_icon_round",
+            app_round_icon_v1       : "@drawable/app_icon_round",
+            app_round_icon_v2       : "@drawable/app_icon_round",
+            app_round_icon_v3       : "@drawable/app_icon_round",
+            MENIFEST_CHANNEL        : channel,
+            DEFAULT_DOMAIN          : defaultDomain,
+            DEFAULT_DOMAIN_WWW      : "www.$defaultDomain",
+            DEFAULT_SHARE_DOMAIN    : shareDomain,
+            DEFAULT_SHARE_DOMAIN_WWW: "www.$shareDomain",
+            DEFAULT_HOME_DOMAIN     : homeSiteDomain,
+            DEFAULT_HOME_DOMAIN_WWW : "www.$homeSiteDomain",
+            ONE_LINK                : oneLink,
+            FACEBOOK_CP_AUTHORITIES : facebookCpAuthorities,
+            FEEDBACK_EMAIL          : feedbackEmail,
+            // 这个东西2个包是一样的
+            GALAXY_DATA_VALUE       : "ew0KICAidmVyIjogMSwNCiAgInBrZyI6ImNvbS5iYWlkdS5jbG91ZGVudGVycHJpc2UiLA0KICAi" +
+                    "c2lncyI6IFsNCiAgICAiMjA3NTFjNmM0MGQ3NWRkZGMzYWZlODI4NWE2NjZhYjI5NTQ5Mjk3NSIN" +
+                    "CiAgXSwNCiAgInByaW9yaXR5IjoxMDAwDQp9",
+            GALAXY_SF_VALUE         : "Rg7H4NOSBSiE3+lGDgXiVxdlwDqDLIMiTPociXfi0BgddQdp2TZlZpD81ngHh+A0nlAYc82jG1JG" +
+                    "sfWXMfs50HhaPUUhxbhinYYi/bmZnYJ5tPHNou9g+QQyKFocJUifOp8IBpTxtlUP4xfwGJZ6LSne" +
+                    "5ViMcdzkjkBG3WoLn6CMSasc5oUbCl/+yFV+lkIY1YkekwRh1dKxay4OxfXDCK24aNttgoUAKtiD" +
+                    "kpSs9eCptRqSWia/KiZ10SxeJMkwHhzRuzSRi5VtMTE+j1E1Ci3XKpWFDU1xvho51v+rJElKxiAB" +
+                    "y26zZWN4gZCLfcKamugMvilpcPJWBIsZieAeWg==",
+            FIREBASE_PUSH_SERVICE   : firebasePushService,
+            CONTENT_PROVIDER_PREFIX : contentProviderPrefix
+    ]
+}
+
+ext.getAdUnitIds = {
+    int index = isDefaultConfig() ? 0 /* 线下 */ : 1 /* 线上 */
+    return [AD_UNIT_ID_MAX_INTERSTITIAL              : ["7013999bab0fb24a", "a4a90734ff189d79"][index],
+            AD_UNIT_ID_MAX_INTERSTITIAL_APP_COLD_OPEN: ["1f1278f2e964e607", "cf6b5aea34cb0f56"][index],
+            AD_UNIT_ID_MAX_NATIVE_MEDIUM             : ["c01e74a36542f50b", "c5c9b08d5bf66869"][index],
+            AD_UNIT_ID_MAX_NATIVE_SMALL              : ["cbcf2c628343f8d5", "2281f8ca1fb13896"][index],
+            AD_UNIT_ID_MAX_MANUAL_NATIVE             : ["a8ce915739083e08", "83a3f8a076330291"][index],
+            AD_UNIT_ID_MAX_BANNER                    : ["e4d7744b07dc2dcd", "1b19d250b01ac23f"][index],
+            AD_UNIT_ID_MAX_REWARD                    : ["b5cd7023e4789e10", "becfa1b804605305"][index]
+    ]
+}
